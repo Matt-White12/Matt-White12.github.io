@@ -5,17 +5,18 @@
 }
 i{
 	color: #272728;
-	padding-top:5px;
+  padding-top: 30px;
 }
-/*.footer {
-  position: absolute;
+.footer {
+  position: relative;
   right: 0;
-  bottom: 0;
   left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
   padding: 1rem;
-  background-color: #efefef;
   text-align: center;
-}*/
+}
 
 h1{
   font-family: 'Lobster', cursive;
@@ -27,7 +28,7 @@ h2{
 }
 h3{
   font-family:  'Questrial', sans-serif;
-  font-size:  16px;
+  font-size:  24px;
 }
 .img-responsive {
     margin: 0 auto;
