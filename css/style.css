@@ -16,13 +16,18 @@ i{
   background-color: #efefef;
   text-align: center;
 }*/
+
+h1{
+  font-family: 'Lobster', cursive;
+  font-size:  48px;
+}
 h2{
   font-family:  'Questrial', sans-serif;
   font-size:  20px;
 }
-h1{
-  font-family: 'Lobster', cursive;
-  font-size:  48px;
+h3{
+  font-family:  'Questrial', sans-serif;
+  font-size:  16px;
 }
 .img-responsive {
     margin: 0 auto;
