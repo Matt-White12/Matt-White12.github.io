@@ -28,6 +28,9 @@
     border-color: #d3d3d3;
     border-image-outset: 13px;
 }
+body{
+  background-color: #d3d3d3;
+}
 i{
 	color: #272728;
   padding-top: 30px;
@@ -43,6 +46,10 @@ h2{
 h3{
   font-family:  'Questrial', sans-serif;
   font-size:  24px;
+}
+h4{
+  font-family: 'Lobster', cursive;
+  font-size:  48px;
 }
 .img-responsive {
     margin: 0 auto;
@@ -60,4 +67,11 @@ h3{
 .hideme
 {
     opacity:0;
+}
+.divider {
+  border-top: 5px double #6b6c6d;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  width: 500px;
 }
