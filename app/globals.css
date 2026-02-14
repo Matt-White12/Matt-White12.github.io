@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: false;
+}
+
+:root {
+    --color-primary: oklch(55% 0.18 245);
+    --color-primary-content: oklch(98% 0.01 245);
+    --color-secondary: oklch(65% 0.12 220);
+    --color-secondary-content: oklch(15% 0.03 220);
+    --color-base-100: oklch(100% 0 0);
+    --color-base-200: oklch(97% 0.003 240);
+    --color-base-300: oklch(93% 0.008 240);
+    --color-base-content: oklch(20% 0.03 245);
+    --color-neutral: oklch(20% 0.03 245);
+    --color-neutral-content: oklch(95% 0.01 240);
+    --color-accent: oklch(70% 0.15 190);
+    --color-accent-content: oklch(15% 0.03 190);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image:
+        linear-gradient(oklch(55% 0.18 245 / 0.25) 1px, transparent 1px),
+        linear-gradient(90deg, oklch(55% 0.18 245 / 0.25) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+@keyframes wave-drift {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bubble-float {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.12;
+    }
+    90% {
+        opacity: 0.12;
+    }
+    100% {
+        transform: translateY(-300px) translateX(30px);
+        opacity: 0;
+    }
+}
+
+@layer utilities {
+    .blog-card-body {
+        transition:
+            background-color 0.2s,
+            color 0.2s,
+            background-image 0.2s;
+    }
+
+    .blog-card:hover .blog-card-body {
+        background-color: oklch(55% 0.18 245) !important;
+        background-image:
+            linear-gradient(oklch(98% 0.01 245 / 0.15) 1px, transparent 1px),
+            linear-gradient(
+                90deg,
+                oklch(98% 0.01 245 / 0.15) 1px,
+                transparent 1px
+            ) !important;
+        background-size: 40px 40px !important;
+        color: oklch(98% 0.01 245) !important;
+    }
+
+    .card-hover-grid {
+        background-image: none;
+        transition:
+            background-color 0.2s,
+            color 0.2s,
+            border-color 0.2s;
+    }
+
+    .card-hover-grid:hover {
+        background-color: oklch(55% 0.18 245) !important;
+        background-image:
+            linear-gradient(oklch(98% 0.01 245 / 0.15) 1px, transparent 1px),
+            linear-gradient(
+                90deg,
+                oklch(98% 0.01 245 / 0.15) 1px,
+                transparent 1px
+            ) !important;
+        background-size: 40px 40px !important;
+    }
+}
