@@ -7,7 +7,7 @@ export default function HeroSection() {
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/matthew-white-58482ab7",
     },
-    { label: "CodePen", href: "https://codepen.io/Matt-White12/" },
+    // { label: "CodePen", href: "https://codepen.io/Matt-White12/" },
   ];
 
   return (
