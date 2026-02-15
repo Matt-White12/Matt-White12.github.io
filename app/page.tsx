@@ -4,42 +4,33 @@ import BlogPostCard from "@/components/BlogPostCard";
 
 const projects = [
   {
-    title: "Random Quote Generator",
-    description: "A simple app that displays random quotes with a colorful UI.",
+    title: "Project Placeholder 1",
+    description: "Project placeholder description",
     tags: ["JavaScript", "HTML", "CSS"],
-    url: "https://codepen.io/Matt-White12/pen/RGRwgA",
+    url: "https://codepen.io",
   },
   {
-    title: "Sudoku Solver",
-    description: "An interactive sudoku solver built with vanilla JavaScript.",
+    title: "Project Placeholder 2",
+    description: "Project placeholder description",
     tags: ["JavaScript", "Algorithms"],
-    url: "https://codepen.io/Matt-White12/pen/zoYzxL",
+    url: "https://codepen.io",
   },
   {
-    title: "Recipe Book",
-    description:
-      "A recipe book application for organizing and browsing recipes.",
+    title: "Project Placeholder 3",
+    description: "Project placeholder description",
     tags: ["JavaScript", "UI"],
-    url: "https://codepen.io/Matt-White12/pen/pNyYwM",
+    url: "https://codepen.io",
   },
 ];
 
 const posts = [
   {
-    title: "Getting Started with Next.js",
+    title: "Data Engineering with WoW",
     date: "Feb 14, 2026",
     excerpt:
       "A placeholder blog post about setting up a Next.js project and deploying it to GitHub Pages.",
     tags: ["Next.js", "React"],
     slug: "getting-started-nextjs",
-  },
-  {
-    title: "Why I Chose DaisyUI",
-    date: "Feb 14, 2026",
-    excerpt:
-      "A placeholder post about choosing DaisyUI for a warm, themeable design system.",
-    tags: ["CSS", "Design"],
-    slug: "why-daisyui",
   },
 ];
 
