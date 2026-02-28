@@ -4,10 +4,11 @@ import BlogPostCard from "@/components/BlogPostCard";
 
 const projects = [
   {
-    title: "Project Placeholder 1",
-    description: "Project placeholder description",
-    tags: ["JavaScript", "HTML", "CSS"],
-    url: "https://codepen.io",
+    title: "Pepsi World Index",
+    description:
+      "Data pipeline testing if the world was better when Pepsi was king. Python + dbt + DuckDB pipeline with interactive Recharts dashboard.",
+    tags: ["Python", "dbt", "DuckDB", "Recharts"],
+    url: "/projects/pepsi-world-index",
   },
   {
     title: "Project Placeholder 2",
