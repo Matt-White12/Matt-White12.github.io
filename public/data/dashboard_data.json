@@ -1,41 +1,8255 @@
 {
   "generated_at": "2026-02-27T00:00:00+00:00",
-  "methodology": "World Quality Index is a weighted composite of normalized CPI (inverted), unemployment (inverted), consumer confidence, happiness, crime rate (inverted), and GDP growth. Pepsi Share = pepsi / (pepsi + coke) Google Trends search interest (available 2004+). Pre-2004 world quality metrics are included but Pepsi/Coke/BK/McDonald's search data is unavailable.",
+  "methodology": "World Quality Index is a weighted composite of normalized CPI (inverted), unemployment (inverted), consumer confidence, happiness, crime rate (inverted), and GDP growth. Pepsi Share = pepsi_index / (pepsi_index + coke_index) using 2-term Google Trends query (available 2004+). The *_3q fields represent a 3-term query (Pepsi, Coca-Cola, Coke) where all three are normalized together \u2014 'Coke' dominates the scale, compressing the others. These are estimated from Google Trends screenshots and should be replaced with pipeline data.",
   "data": [
-    {"year": 1990, "pepsi_index": null, "coke_index": null, "pepsi_share": null, "burger_king_index": null, "mcdonalds_index": null, "bk_share": null, "world_quality_index": 58.4, "cpi": 130.7, "unemployment": 5.6, "consumer_confidence": 83.7, "happiness": null, "crime_rate": 731.8, "gdp_growth": 1.89},
-    {"year": 1991, "pepsi_index": null, "coke_index": null, "pepsi_share": null, "burger_king_index": null, "mcdonalds_index": null, "bk_share": null, "world_quality_index": 54.2, "cpi": 136.2, "unemployment": 6.8, "consumer_confidence": 71.6, "happiness": null, "crime_rate": 758.2, "gdp_growth": -0.11},
-    {"year": 1992, "pepsi_index": null, "coke_index": null, "pepsi_share": null, "burger_king_index": null, "mcdonalds_index": null, "bk_share": null, "world_quality_index": 55.8, "cpi": 140.3, "unemployment": 7.5, "consumer_confidence": 75.0, "happiness": null, "crime_rate": 757.7, "gdp_growth": 3.52},
-    {"year": 1993, "pepsi_index": null, "coke_index": null, "pepsi_share": null, "burger_king_index": null, "mcdonalds_index": null, "bk_share": null, "world_quality_index": 57.1, "cpi": 144.5, "unemployment": 6.9, "consumer_confidence": 77.6, "happiness": null, "crime_rate": 747.1, "gdp_growth": 2.75},
-    {"year": 1994, "pepsi_index": null, "coke_index": null, "pepsi_share": null, "burger_king_index": null, "mcdonalds_index": null, "bk_share": null, "world_quality_index": 60.3, "cpi": 148.2, "unemployment": 6.1, "consumer_confidence": 85.5, "happiness": null, "crime_rate": 713.6, "gdp_growth": 4.03},
-    {"year": 1995, "pepsi_index": null, "coke_index": null, "pepsi_share": null, "burger_king_index": null, "mcdonalds_index": null, "bk_share": null, "world_quality_index": 62.1, "cpi": 152.4, "unemployment": 5.6, "consumer_confidence": 90.6, "happiness": null, "crime_rate": 684.5, "gdp_growth": 2.68},
-    {"year": 1996, "pepsi_index": null, "coke_index": null, "pepsi_share": null, "burger_king_index": null, "mcdonalds_index": null, "bk_share": null, "world_quality_index": 64.8, "cpi": 156.9, "unemployment": 5.4, "consumer_confidence": 94.7, "happiness": null, "crime_rate": 636.6, "gdp_growth": 3.77},
-    {"year": 1997, "pepsi_index": null, "coke_index": null, "pepsi_share": null, "burger_king_index": null, "mcdonalds_index": null, "bk_share": null, "world_quality_index": 68.5, "cpi": 160.5, "unemployment": 4.9, "consumer_confidence": 101.0, "happiness": null, "crime_rate": 611.0, "gdp_growth": 4.45},
-    {"year": 1998, "pepsi_index": null, "coke_index": null, "pepsi_share": null, "burger_king_index": null, "mcdonalds_index": null, "bk_share": null, "world_quality_index": 71.2, "cpi": 163.0, "unemployment": 4.5, "consumer_confidence": 106.3, "happiness": null, "crime_rate": 567.6, "gdp_growth": 4.48},
-    {"year": 1999, "pepsi_index": null, "coke_index": null, "pepsi_share": null, "burger_king_index": null, "mcdonalds_index": null, "bk_share": null, "world_quality_index": 72.8, "cpi": 166.6, "unemployment": 4.2, "consumer_confidence": 107.1, "happiness": null, "crime_rate": 523.0, "gdp_growth": 4.69},
-    {"year": 2000, "pepsi_index": null, "coke_index": null, "pepsi_share": null, "burger_king_index": null, "mcdonalds_index": null, "bk_share": null, "world_quality_index": 71.5, "cpi": 172.2, "unemployment": 4.0, "consumer_confidence": 106.6, "happiness": null, "crime_rate": 506.5, "gdp_growth": 4.13},
-    {"year": 2001, "pepsi_index": null, "coke_index": null, "pepsi_share": null, "burger_king_index": null, "mcdonalds_index": null, "bk_share": null, "world_quality_index": 62.3, "cpi": 177.1, "unemployment": 4.7, "consumer_confidence": 93.7, "happiness": null, "crime_rate": 504.5, "gdp_growth": 0.97},
-    {"year": 2002, "pepsi_index": null, "coke_index": null, "pepsi_share": null, "burger_king_index": null, "mcdonalds_index": null, "bk_share": null, "world_quality_index": 61.8, "cpi": 179.9, "unemployment": 5.8, "consumer_confidence": 89.6, "happiness": null, "crime_rate": 494.4, "gdp_growth": 1.74},
-    {"year": 2003, "pepsi_index": null, "coke_index": null, "pepsi_share": null, "burger_king_index": null, "mcdonalds_index": null, "bk_share": null, "world_quality_index": 63.5, "cpi": 184.0, "unemployment": 6.0, "consumer_confidence": 87.1, "happiness": null, "crime_rate": 475.8, "gdp_growth": 2.86},
-    {"year": 2004, "pepsi_index": 72, "coke_index": 58, "pepsi_share": 55.38, "burger_king_index": 62, "mcdonalds_index": 70, "bk_share": 46.97, "world_quality_index": 68.2, "cpi": 188.9, "unemployment": 5.5, "consumer_confidence": 95.2, "happiness": 7.09, "crime_rate": 463.2, "gdp_growth": 3.85},
-    {"year": 2005, "pepsi_index": 68, "coke_index": 55, "pepsi_share": 55.28, "burger_king_index": 58, "mcdonalds_index": 72, "bk_share": 44.62, "world_quality_index": 66.5, "cpi": 195.3, "unemployment": 5.1, "consumer_confidence": 88.0, "happiness": 7.09, "crime_rate": 469.0, "gdp_growth": 3.51},
-    {"year": 2006, "pepsi_index": 65, "coke_index": 54, "pepsi_share": 54.62, "burger_king_index": 55, "mcdonalds_index": 74, "bk_share": 42.64, "world_quality_index": 65.8, "cpi": 201.6, "unemployment": 4.6, "consumer_confidence": 87.3, "happiness": 7.03, "crime_rate": 473.5, "gdp_growth": 2.86},
-    {"year": 2007, "pepsi_index": 62, "coke_index": 56, "pepsi_share": 52.54, "burger_king_index": 52, "mcdonalds_index": 76, "bk_share": 40.63, "world_quality_index": 63.1, "cpi": 207.3, "unemployment": 4.6, "consumer_confidence": 85.6, "happiness": 7.08, "crime_rate": 471.8, "gdp_growth": 2.01},
-    {"year": 2008, "pepsi_index": 58, "coke_index": 60, "pepsi_share": 49.15, "burger_king_index": 48, "mcdonalds_index": 78, "bk_share": 38.10, "world_quality_index": 52.4, "cpi": 215.3, "unemployment": 5.8, "consumer_confidence": 63.8, "happiness": 7.07, "crime_rate": 458.6, "gdp_growth": -0.14},
-    {"year": 2009, "pepsi_index": 52, "coke_index": 62, "pepsi_share": 45.61, "burger_king_index": 44, "mcdonalds_index": 80, "bk_share": 35.48, "world_quality_index": 48.9, "cpi": 214.5, "unemployment": 9.3, "consumer_confidence": 66.3, "happiness": 7.00, "crime_rate": 431.9, "gdp_growth": -2.60},
-    {"year": 2010, "pepsi_index": 48, "coke_index": 65, "pepsi_share": 42.48, "burger_king_index": 40, "mcdonalds_index": 82, "bk_share": 32.79, "world_quality_index": 51.2, "cpi": 218.1, "unemployment": 9.6, "consumer_confidence": 67.7, "happiness": 7.10, "crime_rate": 404.5, "gdp_growth": 2.71},
-    {"year": 2011, "pepsi_index": 45, "coke_index": 64, "pepsi_share": 41.28, "burger_king_index": 36, "mcdonalds_index": 84, "bk_share": 30.00, "world_quality_index": 50.8, "cpi": 224.9, "unemployment": 8.9, "consumer_confidence": 67.4, "happiness": 7.08, "crime_rate": 387.1, "gdp_growth": 1.55},
-    {"year": 2012, "pepsi_index": 42, "coke_index": 66, "pepsi_share": 38.89, "burger_king_index": 34, "mcdonalds_index": 85, "bk_share": 28.57, "world_quality_index": 53.6, "cpi": 229.6, "unemployment": 8.1, "consumer_confidence": 76.5, "happiness": 7.01, "crime_rate": 387.8, "gdp_growth": 2.25},
-    {"year": 2013, "pepsi_index": 40, "coke_index": 68, "pepsi_share": 37.04, "burger_king_index": 30, "mcdonalds_index": 86, "bk_share": 25.86, "world_quality_index": 55.1, "cpi": 233.0, "unemployment": 7.4, "consumer_confidence": 73.2, "happiness": 6.99, "crime_rate": 369.1, "gdp_growth": 1.84},
-    {"year": 2014, "pepsi_index": 38, "coke_index": 70, "pepsi_share": 35.19, "burger_king_index": 28, "mcdonalds_index": 88, "bk_share": 24.14, "world_quality_index": 58.3, "cpi": 236.7, "unemployment": 6.2, "consumer_confidence": 81.5, "happiness": 7.02, "crime_rate": 365.5, "gdp_growth": 2.53},
-    {"year": 2015, "pepsi_index": 36, "coke_index": 72, "pepsi_share": 33.33, "burger_king_index": 27, "mcdonalds_index": 87, "bk_share": 23.68, "world_quality_index": 61.7, "cpi": 237.0, "unemployment": 5.3, "consumer_confidence": 92.9, "happiness": 6.99, "crime_rate": 373.7, "gdp_growth": 2.88},
-    {"year": 2016, "pepsi_index": 35, "coke_index": 74, "pepsi_share": 32.11, "burger_king_index": 26, "mcdonalds_index": 88, "bk_share": 22.81, "world_quality_index": 60.2, "cpi": 240.0, "unemployment": 4.9, "consumer_confidence": 91.8, "happiness": 6.89, "crime_rate": 397.1, "gdp_growth": 1.77},
-    {"year": 2017, "pepsi_index": 33, "coke_index": 76, "pepsi_share": 30.28, "burger_king_index": 25, "mcdonalds_index": 90, "bk_share": 21.74, "world_quality_index": 61.5, "cpi": 245.1, "unemployment": 4.3, "consumer_confidence": 97.5, "happiness": 6.89, "crime_rate": 383.4, "gdp_growth": 2.33},
-    {"year": 2018, "pepsi_index": 32, "coke_index": 78, "pepsi_share": 29.09, "burger_king_index": 24, "mcdonalds_index": 92, "bk_share": 20.69, "world_quality_index": 62.8, "cpi": 251.1, "unemployment": 3.9, "consumer_confidence": 98.3, "happiness": 6.88, "crime_rate": 369.8, "gdp_growth": 2.95},
-    {"year": 2019, "pepsi_index": 30, "coke_index": 80, "pepsi_share": 27.27, "burger_king_index": 28, "mcdonalds_index": 91, "bk_share": 23.53, "world_quality_index": 64.1, "cpi": 255.7, "unemployment": 3.7, "consumer_confidence": 96.0, "happiness": 6.94, "crime_rate": 380.8, "gdp_growth": 2.29},
-    {"year": 2020, "pepsi_index": 28, "coke_index": 76, "pepsi_share": 26.92, "burger_king_index": 22, "mcdonalds_index": 88, "bk_share": 20.00, "world_quality_index": 45.3, "cpi": 258.8, "unemployment": 8.1, "consumer_confidence": 78.5, "happiness": 6.94, "crime_rate": 398.5, "gdp_growth": -2.77},
-    {"year": 2021, "pepsi_index": 27, "coke_index": 82, "pepsi_share": 24.77, "burger_king_index": 20, "mcdonalds_index": 90, "bk_share": 18.18, "world_quality_index": 52.8, "cpi": 270.9, "unemployment": 5.4, "consumer_confidence": 76.5, "happiness": 6.95, "crime_rate": 395.7, "gdp_growth": 5.95},
-    {"year": 2022, "pepsi_index": 25, "coke_index": 85, "pepsi_share": 22.73, "burger_king_index": 18, "mcdonalds_index": 92, "bk_share": 16.36, "world_quality_index": 48.6, "cpi": 292.7, "unemployment": 3.6, "consumer_confidence": 59.4, "happiness": 6.98, "crime_rate": 380.7, "gdp_growth": 1.94},
-    {"year": 2023, "pepsi_index": 24, "coke_index": 88, "pepsi_share": 21.43, "burger_king_index": 16, "mcdonalds_index": 94, "bk_share": 14.55, "world_quality_index": 51.2, "cpi": 304.7, "unemployment": 3.6, "consumer_confidence": 63.8, "happiness": 6.73, "crime_rate": 364.0, "gdp_growth": 2.54},
-    {"year": 2024, "pepsi_index": 22, "coke_index": 90, "pepsi_share": 19.64, "burger_king_index": 15, "mcdonalds_index": 95, "bk_share": 13.64, "world_quality_index": 53.1, "cpi": 314.2, "unemployment": 4.0, "consumer_confidence": 67.2, "happiness": 6.60, "crime_rate": 358.0, "gdp_growth": 2.80}
+    {
+      "year": 1990,
+      "pepsi_index": null,
+      "coke_index": null,
+      "pepsi_3q": null,
+      "cocacola_3q": null,
+      "coke_3q": null,
+      "pepsi_share": null,
+      "burger_king_index": null,
+      "mcdonalds_index": null,
+      "bk_share": null,
+      "world_quality_index": 58.4,
+      "cpi": 130.7,
+      "unemployment": 5.6,
+      "consumer_confidence": 83.7,
+      "happiness": null,
+      "crime_rate": 731.8,
+      "gdp_growth": 1.89
+    },
+    {
+      "year": 1991,
+      "pepsi_index": null,
+      "coke_index": null,
+      "pepsi_3q": null,
+      "cocacola_3q": null,
+      "coke_3q": null,
+      "pepsi_share": null,
+      "burger_king_index": null,
+      "mcdonalds_index": null,
+      "bk_share": null,
+      "world_quality_index": 54.2,
+      "cpi": 136.2,
+      "unemployment": 6.8,
+      "consumer_confidence": 71.6,
+      "happiness": null,
+      "crime_rate": 758.2,
+      "gdp_growth": -0.11
+    },
+    {
+      "year": 1992,
+      "pepsi_index": null,
+      "coke_index": null,
+      "pepsi_3q": null,
+      "cocacola_3q": null,
+      "coke_3q": null,
+      "pepsi_share": null,
+      "burger_king_index": null,
+      "mcdonalds_index": null,
+      "bk_share": null,
+      "world_quality_index": 55.8,
+      "cpi": 140.3,
+      "unemployment": 7.5,
+      "consumer_confidence": 75,
+      "happiness": null,
+      "crime_rate": 757.7,
+      "gdp_growth": 3.52
+    },
+    {
+      "year": 1993,
+      "pepsi_index": null,
+      "coke_index": null,
+      "pepsi_3q": null,
+      "cocacola_3q": null,
+      "coke_3q": null,
+      "pepsi_share": null,
+      "burger_king_index": null,
+      "mcdonalds_index": null,
+      "bk_share": null,
+      "world_quality_index": 57.1,
+      "cpi": 144.5,
+      "unemployment": 6.9,
+      "consumer_confidence": 77.6,
+      "happiness": null,
+      "crime_rate": 747.1,
+      "gdp_growth": 2.75
+    },
+    {
+      "year": 1994,
+      "pepsi_index": null,
+      "coke_index": null,
+      "pepsi_3q": null,
+      "cocacola_3q": null,
+      "coke_3q": null,
+      "pepsi_share": null,
+      "burger_king_index": null,
+      "mcdonalds_index": null,
+      "bk_share": null,
+      "world_quality_index": 60.3,
+      "cpi": 148.2,
+      "unemployment": 6.1,
+      "consumer_confidence": 85.5,
+      "happiness": null,
+      "crime_rate": 713.6,
+      "gdp_growth": 4.03
+    },
+    {
+      "year": 1995,
+      "pepsi_index": null,
+      "coke_index": null,
+      "pepsi_3q": null,
+      "cocacola_3q": null,
+      "coke_3q": null,
+      "pepsi_share": null,
+      "burger_king_index": null,
+      "mcdonalds_index": null,
+      "bk_share": null,
+      "world_quality_index": 62.1,
+      "cpi": 152.4,
+      "unemployment": 5.6,
+      "consumer_confidence": 90.6,
+      "happiness": null,
+      "crime_rate": 684.5,
+      "gdp_growth": 2.68
+    },
+    {
+      "year": 1996,
+      "pepsi_index": null,
+      "coke_index": null,
+      "pepsi_3q": null,
+      "cocacola_3q": null,
+      "coke_3q": null,
+      "pepsi_share": null,
+      "burger_king_index": null,
+      "mcdonalds_index": null,
+      "bk_share": null,
+      "world_quality_index": 64.8,
+      "cpi": 156.9,
+      "unemployment": 5.4,
+      "consumer_confidence": 94.7,
+      "happiness": null,
+      "crime_rate": 636.6,
+      "gdp_growth": 3.77
+    },
+    {
+      "year": 1997,
+      "pepsi_index": null,
+      "coke_index": null,
+      "pepsi_3q": null,
+      "cocacola_3q": null,
+      "coke_3q": null,
+      "pepsi_share": null,
+      "burger_king_index": null,
+      "mcdonalds_index": null,
+      "bk_share": null,
+      "world_quality_index": 68.5,
+      "cpi": 160.5,
+      "unemployment": 4.9,
+      "consumer_confidence": 101,
+      "happiness": null,
+      "crime_rate": 611,
+      "gdp_growth": 4.45
+    },
+    {
+      "year": 1998,
+      "pepsi_index": null,
+      "coke_index": null,
+      "pepsi_3q": null,
+      "cocacola_3q": null,
+      "coke_3q": null,
+      "pepsi_share": null,
+      "burger_king_index": null,
+      "mcdonalds_index": null,
+      "bk_share": null,
+      "world_quality_index": 71.2,
+      "cpi": 163,
+      "unemployment": 4.5,
+      "consumer_confidence": 106.3,
+      "happiness": null,
+      "crime_rate": 567.6,
+      "gdp_growth": 4.48
+    },
+    {
+      "year": 1999,
+      "pepsi_index": null,
+      "coke_index": null,
+      "pepsi_3q": null,
+      "cocacola_3q": null,
+      "coke_3q": null,
+      "pepsi_share": null,
+      "burger_king_index": null,
+      "mcdonalds_index": null,
+      "bk_share": null,
+      "world_quality_index": 72.8,
+      "cpi": 166.6,
+      "unemployment": 4.2,
+      "consumer_confidence": 107.1,
+      "happiness": null,
+      "crime_rate": 523,
+      "gdp_growth": 4.69
+    },
+    {
+      "year": 2000,
+      "pepsi_index": null,
+      "coke_index": null,
+      "pepsi_3q": null,
+      "cocacola_3q": null,
+      "coke_3q": null,
+      "pepsi_share": null,
+      "burger_king_index": null,
+      "mcdonalds_index": null,
+      "bk_share": null,
+      "world_quality_index": 71.5,
+      "cpi": 172.2,
+      "unemployment": 4,
+      "consumer_confidence": 106.6,
+      "happiness": null,
+      "crime_rate": 506.5,
+      "gdp_growth": 4.13
+    },
+    {
+      "year": 2001,
+      "pepsi_index": null,
+      "coke_index": null,
+      "pepsi_3q": null,
+      "cocacola_3q": null,
+      "coke_3q": null,
+      "pepsi_share": null,
+      "burger_king_index": null,
+      "mcdonalds_index": null,
+      "bk_share": null,
+      "world_quality_index": 62.3,
+      "cpi": 177.1,
+      "unemployment": 4.7,
+      "consumer_confidence": 93.7,
+      "happiness": null,
+      "crime_rate": 504.5,
+      "gdp_growth": 0.97
+    },
+    {
+      "year": 2002,
+      "pepsi_index": null,
+      "coke_index": null,
+      "pepsi_3q": null,
+      "cocacola_3q": null,
+      "coke_3q": null,
+      "pepsi_share": null,
+      "burger_king_index": null,
+      "mcdonalds_index": null,
+      "bk_share": null,
+      "world_quality_index": 61.8,
+      "cpi": 179.9,
+      "unemployment": 5.8,
+      "consumer_confidence": 89.6,
+      "happiness": null,
+      "crime_rate": 494.4,
+      "gdp_growth": 1.74
+    },
+    {
+      "year": 2003,
+      "pepsi_index": null,
+      "coke_index": null,
+      "pepsi_3q": null,
+      "cocacola_3q": null,
+      "coke_3q": null,
+      "pepsi_share": null,
+      "burger_king_index": null,
+      "mcdonalds_index": null,
+      "bk_share": null,
+      "world_quality_index": 63.5,
+      "cpi": 184,
+      "unemployment": 6,
+      "consumer_confidence": 87.1,
+      "happiness": null,
+      "crime_rate": 475.8,
+      "gdp_growth": 2.86
+    },
+    {
+      "year": 2004,
+      "pepsi_index": 33.5,
+      "coke_index": 31.8,
+      "pepsi_3q": 33.5,
+      "cocacola_3q": 8.8,
+      "coke_3q": 31.8,
+      "pepsi_share": 51.28,
+      "burger_king_index": 9.0,
+      "mcdonalds_index": 18.4,
+      "bk_share": 32.83,
+      "world_quality_index": 68.2,
+      "cpi": 188.9,
+      "unemployment": 5.5,
+      "consumer_confidence": 95.2,
+      "happiness": 7.09,
+      "crime_rate": 463.2,
+      "gdp_growth": 3.85,
+      "pepsi_raw": 32.3,
+      "bk_raw": 19.0
+    },
+    {
+      "year": 2005,
+      "pepsi_index": 28.3,
+      "coke_index": 30.2,
+      "pepsi_3q": 28.3,
+      "cocacola_3q": 7.8,
+      "coke_3q": 30.2,
+      "pepsi_share": 48.36,
+      "burger_king_index": 11.3,
+      "mcdonalds_index": 20.2,
+      "bk_share": 35.98,
+      "world_quality_index": 66.5,
+      "cpi": 195.3,
+      "unemployment": 5.1,
+      "consumer_confidence": 88,
+      "happiness": 7.09,
+      "crime_rate": 469,
+      "gdp_growth": 3.51,
+      "pepsi_raw": 27.4,
+      "bk_raw": 24.0
+    },
+    {
+      "year": 2006,
+      "pepsi_index": 29.6,
+      "coke_index": 44.8,
+      "pepsi_3q": 29.6,
+      "cocacola_3q": 6.9,
+      "coke_3q": 44.8,
+      "pepsi_share": 39.8,
+      "burger_king_index": 10.6,
+      "mcdonalds_index": 23.2,
+      "bk_share": 31.28,
+      "world_quality_index": 65.8,
+      "cpi": 201.6,
+      "unemployment": 4.6,
+      "consumer_confidence": 87.3,
+      "happiness": 7.03,
+      "crime_rate": 473.5,
+      "gdp_growth": 2.86,
+      "pepsi_raw": 28.6,
+      "bk_raw": 22.6
+    },
+    {
+      "year": 2007,
+      "pepsi_index": 25.9,
+      "coke_index": 46.3,
+      "pepsi_3q": 25.9,
+      "cocacola_3q": 5.9,
+      "coke_3q": 46.3,
+      "pepsi_share": 35.87,
+      "burger_king_index": 9.7,
+      "mcdonalds_index": 27.1,
+      "bk_share": 26.3,
+      "world_quality_index": 63.1,
+      "cpi": 207.3,
+      "unemployment": 4.6,
+      "consumer_confidence": 85.6,
+      "happiness": 7.08,
+      "crime_rate": 471.8,
+      "gdp_growth": 2.01,
+      "pepsi_raw": 25.1,
+      "bk_raw": 20.9
+    },
+    {
+      "year": 2008,
+      "pepsi_index": 29.0,
+      "coke_index": 40.8,
+      "pepsi_3q": 29.0,
+      "cocacola_3q": 4.8,
+      "coke_3q": 40.8,
+      "pepsi_share": 41.53,
+      "burger_king_index": 11.3,
+      "mcdonalds_index": 31.4,
+      "bk_share": 26.51,
+      "world_quality_index": 52.4,
+      "cpi": 215.3,
+      "unemployment": 5.8,
+      "consumer_confidence": 63.8,
+      "happiness": 7.07,
+      "crime_rate": 458.6,
+      "gdp_growth": -0.14,
+      "pepsi_raw": 28.0,
+      "bk_raw": 24.1
+    },
+    {
+      "year": 2009,
+      "pepsi_index": 27.6,
+      "coke_index": 37.4,
+      "pepsi_3q": 27.6,
+      "cocacola_3q": 3.7,
+      "coke_3q": 37.4,
+      "pepsi_share": 42.44,
+      "burger_king_index": 12.6,
+      "mcdonalds_index": 36.6,
+      "bk_share": 25.59,
+      "world_quality_index": 48.9,
+      "cpi": 214.5,
+      "unemployment": 9.3,
+      "consumer_confidence": 66.3,
+      "happiness": 7,
+      "crime_rate": 431.9,
+      "gdp_growth": -2.6,
+      "pepsi_raw": 26.8,
+      "bk_raw": 27.2
+    },
+    {
+      "year": 2010,
+      "pepsi_index": 25.2,
+      "coke_index": 37.8,
+      "pepsi_3q": 25.2,
+      "cocacola_3q": 3.2,
+      "coke_3q": 37.8,
+      "pepsi_share": 40.08,
+      "burger_king_index": 13.2,
+      "mcdonalds_index": 43.2,
+      "bk_share": 23.49,
+      "world_quality_index": 51.2,
+      "cpi": 218.1,
+      "unemployment": 9.6,
+      "consumer_confidence": 67.7,
+      "happiness": 7.1,
+      "crime_rate": 404.5,
+      "gdp_growth": 2.71,
+      "pepsi_raw": 24.4,
+      "bk_raw": 28.2
+    },
+    {
+      "year": 2011,
+      "pepsi_index": 24.2,
+      "coke_index": 44.8,
+      "pepsi_3q": 24.2,
+      "cocacola_3q": 2.6,
+      "coke_3q": 44.8,
+      "pepsi_share": 35.07,
+      "burger_king_index": 15.4,
+      "mcdonalds_index": 56.0,
+      "bk_share": 21.59,
+      "world_quality_index": 50.8,
+      "cpi": 224.9,
+      "unemployment": 8.9,
+      "consumer_confidence": 67.4,
+      "happiness": 7.08,
+      "crime_rate": 387.1,
+      "gdp_growth": 1.55,
+      "pepsi_raw": 23.3,
+      "bk_raw": 33.2
+    },
+    {
+      "year": 2012,
+      "pepsi_index": 24.0,
+      "coke_index": 48.0,
+      "pepsi_3q": 24.0,
+      "cocacola_3q": 2.2,
+      "coke_3q": 48.0,
+      "pepsi_share": 33.33,
+      "burger_king_index": 20.2,
+      "mcdonalds_index": 57.0,
+      "bk_share": 26.13,
+      "world_quality_index": 53.6,
+      "cpi": 229.6,
+      "unemployment": 8.1,
+      "consumer_confidence": 76.5,
+      "happiness": 7.01,
+      "crime_rate": 387.8,
+      "gdp_growth": 2.25,
+      "pepsi_raw": 23.2,
+      "bk_raw": 43.3
+    },
+    {
+      "year": 2013,
+      "pepsi_index": 24.3,
+      "coke_index": 51.8,
+      "pepsi_3q": 24.3,
+      "cocacola_3q": 2.0,
+      "coke_3q": 51.8,
+      "pepsi_share": 31.95,
+      "burger_king_index": 21.2,
+      "mcdonalds_index": 61.1,
+      "bk_share": 25.73,
+      "world_quality_index": 55.1,
+      "cpi": 233,
+      "unemployment": 7.4,
+      "consumer_confidence": 73.2,
+      "happiness": 6.99,
+      "crime_rate": 369.1,
+      "gdp_growth": 1.84,
+      "pepsi_raw": 23.4,
+      "bk_raw": 45.3
+    },
+    {
+      "year": 2014,
+      "pepsi_index": 20.5,
+      "coke_index": 59.1,
+      "pepsi_3q": 20.5,
+      "cocacola_3q": 2.0,
+      "coke_3q": 59.1,
+      "pepsi_share": 25.76,
+      "burger_king_index": 21.1,
+      "mcdonalds_index": 58.2,
+      "bk_share": 26.58,
+      "world_quality_index": 58.3,
+      "cpi": 236.7,
+      "unemployment": 6.2,
+      "consumer_confidence": 81.5,
+      "happiness": 7.02,
+      "crime_rate": 365.5,
+      "gdp_growth": 2.53,
+      "pepsi_raw": 19.8,
+      "bk_raw": 45.6
+    },
+    {
+      "year": 2015,
+      "pepsi_index": 22.2,
+      "coke_index": 50.1,
+      "pepsi_3q": 22.2,
+      "cocacola_3q": 2.1,
+      "coke_3q": 50.1,
+      "pepsi_share": 30.68,
+      "burger_king_index": 23.4,
+      "mcdonalds_index": 58.0,
+      "bk_share": 28.76,
+      "world_quality_index": 61.7,
+      "cpi": 237,
+      "unemployment": 5.3,
+      "consumer_confidence": 92.9,
+      "happiness": 6.99,
+      "crime_rate": 373.7,
+      "gdp_growth": 2.88,
+      "pepsi_raw": 21.3,
+      "bk_raw": 50.1
+    },
+    {
+      "year": 2016,
+      "pepsi_index": 22.3,
+      "coke_index": 42.3,
+      "pepsi_3q": 22.3,
+      "cocacola_3q": 2.0,
+      "coke_3q": 42.3,
+      "pepsi_share": 34.54,
+      "burger_king_index": 26.5,
+      "mcdonalds_index": 61.2,
+      "bk_share": 30.23,
+      "world_quality_index": 60.2,
+      "cpi": 240,
+      "unemployment": 4.9,
+      "consumer_confidence": 91.8,
+      "happiness": 6.89,
+      "crime_rate": 397.1,
+      "gdp_growth": 1.77,
+      "pepsi_raw": 21.4,
+      "bk_raw": 56.5
+    },
+    {
+      "year": 2017,
+      "pepsi_index": 29.0,
+      "coke_index": 45.9,
+      "pepsi_3q": 29.0,
+      "cocacola_3q": 2.1,
+      "coke_3q": 45.9,
+      "pepsi_share": 38.71,
+      "burger_king_index": 28.6,
+      "mcdonalds_index": 70.8,
+      "bk_share": 28.78,
+      "world_quality_index": 61.5,
+      "cpi": 245.1,
+      "unemployment": 4.3,
+      "consumer_confidence": 97.5,
+      "happiness": 6.89,
+      "crime_rate": 383.4,
+      "gdp_growth": 2.33,
+      "pepsi_raw": 28.2,
+      "bk_raw": 60.9
+    },
+    {
+      "year": 2018,
+      "pepsi_index": 21.5,
+      "coke_index": 41.7,
+      "pepsi_3q": 21.5,
+      "cocacola_3q": 2.0,
+      "coke_3q": 41.7,
+      "pepsi_share": 34.04,
+      "burger_king_index": 32.8,
+      "mcdonalds_index": 75.4,
+      "bk_share": 30.33,
+      "world_quality_index": 62.8,
+      "cpi": 251.1,
+      "unemployment": 3.9,
+      "consumer_confidence": 98.3,
+      "happiness": 6.88,
+      "crime_rate": 369.8,
+      "gdp_growth": 2.95,
+      "pepsi_raw": 20.8,
+      "bk_raw": 70.2
+    },
+    {
+      "year": 2019,
+      "pepsi_index": 21.0,
+      "coke_index": 40.1,
+      "pepsi_3q": 21.0,
+      "cocacola_3q": 2.0,
+      "coke_3q": 40.1,
+      "pepsi_share": 34.38,
+      "burger_king_index": 39.1,
+      "mcdonalds_index": 82.9,
+      "bk_share": 32.04,
+      "world_quality_index": 64.1,
+      "cpi": 255.7,
+      "unemployment": 3.7,
+      "consumer_confidence": 96,
+      "happiness": 6.94,
+      "crime_rate": 380.8,
+      "gdp_growth": 2.29,
+      "pepsi_raw": 20.2,
+      "bk_raw": 83.0
+    },
+    {
+      "year": 2020,
+      "pepsi_index": 16.4,
+      "coke_index": 34.9,
+      "pepsi_3q": 16.4,
+      "cocacola_3q": 2.2,
+      "coke_3q": 34.9,
+      "pepsi_share": 31.98,
+      "burger_king_index": 36.3,
+      "mcdonalds_index": 76.8,
+      "bk_share": 32.13,
+      "world_quality_index": 45.3,
+      "cpi": 258.8,
+      "unemployment": 8.1,
+      "consumer_confidence": 78.5,
+      "happiness": 6.94,
+      "crime_rate": 398.5,
+      "gdp_growth": -2.77,
+      "pepsi_raw": 16.1,
+      "bk_raw": 77.2
+    },
+    {
+      "year": 2021,
+      "pepsi_index": 16.4,
+      "coke_index": 38.1,
+      "pepsi_3q": 16.4,
+      "cocacola_3q": 2.8,
+      "coke_3q": 38.1,
+      "pepsi_share": 30.12,
+      "burger_king_index": 37.1,
+      "mcdonalds_index": 84.2,
+      "bk_share": 30.58,
+      "world_quality_index": 52.8,
+      "cpi": 270.9,
+      "unemployment": 5.4,
+      "consumer_confidence": 76.5,
+      "happiness": 6.95,
+      "crime_rate": 395.7,
+      "gdp_growth": 5.95,
+      "pepsi_raw": 16.2,
+      "bk_raw": 79.2
+    },
+    {
+      "year": 2022,
+      "pepsi_index": 21.2,
+      "coke_index": 40.8,
+      "pepsi_3q": 21.2,
+      "cocacola_3q": 3.8,
+      "coke_3q": 40.8,
+      "pepsi_share": 34.19,
+      "burger_king_index": 33.1,
+      "mcdonalds_index": 62.0,
+      "bk_share": 34.79,
+      "world_quality_index": 48.6,
+      "cpi": 292.7,
+      "unemployment": 3.6,
+      "consumer_confidence": 59.4,
+      "happiness": 6.98,
+      "crime_rate": 380.7,
+      "gdp_growth": 1.94,
+      "pepsi_raw": 20.5,
+      "bk_raw": 70.7
+    },
+    {
+      "year": 2023,
+      "pepsi_index": 21.1,
+      "coke_index": 40.6,
+      "pepsi_3q": 21.1,
+      "cocacola_3q": 3.2,
+      "coke_3q": 40.6,
+      "pepsi_share": 34.19,
+      "burger_king_index": 32.0,
+      "mcdonalds_index": 39.9,
+      "bk_share": 44.5,
+      "world_quality_index": 51.2,
+      "cpi": 304.7,
+      "unemployment": 3.6,
+      "consumer_confidence": 63.8,
+      "happiness": 6.73,
+      "crime_rate": 364,
+      "gdp_growth": 2.54,
+      "pepsi_raw": 20.2,
+      "bk_raw": 68.7
+    },
+    {
+      "year": 2024,
+      "pepsi_index": 19.8,
+      "coke_index": 40.8,
+      "pepsi_3q": 19.8,
+      "cocacola_3q": 3.3,
+      "coke_3q": 40.8,
+      "pepsi_share": 32.64,
+      "burger_king_index": 28.8,
+      "mcdonalds_index": 41.9,
+      "bk_share": 40.68,
+      "world_quality_index": 53.1,
+      "cpi": 314.2,
+      "unemployment": 4,
+      "consumer_confidence": 67.2,
+      "happiness": 6.6,
+      "crime_rate": 358,
+      "gdp_growth": 2.8,
+      "pepsi_raw": 19.1,
+      "bk_raw": 61.7
+    }
+  ],
+  "monthly_trends": [
+    {
+      "date": "2004-01",
+      "pepsi_3q": 32,
+      "cocacola_3q": 8,
+      "coke_3q": 32
+    },
+    {
+      "date": "2004-02",
+      "pepsi_3q": 47,
+      "cocacola_3q": 10,
+      "coke_3q": 33
+    },
+    {
+      "date": "2004-03",
+      "pepsi_3q": 38,
+      "cocacola_3q": 10,
+      "coke_3q": 32
+    },
+    {
+      "date": "2004-04",
+      "pepsi_3q": 37,
+      "cocacola_3q": 10,
+      "coke_3q": 33
+    },
+    {
+      "date": "2004-05",
+      "pepsi_3q": 36,
+      "cocacola_3q": 11,
+      "coke_3q": 35
+    },
+    {
+      "date": "2004-06",
+      "pepsi_3q": 36,
+      "cocacola_3q": 9,
+      "coke_3q": 35
+    },
+    {
+      "date": "2004-07",
+      "pepsi_3q": 39,
+      "cocacola_3q": 7,
+      "coke_3q": 32
+    },
+    {
+      "date": "2004-08",
+      "pepsi_3q": 27,
+      "cocacola_3q": 7,
+      "coke_3q": 31
+    },
+    {
+      "date": "2004-09",
+      "pepsi_3q": 28,
+      "cocacola_3q": 8,
+      "coke_3q": 29
+    },
+    {
+      "date": "2004-10",
+      "pepsi_3q": 26,
+      "cocacola_3q": 9,
+      "coke_3q": 29
+    },
+    {
+      "date": "2004-11",
+      "pepsi_3q": 30,
+      "cocacola_3q": 9,
+      "coke_3q": 30
+    },
+    {
+      "date": "2004-12",
+      "pepsi_3q": 26,
+      "cocacola_3q": 8,
+      "coke_3q": 31
+    },
+    {
+      "date": "2005-01",
+      "pepsi_3q": 26,
+      "cocacola_3q": 8,
+      "coke_3q": 27
+    },
+    {
+      "date": "2005-02",
+      "pepsi_3q": 36,
+      "cocacola_3q": 8,
+      "coke_3q": 30
+    },
+    {
+      "date": "2005-03",
+      "pepsi_3q": 33,
+      "cocacola_3q": 9,
+      "coke_3q": 31
+    },
+    {
+      "date": "2005-04",
+      "pepsi_3q": 32,
+      "cocacola_3q": 9,
+      "coke_3q": 36
+    },
+    {
+      "date": "2005-05",
+      "pepsi_3q": 31,
+      "cocacola_3q": 8,
+      "coke_3q": 33
+    },
+    {
+      "date": "2005-06",
+      "pepsi_3q": 29,
+      "cocacola_3q": 8,
+      "coke_3q": 35
+    },
+    {
+      "date": "2005-07",
+      "pepsi_3q": 30,
+      "cocacola_3q": 7,
+      "coke_3q": 31
+    },
+    {
+      "date": "2005-08",
+      "pepsi_3q": 24,
+      "cocacola_3q": 6,
+      "coke_3q": 30
+    },
+    {
+      "date": "2005-09",
+      "pepsi_3q": 26,
+      "cocacola_3q": 7,
+      "coke_3q": 28
+    },
+    {
+      "date": "2005-10",
+      "pepsi_3q": 25,
+      "cocacola_3q": 8,
+      "coke_3q": 25
+    },
+    {
+      "date": "2005-11",
+      "pepsi_3q": 25,
+      "cocacola_3q": 8,
+      "coke_3q": 27
+    },
+    {
+      "date": "2005-12",
+      "pepsi_3q": 23,
+      "cocacola_3q": 7,
+      "coke_3q": 30
+    },
+    {
+      "date": "2006-01",
+      "pepsi_3q": 23,
+      "cocacola_3q": 7,
+      "coke_3q": 29
+    },
+    {
+      "date": "2006-02",
+      "pepsi_3q": 38,
+      "cocacola_3q": 8,
+      "coke_3q": 31
+    },
+    {
+      "date": "2006-03",
+      "pepsi_3q": 36,
+      "cocacola_3q": 8,
+      "coke_3q": 38
+    },
+    {
+      "date": "2006-04",
+      "pepsi_3q": 33,
+      "cocacola_3q": 9,
+      "coke_3q": 43
+    },
+    {
+      "date": "2006-05",
+      "pepsi_3q": 33,
+      "cocacola_3q": 7,
+      "coke_3q": 39
+    },
+    {
+      "date": "2006-06",
+      "pepsi_3q": 37,
+      "cocacola_3q": 6,
+      "coke_3q": 70
+    },
+    {
+      "date": "2006-07",
+      "pepsi_3q": 33,
+      "cocacola_3q": 6,
+      "coke_3q": 60
+    },
+    {
+      "date": "2006-08",
+      "pepsi_3q": 28,
+      "cocacola_3q": 6,
+      "coke_3q": 58
+    },
+    {
+      "date": "2006-09",
+      "pepsi_3q": 26,
+      "cocacola_3q": 7,
+      "coke_3q": 46
+    },
+    {
+      "date": "2006-10",
+      "pepsi_3q": 24,
+      "cocacola_3q": 7,
+      "coke_3q": 43
+    },
+    {
+      "date": "2006-11",
+      "pepsi_3q": 23,
+      "cocacola_3q": 6,
+      "coke_3q": 40
+    },
+    {
+      "date": "2006-12",
+      "pepsi_3q": 21,
+      "cocacola_3q": 6,
+      "coke_3q": 40
+    },
+    {
+      "date": "2007-01",
+      "pepsi_3q": 22,
+      "cocacola_3q": 6,
+      "coke_3q": 38
+    },
+    {
+      "date": "2007-02",
+      "pepsi_3q": 33,
+      "cocacola_3q": 6,
+      "coke_3q": 41
+    },
+    {
+      "date": "2007-03",
+      "pepsi_3q": 28,
+      "cocacola_3q": 7,
+      "coke_3q": 44
+    },
+    {
+      "date": "2007-04",
+      "pepsi_3q": 27,
+      "cocacola_3q": 7,
+      "coke_3q": 47
+    },
+    {
+      "date": "2007-05",
+      "pepsi_3q": 26,
+      "cocacola_3q": 7,
+      "coke_3q": 55
+    },
+    {
+      "date": "2007-06",
+      "pepsi_3q": 29,
+      "cocacola_3q": 5,
+      "coke_3q": 55
+    },
+    {
+      "date": "2007-07",
+      "pepsi_3q": 28,
+      "cocacola_3q": 6,
+      "coke_3q": 53
+    },
+    {
+      "date": "2007-08",
+      "pepsi_3q": 23,
+      "cocacola_3q": 5,
+      "coke_3q": 48
+    },
+    {
+      "date": "2007-09",
+      "pepsi_3q": 25,
+      "cocacola_3q": 6,
+      "coke_3q": 47
+    },
+    {
+      "date": "2007-10",
+      "pepsi_3q": 25,
+      "cocacola_3q": 6,
+      "coke_3q": 45
+    },
+    {
+      "date": "2007-11",
+      "pepsi_3q": 24,
+      "cocacola_3q": 5,
+      "coke_3q": 42
+    },
+    {
+      "date": "2007-12",
+      "pepsi_3q": 21,
+      "cocacola_3q": 5,
+      "coke_3q": 41
+    },
+    {
+      "date": "2008-01",
+      "pepsi_3q": 25,
+      "cocacola_3q": 5,
+      "coke_3q": 42
+    },
+    {
+      "date": "2008-02",
+      "pepsi_3q": 34,
+      "cocacola_3q": 5,
+      "coke_3q": 41
+    },
+    {
+      "date": "2008-03",
+      "pepsi_3q": 30,
+      "cocacola_3q": 5,
+      "coke_3q": 42
+    },
+    {
+      "date": "2008-04",
+      "pepsi_3q": 30,
+      "cocacola_3q": 6,
+      "coke_3q": 41
+    },
+    {
+      "date": "2008-05",
+      "pepsi_3q": 31,
+      "cocacola_3q": 6,
+      "coke_3q": 42
+    },
+    {
+      "date": "2008-06",
+      "pepsi_3q": 29,
+      "cocacola_3q": 4,
+      "coke_3q": 42
+    },
+    {
+      "date": "2008-07",
+      "pepsi_3q": 28,
+      "cocacola_3q": 5,
+      "coke_3q": 45
+    },
+    {
+      "date": "2008-08",
+      "pepsi_3q": 27,
+      "cocacola_3q": 5,
+      "coke_3q": 42
+    },
+    {
+      "date": "2008-09",
+      "pepsi_3q": 28,
+      "cocacola_3q": 4,
+      "coke_3q": 40
+    },
+    {
+      "date": "2008-10",
+      "pepsi_3q": 31,
+      "cocacola_3q": 5,
+      "coke_3q": 40
+    },
+    {
+      "date": "2008-11",
+      "pepsi_3q": 28,
+      "cocacola_3q": 4,
+      "coke_3q": 38
+    },
+    {
+      "date": "2008-12",
+      "pepsi_3q": 27,
+      "cocacola_3q": 4,
+      "coke_3q": 35
+    },
+    {
+      "date": "2009-01",
+      "pepsi_3q": 31,
+      "cocacola_3q": 4,
+      "coke_3q": 37
+    },
+    {
+      "date": "2009-02",
+      "pepsi_3q": 33,
+      "cocacola_3q": 4,
+      "coke_3q": 40
+    },
+    {
+      "date": "2009-03",
+      "pepsi_3q": 28,
+      "cocacola_3q": 4,
+      "coke_3q": 38
+    },
+    {
+      "date": "2009-04",
+      "pepsi_3q": 30,
+      "cocacola_3q": 4,
+      "coke_3q": 40
+    },
+    {
+      "date": "2009-05",
+      "pepsi_3q": 32,
+      "cocacola_3q": 4,
+      "coke_3q": 36
+    },
+    {
+      "date": "2009-06",
+      "pepsi_3q": 27,
+      "cocacola_3q": 3,
+      "coke_3q": 37
+    },
+    {
+      "date": "2009-07",
+      "pepsi_3q": 35,
+      "cocacola_3q": 3,
+      "coke_3q": 37
+    },
+    {
+      "date": "2009-08",
+      "pepsi_3q": 24,
+      "cocacola_3q": 3,
+      "coke_3q": 37
+    },
+    {
+      "date": "2009-09",
+      "pepsi_3q": 25,
+      "cocacola_3q": 4,
+      "coke_3q": 35
+    },
+    {
+      "date": "2009-10",
+      "pepsi_3q": 24,
+      "cocacola_3q": 4,
+      "coke_3q": 38
+    },
+    {
+      "date": "2009-11",
+      "pepsi_3q": 22,
+      "cocacola_3q": 4,
+      "coke_3q": 38
+    },
+    {
+      "date": "2009-12",
+      "pepsi_3q": 20,
+      "cocacola_3q": 3,
+      "coke_3q": 36
+    },
+    {
+      "date": "2010-01",
+      "pepsi_3q": 27,
+      "cocacola_3q": 3,
+      "coke_3q": 36
+    },
+    {
+      "date": "2010-02",
+      "pepsi_3q": 31,
+      "cocacola_3q": 3,
+      "coke_3q": 36
+    },
+    {
+      "date": "2010-03",
+      "pepsi_3q": 29,
+      "cocacola_3q": 3,
+      "coke_3q": 37
+    },
+    {
+      "date": "2010-04",
+      "pepsi_3q": 28,
+      "cocacola_3q": 4,
+      "coke_3q": 36
+    },
+    {
+      "date": "2010-05",
+      "pepsi_3q": 27,
+      "cocacola_3q": 4,
+      "coke_3q": 45
+    },
+    {
+      "date": "2010-06",
+      "pepsi_3q": 26,
+      "cocacola_3q": 4,
+      "coke_3q": 39
+    },
+    {
+      "date": "2010-07",
+      "pepsi_3q": 23,
+      "cocacola_3q": 3,
+      "coke_3q": 38
+    },
+    {
+      "date": "2010-08",
+      "pepsi_3q": 22,
+      "cocacola_3q": 3,
+      "coke_3q": 36
+    },
+    {
+      "date": "2010-09",
+      "pepsi_3q": 24,
+      "cocacola_3q": 3,
+      "coke_3q": 39
+    },
+    {
+      "date": "2010-10",
+      "pepsi_3q": 25,
+      "cocacola_3q": 3,
+      "coke_3q": 41
+    },
+    {
+      "date": "2010-11",
+      "pepsi_3q": 21,
+      "cocacola_3q": 3,
+      "coke_3q": 36
+    },
+    {
+      "date": "2010-12",
+      "pepsi_3q": 20,
+      "cocacola_3q": 3,
+      "coke_3q": 34
+    },
+    {
+      "date": "2011-01",
+      "pepsi_3q": 26,
+      "cocacola_3q": 2,
+      "coke_3q": 41
+    },
+    {
+      "date": "2011-02",
+      "pepsi_3q": 31,
+      "cocacola_3q": 3,
+      "coke_3q": 47
+    },
+    {
+      "date": "2011-03",
+      "pepsi_3q": 25,
+      "cocacola_3q": 3,
+      "coke_3q": 45
+    },
+    {
+      "date": "2011-04",
+      "pepsi_3q": 23,
+      "cocacola_3q": 3,
+      "coke_3q": 41
+    },
+    {
+      "date": "2011-05",
+      "pepsi_3q": 24,
+      "cocacola_3q": 3,
+      "coke_3q": 44
+    },
+    {
+      "date": "2011-06",
+      "pepsi_3q": 24,
+      "cocacola_3q": 2,
+      "coke_3q": 45
+    },
+    {
+      "date": "2011-07",
+      "pepsi_3q": 27,
+      "cocacola_3q": 2,
+      "coke_3q": 48
+    },
+    {
+      "date": "2011-08",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 45
+    },
+    {
+      "date": "2011-09",
+      "pepsi_3q": 24,
+      "cocacola_3q": 3,
+      "coke_3q": 43
+    },
+    {
+      "date": "2011-10",
+      "pepsi_3q": 21,
+      "cocacola_3q": 3,
+      "coke_3q": 48
+    },
+    {
+      "date": "2011-11",
+      "pepsi_3q": 21,
+      "cocacola_3q": 3,
+      "coke_3q": 44
+    },
+    {
+      "date": "2011-12",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 46
+    },
+    {
+      "date": "2012-01",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 46
+    },
+    {
+      "date": "2012-02",
+      "pepsi_3q": 33,
+      "cocacola_3q": 2,
+      "coke_3q": 46
+    },
+    {
+      "date": "2012-03",
+      "pepsi_3q": 27,
+      "cocacola_3q": 2,
+      "coke_3q": 46
+    },
+    {
+      "date": "2012-04",
+      "pepsi_3q": 27,
+      "cocacola_3q": 3,
+      "coke_3q": 52
+    },
+    {
+      "date": "2012-05",
+      "pepsi_3q": 27,
+      "cocacola_3q": 3,
+      "coke_3q": 47
+    },
+    {
+      "date": "2012-06",
+      "pepsi_3q": 25,
+      "cocacola_3q": 2,
+      "coke_3q": 47
+    },
+    {
+      "date": "2012-07",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 51
+    },
+    {
+      "date": "2012-08",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 47
+    },
+    {
+      "date": "2012-09",
+      "pepsi_3q": 20,
+      "cocacola_3q": 2,
+      "coke_3q": 46
+    },
+    {
+      "date": "2012-10",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 49
+    },
+    {
+      "date": "2012-11",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 50
+    },
+    {
+      "date": "2012-12",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 49
+    },
+    {
+      "date": "2013-01",
+      "pepsi_3q": 24,
+      "cocacola_3q": 2,
+      "coke_3q": 52
+    },
+    {
+      "date": "2013-02",
+      "pepsi_3q": 26,
+      "cocacola_3q": 2,
+      "coke_3q": 57
+    },
+    {
+      "date": "2013-03",
+      "pepsi_3q": 37,
+      "cocacola_3q": 2,
+      "coke_3q": 51
+    },
+    {
+      "date": "2013-04",
+      "pepsi_3q": 32,
+      "cocacola_3q": 2,
+      "coke_3q": 52
+    },
+    {
+      "date": "2013-05",
+      "pepsi_3q": 26,
+      "cocacola_3q": 2,
+      "coke_3q": 53
+    },
+    {
+      "date": "2013-06",
+      "pepsi_3q": 23,
+      "cocacola_3q": 2,
+      "coke_3q": 53
+    },
+    {
+      "date": "2013-07",
+      "pepsi_3q": 24,
+      "cocacola_3q": 2,
+      "coke_3q": 55
+    },
+    {
+      "date": "2013-08",
+      "pepsi_3q": 23,
+      "cocacola_3q": 2,
+      "coke_3q": 53
+    },
+    {
+      "date": "2013-09",
+      "pepsi_3q": 20,
+      "cocacola_3q": 2,
+      "coke_3q": 48
+    },
+    {
+      "date": "2013-10",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 49
+    },
+    {
+      "date": "2013-11",
+      "pepsi_3q": 19,
+      "cocacola_3q": 2,
+      "coke_3q": 49
+    },
+    {
+      "date": "2013-12",
+      "pepsi_3q": 17,
+      "cocacola_3q": 2,
+      "coke_3q": 50
+    },
+    {
+      "date": "2014-01",
+      "pepsi_3q": 24,
+      "cocacola_3q": 2,
+      "coke_3q": 53
+    },
+    {
+      "date": "2014-02",
+      "pepsi_3q": 24,
+      "cocacola_3q": 2,
+      "coke_3q": 69
+    },
+    {
+      "date": "2014-03",
+      "pepsi_3q": 26,
+      "cocacola_3q": 2,
+      "coke_3q": 51
+    },
+    {
+      "date": "2014-04",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 53
+    },
+    {
+      "date": "2014-05",
+      "pepsi_3q": 20,
+      "cocacola_3q": 2,
+      "coke_3q": 54
+    },
+    {
+      "date": "2014-06",
+      "pepsi_3q": 19,
+      "cocacola_3q": 2,
+      "coke_3q": 56
+    },
+    {
+      "date": "2014-07",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 94
+    },
+    {
+      "date": "2014-08",
+      "pepsi_3q": 19,
+      "cocacola_3q": 2,
+      "coke_3q": 75
+    },
+    {
+      "date": "2014-09",
+      "pepsi_3q": 18,
+      "cocacola_3q": 2,
+      "coke_3q": 54
+    },
+    {
+      "date": "2014-10",
+      "pepsi_3q": 19,
+      "cocacola_3q": 2,
+      "coke_3q": 53
+    },
+    {
+      "date": "2014-11",
+      "pepsi_3q": 17,
+      "cocacola_3q": 2,
+      "coke_3q": 48
+    },
+    {
+      "date": "2014-12",
+      "pepsi_3q": 17,
+      "cocacola_3q": 2,
+      "coke_3q": 49
+    },
+    {
+      "date": "2015-01",
+      "pepsi_3q": 21,
+      "cocacola_3q": 1,
+      "coke_3q": 48
+    },
+    {
+      "date": "2015-02",
+      "pepsi_3q": 20,
+      "cocacola_3q": 2,
+      "coke_3q": 45
+    },
+    {
+      "date": "2015-03",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 47
+    },
+    {
+      "date": "2015-04",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 46
+    },
+    {
+      "date": "2015-05",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 57
+    },
+    {
+      "date": "2015-06",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 60
+    },
+    {
+      "date": "2015-07",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 62
+    },
+    {
+      "date": "2015-08",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 51
+    },
+    {
+      "date": "2015-09",
+      "pepsi_3q": 21,
+      "cocacola_3q": 3,
+      "coke_3q": 47
+    },
+    {
+      "date": "2015-10",
+      "pepsi_3q": 30,
+      "cocacola_3q": 2,
+      "coke_3q": 46
+    },
+    {
+      "date": "2015-11",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 45
+    },
+    {
+      "date": "2015-12",
+      "pepsi_3q": 24,
+      "cocacola_3q": 3,
+      "coke_3q": 47
+    },
+    {
+      "date": "2016-01",
+      "pepsi_3q": 23,
+      "cocacola_3q": 2,
+      "coke_3q": 43
+    },
+    {
+      "date": "2016-02",
+      "pepsi_3q": 25,
+      "cocacola_3q": 2,
+      "coke_3q": 46
+    },
+    {
+      "date": "2016-03",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 41
+    },
+    {
+      "date": "2016-04",
+      "pepsi_3q": 25,
+      "cocacola_3q": 2,
+      "coke_3q": 42
+    },
+    {
+      "date": "2016-05",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 45
+    },
+    {
+      "date": "2016-06",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 42
+    },
+    {
+      "date": "2016-07",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 44
+    },
+    {
+      "date": "2016-08",
+      "pepsi_3q": 30,
+      "cocacola_3q": 2,
+      "coke_3q": 37
+    },
+    {
+      "date": "2016-09",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 43
+    },
+    {
+      "date": "2016-10",
+      "pepsi_3q": 19,
+      "cocacola_3q": 2,
+      "coke_3q": 42
+    },
+    {
+      "date": "2016-11",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 41
+    },
+    {
+      "date": "2016-12",
+      "pepsi_3q": 17,
+      "cocacola_3q": 2,
+      "coke_3q": 42
+    },
+    {
+      "date": "2017-01",
+      "pepsi_3q": 19,
+      "cocacola_3q": 2,
+      "coke_3q": 41
+    },
+    {
+      "date": "2017-02",
+      "pepsi_3q": 23,
+      "cocacola_3q": 2,
+      "coke_3q": 45
+    },
+    {
+      "date": "2017-03",
+      "pepsi_3q": 19,
+      "cocacola_3q": 2,
+      "coke_3q": 45
+    },
+    {
+      "date": "2017-04",
+      "pepsi_3q": 100,
+      "cocacola_3q": 2,
+      "coke_3q": 61
+    },
+    {
+      "date": "2017-05",
+      "pepsi_3q": 25,
+      "cocacola_3q": 3,
+      "coke_3q": 46
+    },
+    {
+      "date": "2017-06",
+      "pepsi_3q": 26,
+      "cocacola_3q": 2,
+      "coke_3q": 47
+    },
+    {
+      "date": "2017-07",
+      "pepsi_3q": 24,
+      "cocacola_3q": 2,
+      "coke_3q": 50
+    },
+    {
+      "date": "2017-08",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 43
+    },
+    {
+      "date": "2017-09",
+      "pepsi_3q": 29,
+      "cocacola_3q": 2,
+      "coke_3q": 41
+    },
+    {
+      "date": "2017-10",
+      "pepsi_3q": 25,
+      "cocacola_3q": 2,
+      "coke_3q": 45
+    },
+    {
+      "date": "2017-11",
+      "pepsi_3q": 19,
+      "cocacola_3q": 2,
+      "coke_3q": 40
+    },
+    {
+      "date": "2017-12",
+      "pepsi_3q": 17,
+      "cocacola_3q": 2,
+      "coke_3q": 47
+    },
+    {
+      "date": "2018-01",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 45
+    },
+    {
+      "date": "2018-02",
+      "pepsi_3q": 28,
+      "cocacola_3q": 2,
+      "coke_3q": 49
+    },
+    {
+      "date": "2018-03",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 43
+    },
+    {
+      "date": "2018-04",
+      "pepsi_3q": 20,
+      "cocacola_3q": 2,
+      "coke_3q": 41
+    },
+    {
+      "date": "2018-05",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 42
+    },
+    {
+      "date": "2018-06",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 43
+    },
+    {
+      "date": "2018-07",
+      "pepsi_3q": 24,
+      "cocacola_3q": 2,
+      "coke_3q": 47
+    },
+    {
+      "date": "2018-08",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 40
+    },
+    {
+      "date": "2018-09",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 40
+    },
+    {
+      "date": "2018-10",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 37
+    },
+    {
+      "date": "2018-11",
+      "pepsi_3q": 18,
+      "cocacola_3q": 2,
+      "coke_3q": 35
+    },
+    {
+      "date": "2018-12",
+      "pepsi_3q": 18,
+      "cocacola_3q": 2,
+      "coke_3q": 38
+    },
+    {
+      "date": "2019-01",
+      "pepsi_3q": 24,
+      "cocacola_3q": 2,
+      "coke_3q": 38
+    },
+    {
+      "date": "2019-02",
+      "pepsi_3q": 28,
+      "cocacola_3q": 2,
+      "coke_3q": 43
+    },
+    {
+      "date": "2019-03",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 42
+    },
+    {
+      "date": "2019-04",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 40
+    },
+    {
+      "date": "2019-05",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 44
+    },
+    {
+      "date": "2019-06",
+      "pepsi_3q": 22,
+      "cocacola_3q": 2,
+      "coke_3q": 41
+    },
+    {
+      "date": "2019-07",
+      "pepsi_3q": 21,
+      "cocacola_3q": 2,
+      "coke_3q": 45
+    },
+    {
+      "date": "2019-08",
+      "pepsi_3q": 19,
+      "cocacola_3q": 2,
+      "coke_3q": 38
+    },
+    {
+      "date": "2019-09",
+      "pepsi_3q": 18,
+      "cocacola_3q": 2,
+      "coke_3q": 37
+    },
+    {
+      "date": "2019-10",
+      "pepsi_3q": 18,
+      "cocacola_3q": 2,
+      "coke_3q": 37
+    },
+    {
+      "date": "2019-11",
+      "pepsi_3q": 18,
+      "cocacola_3q": 2,
+      "coke_3q": 36
+    },
+    {
+      "date": "2019-12",
+      "pepsi_3q": 18,
+      "cocacola_3q": 2,
+      "coke_3q": 40
+    },
+    {
+      "date": "2020-01",
+      "pepsi_3q": 19,
+      "cocacola_3q": 2,
+      "coke_3q": 37
+    },
+    {
+      "date": "2020-02",
+      "pepsi_3q": 23,
+      "cocacola_3q": 2,
+      "coke_3q": 41
+    },
+    {
+      "date": "2020-03",
+      "pepsi_3q": 17,
+      "cocacola_3q": 2,
+      "coke_3q": 33
+    },
+    {
+      "date": "2020-04",
+      "pepsi_3q": 14,
+      "cocacola_3q": 2,
+      "coke_3q": 34
+    },
+    {
+      "date": "2020-05",
+      "pepsi_3q": 14,
+      "cocacola_3q": 3,
+      "coke_3q": 37
+    },
+    {
+      "date": "2020-06",
+      "pepsi_3q": 19,
+      "cocacola_3q": 2,
+      "coke_3q": 34
+    },
+    {
+      "date": "2020-07",
+      "pepsi_3q": 18,
+      "cocacola_3q": 2,
+      "coke_3q": 39
+    },
+    {
+      "date": "2020-08",
+      "pepsi_3q": 17,
+      "cocacola_3q": 2,
+      "coke_3q": 35
+    },
+    {
+      "date": "2020-09",
+      "pepsi_3q": 15,
+      "cocacola_3q": 2,
+      "coke_3q": 33
+    },
+    {
+      "date": "2020-10",
+      "pepsi_3q": 15,
+      "cocacola_3q": 3,
+      "coke_3q": 35
+    },
+    {
+      "date": "2020-11",
+      "pepsi_3q": 13,
+      "cocacola_3q": 2,
+      "coke_3q": 30
+    },
+    {
+      "date": "2020-12",
+      "pepsi_3q": 13,
+      "cocacola_3q": 2,
+      "coke_3q": 31
+    },
+    {
+      "date": "2021-01",
+      "pepsi_3q": 16,
+      "cocacola_3q": 2,
+      "coke_3q": 35
+    },
+    {
+      "date": "2021-02",
+      "pepsi_3q": 18,
+      "cocacola_3q": 4,
+      "coke_3q": 52
+    },
+    {
+      "date": "2021-03",
+      "pepsi_3q": 20,
+      "cocacola_3q": 3,
+      "coke_3q": 39
+    },
+    {
+      "date": "2021-04",
+      "pepsi_3q": 18,
+      "cocacola_3q": 3,
+      "coke_3q": 40
+    },
+    {
+      "date": "2021-05",
+      "pepsi_3q": 17,
+      "cocacola_3q": 3,
+      "coke_3q": 36
+    },
+    {
+      "date": "2021-06",
+      "pepsi_3q": 17,
+      "cocacola_3q": 3,
+      "coke_3q": 40
+    },
+    {
+      "date": "2021-07",
+      "pepsi_3q": 16,
+      "cocacola_3q": 3,
+      "coke_3q": 37
+    },
+    {
+      "date": "2021-08",
+      "pepsi_3q": 15,
+      "cocacola_3q": 2,
+      "coke_3q": 37
+    },
+    {
+      "date": "2021-09",
+      "pepsi_3q": 16,
+      "cocacola_3q": 2,
+      "coke_3q": 35
+    },
+    {
+      "date": "2021-10",
+      "pepsi_3q": 16,
+      "cocacola_3q": 2,
+      "coke_3q": 33
+    },
+    {
+      "date": "2021-11",
+      "pepsi_3q": 14,
+      "cocacola_3q": 3,
+      "coke_3q": 33
+    },
+    {
+      "date": "2021-12",
+      "pepsi_3q": 14,
+      "cocacola_3q": 3,
+      "coke_3q": 40
+    },
+    {
+      "date": "2022-01",
+      "pepsi_3q": 17,
+      "cocacola_3q": 3,
+      "coke_3q": 37
+    },
+    {
+      "date": "2022-02",
+      "pepsi_3q": 21,
+      "cocacola_3q": 4,
+      "coke_3q": 43
+    },
+    {
+      "date": "2022-03",
+      "pepsi_3q": 25,
+      "cocacola_3q": 4,
+      "coke_3q": 44
+    },
+    {
+      "date": "2022-04",
+      "pepsi_3q": 25,
+      "cocacola_3q": 4,
+      "coke_3q": 42
+    },
+    {
+      "date": "2022-05",
+      "pepsi_3q": 21,
+      "cocacola_3q": 5,
+      "coke_3q": 44
+    },
+    {
+      "date": "2022-06",
+      "pepsi_3q": 19,
+      "cocacola_3q": 4,
+      "coke_3q": 40
+    },
+    {
+      "date": "2022-07",
+      "pepsi_3q": 19,
+      "cocacola_3q": 4,
+      "coke_3q": 42
+    },
+    {
+      "date": "2022-08",
+      "pepsi_3q": 19,
+      "cocacola_3q": 4,
+      "coke_3q": 50
+    },
+    {
+      "date": "2022-09",
+      "pepsi_3q": 19,
+      "cocacola_3q": 4,
+      "coke_3q": 42
+    },
+    {
+      "date": "2022-10",
+      "pepsi_3q": 18,
+      "cocacola_3q": 4,
+      "coke_3q": 35
+    },
+    {
+      "date": "2022-11",
+      "pepsi_3q": 28,
+      "cocacola_3q": 3,
+      "coke_3q": 34
+    },
+    {
+      "date": "2022-12",
+      "pepsi_3q": 23,
+      "cocacola_3q": 3,
+      "coke_3q": 36
+    },
+    {
+      "date": "2023-01",
+      "pepsi_3q": 23,
+      "cocacola_3q": 3,
+      "coke_3q": 37
+    },
+    {
+      "date": "2023-02",
+      "pepsi_3q": 27,
+      "cocacola_3q": 3,
+      "coke_3q": 44
+    },
+    {
+      "date": "2023-03",
+      "pepsi_3q": 24,
+      "cocacola_3q": 3,
+      "coke_3q": 43
+    },
+    {
+      "date": "2023-04",
+      "pepsi_3q": 22,
+      "cocacola_3q": 3,
+      "coke_3q": 40
+    },
+    {
+      "date": "2023-05",
+      "pepsi_3q": 20,
+      "cocacola_3q": 4,
+      "coke_3q": 41
+    },
+    {
+      "date": "2023-06",
+      "pepsi_3q": 20,
+      "cocacola_3q": 4,
+      "coke_3q": 44
+    },
+    {
+      "date": "2023-07",
+      "pepsi_3q": 22,
+      "cocacola_3q": 3,
+      "coke_3q": 46
+    },
+    {
+      "date": "2023-08",
+      "pepsi_3q": 19,
+      "cocacola_3q": 3,
+      "coke_3q": 40
+    },
+    {
+      "date": "2023-09",
+      "pepsi_3q": 20,
+      "cocacola_3q": 3,
+      "coke_3q": 39
+    },
+    {
+      "date": "2023-10",
+      "pepsi_3q": 19,
+      "cocacola_3q": 3,
+      "coke_3q": 39
+    },
+    {
+      "date": "2023-11",
+      "pepsi_3q": 19,
+      "cocacola_3q": 3,
+      "coke_3q": 36
+    },
+    {
+      "date": "2023-12",
+      "pepsi_3q": 18,
+      "cocacola_3q": 3,
+      "coke_3q": 38
+    },
+    {
+      "date": "2024-01",
+      "pepsi_3q": 19,
+      "cocacola_3q": 3,
+      "coke_3q": 35
+    },
+    {
+      "date": "2024-02",
+      "pepsi_3q": 20,
+      "cocacola_3q": 4,
+      "coke_3q": 40
+    },
+    {
+      "date": "2024-03",
+      "pepsi_3q": 20,
+      "cocacola_3q": 3,
+      "coke_3q": 40
+    },
+    {
+      "date": "2024-04",
+      "pepsi_3q": 18,
+      "cocacola_3q": 3,
+      "coke_3q": 38
+    },
+    {
+      "date": "2024-05",
+      "pepsi_3q": 19,
+      "cocacola_3q": 4,
+      "coke_3q": 42
+    },
+    {
+      "date": "2024-06",
+      "pepsi_3q": 20,
+      "cocacola_3q": 3,
+      "coke_3q": 39
+    },
+    {
+      "date": "2024-07",
+      "pepsi_3q": 21,
+      "cocacola_3q": 3,
+      "coke_3q": 41
+    },
+    {
+      "date": "2024-08",
+      "pepsi_3q": 21,
+      "cocacola_3q": 3,
+      "coke_3q": 42
+    },
+    {
+      "date": "2024-09",
+      "pepsi_3q": 22,
+      "cocacola_3q": 4,
+      "coke_3q": 49
+    },
+    {
+      "date": "2024-10",
+      "pepsi_3q": 21,
+      "cocacola_3q": 4,
+      "coke_3q": 40
+    },
+    {
+      "date": "2024-11",
+      "pepsi_3q": 18,
+      "cocacola_3q": 3,
+      "coke_3q": 41
+    },
+    {
+      "date": "2024-12",
+      "pepsi_3q": 18,
+      "cocacola_3q": 3,
+      "coke_3q": 42
+    },
+    {
+      "date": "2025-01",
+      "pepsi_3q": 19,
+      "cocacola_3q": 3,
+      "coke_3q": 42
+    },
+    {
+      "date": "2025-02",
+      "pepsi_3q": 28,
+      "cocacola_3q": 5,
+      "coke_3q": 51
+    },
+    {
+      "date": "2025-03",
+      "pepsi_3q": 23,
+      "cocacola_3q": 4,
+      "coke_3q": 44
+    },
+    {
+      "date": "2025-04",
+      "pepsi_3q": 21,
+      "cocacola_3q": 4,
+      "coke_3q": 47
+    },
+    {
+      "date": "2025-05",
+      "pepsi_3q": 20,
+      "cocacola_3q": 5,
+      "coke_3q": 52
+    },
+    {
+      "date": "2025-06",
+      "pepsi_3q": 20,
+      "cocacola_3q": 4,
+      "coke_3q": 48
+    },
+    {
+      "date": "2025-07",
+      "pepsi_3q": 23,
+      "cocacola_3q": 7,
+      "coke_3q": 55
+    },
+    {
+      "date": "2025-08",
+      "pepsi_3q": 23,
+      "cocacola_3q": 5,
+      "coke_3q": 50
+    },
+    {
+      "date": "2025-09",
+      "pepsi_3q": 19,
+      "cocacola_3q": 4,
+      "coke_3q": 41
+    },
+    {
+      "date": "2025-10",
+      "pepsi_3q": 19,
+      "cocacola_3q": 4,
+      "coke_3q": 47
+    },
+    {
+      "date": "2025-11",
+      "pepsi_3q": 19,
+      "cocacola_3q": 6,
+      "coke_3q": 55
+    },
+    {
+      "date": "2025-12",
+      "pepsi_3q": 18,
+      "cocacola_3q": 7,
+      "coke_3q": 53
+    },
+    {
+      "date": "2026-01",
+      "pepsi_3q": 21,
+      "cocacola_3q": 9,
+      "coke_3q": 46
+    },
+    {
+      "date": "2026-02",
+      "pepsi_3q": 26,
+      "cocacola_3q": 10,
+      "coke_3q": 47
+    }
+  ],
+  "monthly_burger_trends": [
+    {
+      "date": "2004-01",
+      "burger_king": 10,
+      "mcdonalds": 17
+    },
+    {
+      "date": "2004-02",
+      "burger_king": 7,
+      "mcdonalds": 18
+    },
+    {
+      "date": "2004-03",
+      "burger_king": 8,
+      "mcdonalds": 21
+    },
+    {
+      "date": "2004-04",
+      "burger_king": 10,
+      "mcdonalds": 22
+    },
+    {
+      "date": "2004-05",
+      "burger_king": 9,
+      "mcdonalds": 21
+    },
+    {
+      "date": "2004-06",
+      "burger_king": 9,
+      "mcdonalds": 18
+    },
+    {
+      "date": "2004-07",
+      "burger_king": 8,
+      "mcdonalds": 17
+    },
+    {
+      "date": "2004-08",
+      "burger_king": 7,
+      "mcdonalds": 15
+    },
+    {
+      "date": "2004-09",
+      "burger_king": 8,
+      "mcdonalds": 17
+    },
+    {
+      "date": "2004-10",
+      "burger_king": 10,
+      "mcdonalds": 19
+    },
+    {
+      "date": "2004-11",
+      "burger_king": 9,
+      "mcdonalds": 21
+    },
+    {
+      "date": "2004-12",
+      "burger_king": 13,
+      "mcdonalds": 15
+    },
+    {
+      "date": "2005-01",
+      "burger_king": 9,
+      "mcdonalds": 17
+    },
+    {
+      "date": "2005-02",
+      "burger_king": 10,
+      "mcdonalds": 20
+    },
+    {
+      "date": "2005-03",
+      "burger_king": 14,
+      "mcdonalds": 22
+    },
+    {
+      "date": "2005-04",
+      "burger_king": 12,
+      "mcdonalds": 22
+    },
+    {
+      "date": "2005-05",
+      "burger_king": 13,
+      "mcdonalds": 20
+    },
+    {
+      "date": "2005-06",
+      "burger_king": 11,
+      "mcdonalds": 17
+    },
+    {
+      "date": "2005-07",
+      "burger_king": 9,
+      "mcdonalds": 18
+    },
+    {
+      "date": "2005-08",
+      "burger_king": 9,
+      "mcdonalds": 16
+    },
+    {
+      "date": "2005-09",
+      "burger_king": 11,
+      "mcdonalds": 17
+    },
+    {
+      "date": "2005-10",
+      "burger_king": 14,
+      "mcdonalds": 31
+    },
+    {
+      "date": "2005-11",
+      "burger_king": 10,
+      "mcdonalds": 25
+    },
+    {
+      "date": "2005-12",
+      "burger_king": 14,
+      "mcdonalds": 17
+    },
+    {
+      "date": "2006-01",
+      "burger_king": 10,
+      "mcdonalds": 19
+    },
+    {
+      "date": "2006-02",
+      "burger_king": 11,
+      "mcdonalds": 22
+    },
+    {
+      "date": "2006-03",
+      "burger_king": 10,
+      "mcdonalds": 25
+    },
+    {
+      "date": "2006-04",
+      "burger_king": 10,
+      "mcdonalds": 23
+    },
+    {
+      "date": "2006-05",
+      "burger_king": 11,
+      "mcdonalds": 23
+    },
+    {
+      "date": "2006-06",
+      "burger_king": 9,
+      "mcdonalds": 22
+    },
+    {
+      "date": "2006-07",
+      "burger_king": 10,
+      "mcdonalds": 24
+    },
+    {
+      "date": "2006-08",
+      "burger_king": 9,
+      "mcdonalds": 19
+    },
+    {
+      "date": "2006-09",
+      "burger_king": 10,
+      "mcdonalds": 21
+    },
+    {
+      "date": "2006-10",
+      "burger_king": 12,
+      "mcdonalds": 37
+    },
+    {
+      "date": "2006-11",
+      "burger_king": 12,
+      "mcdonalds": 22
+    },
+    {
+      "date": "2006-12",
+      "burger_king": 13,
+      "mcdonalds": 22
+    },
+    {
+      "date": "2007-01",
+      "burger_king": 9,
+      "mcdonalds": 22
+    },
+    {
+      "date": "2007-02",
+      "burger_king": 8,
+      "mcdonalds": 24
+    },
+    {
+      "date": "2007-03",
+      "burger_king": 9,
+      "mcdonalds": 28
+    },
+    {
+      "date": "2007-04",
+      "burger_king": 8,
+      "mcdonalds": 27
+    },
+    {
+      "date": "2007-05",
+      "burger_king": 9,
+      "mcdonalds": 26
+    },
+    {
+      "date": "2007-06",
+      "burger_king": 10,
+      "mcdonalds": 26
+    },
+    {
+      "date": "2007-07",
+      "burger_king": 11,
+      "mcdonalds": 25
+    },
+    {
+      "date": "2007-08",
+      "burger_king": 10,
+      "mcdonalds": 24
+    },
+    {
+      "date": "2007-09",
+      "burger_king": 10,
+      "mcdonalds": 25
+    },
+    {
+      "date": "2007-10",
+      "burger_king": 11,
+      "mcdonalds": 49
+    },
+    {
+      "date": "2007-11",
+      "burger_king": 10,
+      "mcdonalds": 25
+    },
+    {
+      "date": "2007-12",
+      "burger_king": 11,
+      "mcdonalds": 24
+    },
+    {
+      "date": "2008-01",
+      "burger_king": 10,
+      "mcdonalds": 26
+    },
+    {
+      "date": "2008-02",
+      "burger_king": 10,
+      "mcdonalds": 28
+    },
+    {
+      "date": "2008-03",
+      "burger_king": 10,
+      "mcdonalds": 28
+    },
+    {
+      "date": "2008-04",
+      "burger_king": 11,
+      "mcdonalds": 29
+    },
+    {
+      "date": "2008-05",
+      "burger_king": 12,
+      "mcdonalds": 32
+    },
+    {
+      "date": "2008-06",
+      "burger_king": 11,
+      "mcdonalds": 29
+    },
+    {
+      "date": "2008-07",
+      "burger_king": 11,
+      "mcdonalds": 29
+    },
+    {
+      "date": "2008-08",
+      "burger_king": 12,
+      "mcdonalds": 27
+    },
+    {
+      "date": "2008-09",
+      "burger_king": 11,
+      "mcdonalds": 29
+    },
+    {
+      "date": "2008-10",
+      "burger_king": 12,
+      "mcdonalds": 54
+    },
+    {
+      "date": "2008-11",
+      "burger_king": 11,
+      "mcdonalds": 38
+    },
+    {
+      "date": "2008-12",
+      "burger_king": 15,
+      "mcdonalds": 28
+    },
+    {
+      "date": "2009-01",
+      "burger_king": 12,
+      "mcdonalds": 29
+    },
+    {
+      "date": "2009-02",
+      "burger_king": 12,
+      "mcdonalds": 34
+    },
+    {
+      "date": "2009-03",
+      "burger_king": 12,
+      "mcdonalds": 38
+    },
+    {
+      "date": "2009-04",
+      "burger_king": 14,
+      "mcdonalds": 35
+    },
+    {
+      "date": "2009-05",
+      "burger_king": 13,
+      "mcdonalds": 34
+    },
+    {
+      "date": "2009-06",
+      "burger_king": 13,
+      "mcdonalds": 35
+    },
+    {
+      "date": "2009-07",
+      "burger_king": 12,
+      "mcdonalds": 38
+    },
+    {
+      "date": "2009-08",
+      "burger_king": 12,
+      "mcdonalds": 34
+    },
+    {
+      "date": "2009-09",
+      "burger_king": 12,
+      "mcdonalds": 33
+    },
+    {
+      "date": "2009-10",
+      "burger_king": 13,
+      "mcdonalds": 59
+    },
+    {
+      "date": "2009-11",
+      "burger_king": 14,
+      "mcdonalds": 38
+    },
+    {
+      "date": "2009-12",
+      "burger_king": 12,
+      "mcdonalds": 32
+    },
+    {
+      "date": "2010-01",
+      "burger_king": 13,
+      "mcdonalds": 37
+    },
+    {
+      "date": "2010-02",
+      "burger_king": 12,
+      "mcdonalds": 37
+    },
+    {
+      "date": "2010-03",
+      "burger_king": 13,
+      "mcdonalds": 41
+    },
+    {
+      "date": "2010-04",
+      "burger_king": 14,
+      "mcdonalds": 41
+    },
+    {
+      "date": "2010-05",
+      "burger_king": 13,
+      "mcdonalds": 41
+    },
+    {
+      "date": "2010-06",
+      "burger_king": 13,
+      "mcdonalds": 46
+    },
+    {
+      "date": "2010-07",
+      "burger_king": 13,
+      "mcdonalds": 48
+    },
+    {
+      "date": "2010-08",
+      "burger_king": 12,
+      "mcdonalds": 45
+    },
+    {
+      "date": "2010-09",
+      "burger_king": 15,
+      "mcdonalds": 41
+    },
+    {
+      "date": "2010-10",
+      "burger_king": 14,
+      "mcdonalds": 58
+    },
+    {
+      "date": "2010-11",
+      "burger_king": 14,
+      "mcdonalds": 44
+    },
+    {
+      "date": "2010-12",
+      "burger_king": 13,
+      "mcdonalds": 39
+    },
+    {
+      "date": "2011-01",
+      "burger_king": 14,
+      "mcdonalds": 47
+    },
+    {
+      "date": "2011-02",
+      "burger_king": 13,
+      "mcdonalds": 49
+    },
+    {
+      "date": "2011-03",
+      "burger_king": 15,
+      "mcdonalds": 52
+    },
+    {
+      "date": "2011-04",
+      "burger_king": 15,
+      "mcdonalds": 66
+    },
+    {
+      "date": "2011-05",
+      "burger_king": 15,
+      "mcdonalds": 53
+    },
+    {
+      "date": "2011-06",
+      "burger_king": 16,
+      "mcdonalds": 58
+    },
+    {
+      "date": "2011-07",
+      "burger_king": 17,
+      "mcdonalds": 58
+    },
+    {
+      "date": "2011-08",
+      "burger_king": 16,
+      "mcdonalds": 53
+    },
+    {
+      "date": "2011-09",
+      "burger_king": 16,
+      "mcdonalds": 55
+    },
+    {
+      "date": "2011-10",
+      "burger_king": 16,
+      "mcdonalds": 75
+    },
+    {
+      "date": "2011-11",
+      "burger_king": 14,
+      "mcdonalds": 55
+    },
+    {
+      "date": "2011-12",
+      "burger_king": 18,
+      "mcdonalds": 51
+    },
+    {
+      "date": "2012-01",
+      "burger_king": 18,
+      "mcdonalds": 58
+    },
+    {
+      "date": "2012-02",
+      "burger_king": 18,
+      "mcdonalds": 56
+    },
+    {
+      "date": "2012-03",
+      "burger_king": 17,
+      "mcdonalds": 57
+    },
+    {
+      "date": "2012-04",
+      "burger_king": 25,
+      "mcdonalds": 57
+    },
+    {
+      "date": "2012-05",
+      "burger_king": 19,
+      "mcdonalds": 57
+    },
+    {
+      "date": "2012-06",
+      "burger_king": 25,
+      "mcdonalds": 59
+    },
+    {
+      "date": "2012-07",
+      "burger_king": 23,
+      "mcdonalds": 61
+    },
+    {
+      "date": "2012-08",
+      "burger_king": 20,
+      "mcdonalds": 57
+    },
+    {
+      "date": "2012-09",
+      "burger_king": 20,
+      "mcdonalds": 55
+    },
+    {
+      "date": "2012-10",
+      "burger_king": 18,
+      "mcdonalds": 61
+    },
+    {
+      "date": "2012-11",
+      "burger_king": 18,
+      "mcdonalds": 51
+    },
+    {
+      "date": "2012-12",
+      "burger_king": 21,
+      "mcdonalds": 55
+    },
+    {
+      "date": "2013-01",
+      "burger_king": 20,
+      "mcdonalds": 54
+    },
+    {
+      "date": "2013-02",
+      "burger_king": 21,
+      "mcdonalds": 54
+    },
+    {
+      "date": "2013-03",
+      "burger_king": 21,
+      "mcdonalds": 58
+    },
+    {
+      "date": "2013-04",
+      "burger_king": 21,
+      "mcdonalds": 61
+    },
+    {
+      "date": "2013-05",
+      "burger_king": 21,
+      "mcdonalds": 62
+    },
+    {
+      "date": "2013-06",
+      "burger_king": 23,
+      "mcdonalds": 66
+    },
+    {
+      "date": "2013-07",
+      "burger_king": 22,
+      "mcdonalds": 74
+    },
+    {
+      "date": "2013-08",
+      "burger_king": 21,
+      "mcdonalds": 71
+    },
+    {
+      "date": "2013-09",
+      "burger_king": 21,
+      "mcdonalds": 60
+    },
+    {
+      "date": "2013-10",
+      "burger_king": 23,
+      "mcdonalds": 57
+    },
+    {
+      "date": "2013-11",
+      "burger_king": 20,
+      "mcdonalds": 59
+    },
+    {
+      "date": "2013-12",
+      "burger_king": 20,
+      "mcdonalds": 57
+    },
+    {
+      "date": "2014-01",
+      "burger_king": 20,
+      "mcdonalds": 57
+    },
+    {
+      "date": "2014-02",
+      "burger_king": 17,
+      "mcdonalds": 56
+    },
+    {
+      "date": "2014-03",
+      "burger_king": 21,
+      "mcdonalds": 59
+    },
+    {
+      "date": "2014-04",
+      "burger_king": 20,
+      "mcdonalds": 61
+    },
+    {
+      "date": "2014-05",
+      "burger_king": 20,
+      "mcdonalds": 60
+    },
+    {
+      "date": "2014-06",
+      "burger_king": 22,
+      "mcdonalds": 60
+    },
+    {
+      "date": "2014-07",
+      "burger_king": 22,
+      "mcdonalds": 60
+    },
+    {
+      "date": "2014-08",
+      "burger_king": 27,
+      "mcdonalds": 59
+    },
+    {
+      "date": "2014-09",
+      "burger_king": 21,
+      "mcdonalds": 56
+    },
+    {
+      "date": "2014-10",
+      "burger_king": 22,
+      "mcdonalds": 64
+    },
+    {
+      "date": "2014-11",
+      "burger_king": 21,
+      "mcdonalds": 49
+    },
+    {
+      "date": "2014-12",
+      "burger_king": 20,
+      "mcdonalds": 58
+    },
+    {
+      "date": "2015-01",
+      "burger_king": 21,
+      "mcdonalds": 53
+    },
+    {
+      "date": "2015-02",
+      "burger_king": 19,
+      "mcdonalds": 52
+    },
+    {
+      "date": "2015-03",
+      "burger_king": 21,
+      "mcdonalds": 59
+    },
+    {
+      "date": "2015-04",
+      "burger_king": 23,
+      "mcdonalds": 57
+    },
+    {
+      "date": "2015-05",
+      "burger_king": 23,
+      "mcdonalds": 57
+    },
+    {
+      "date": "2015-06",
+      "burger_king": 25,
+      "mcdonalds": 55
+    },
+    {
+      "date": "2015-07",
+      "burger_king": 26,
+      "mcdonalds": 69
+    },
+    {
+      "date": "2015-08",
+      "burger_king": 25,
+      "mcdonalds": 58
+    },
+    {
+      "date": "2015-09",
+      "burger_king": 25,
+      "mcdonalds": 58
+    },
+    {
+      "date": "2015-10",
+      "burger_king": 27,
+      "mcdonalds": 60
+    },
+    {
+      "date": "2015-11",
+      "burger_king": 22,
+      "mcdonalds": 59
+    },
+    {
+      "date": "2015-12",
+      "burger_king": 24,
+      "mcdonalds": 59
+    },
+    {
+      "date": "2016-01",
+      "burger_king": 26,
+      "mcdonalds": 56
+    },
+    {
+      "date": "2016-02",
+      "burger_king": 25,
+      "mcdonalds": 55
+    },
+    {
+      "date": "2016-03",
+      "burger_king": 26,
+      "mcdonalds": 61
+    },
+    {
+      "date": "2016-04",
+      "burger_king": 26,
+      "mcdonalds": 70
+    },
+    {
+      "date": "2016-05",
+      "burger_king": 27,
+      "mcdonalds": 63
+    },
+    {
+      "date": "2016-06",
+      "burger_king": 32,
+      "mcdonalds": 64
+    },
+    {
+      "date": "2016-07",
+      "burger_king": 31,
+      "mcdonalds": 69
+    },
+    {
+      "date": "2016-08",
+      "burger_king": 25,
+      "mcdonalds": 61
+    },
+    {
+      "date": "2016-09",
+      "burger_king": 25,
+      "mcdonalds": 57
+    },
+    {
+      "date": "2016-10",
+      "burger_king": 25,
+      "mcdonalds": 56
+    },
+    {
+      "date": "2016-11",
+      "burger_king": 24,
+      "mcdonalds": 58
+    },
+    {
+      "date": "2016-12",
+      "burger_king": 26,
+      "mcdonalds": 64
+    },
+    {
+      "date": "2017-01",
+      "burger_king": 26,
+      "mcdonalds": 65
+    },
+    {
+      "date": "2017-02",
+      "burger_king": 26,
+      "mcdonalds": 63
+    },
+    {
+      "date": "2017-03",
+      "burger_king": 25,
+      "mcdonalds": 62
+    },
+    {
+      "date": "2017-04",
+      "burger_king": 29,
+      "mcdonalds": 70
+    },
+    {
+      "date": "2017-05",
+      "burger_king": 29,
+      "mcdonalds": 70
+    },
+    {
+      "date": "2017-06",
+      "burger_king": 31,
+      "mcdonalds": 75
+    },
+    {
+      "date": "2017-07",
+      "burger_king": 33,
+      "mcdonalds": 79
+    },
+    {
+      "date": "2017-08",
+      "burger_king": 30,
+      "mcdonalds": 71
+    },
+    {
+      "date": "2017-09",
+      "burger_king": 28,
+      "mcdonalds": 69
+    },
+    {
+      "date": "2017-10",
+      "burger_king": 28,
+      "mcdonalds": 75
+    },
+    {
+      "date": "2017-11",
+      "burger_king": 28,
+      "mcdonalds": 71
+    },
+    {
+      "date": "2017-12",
+      "burger_king": 30,
+      "mcdonalds": 79
+    },
+    {
+      "date": "2018-01",
+      "burger_king": 30,
+      "mcdonalds": 71
+    },
+    {
+      "date": "2018-02",
+      "burger_king": 28,
+      "mcdonalds": 72
+    },
+    {
+      "date": "2018-03",
+      "burger_king": 29,
+      "mcdonalds": 70
+    },
+    {
+      "date": "2018-04",
+      "burger_king": 32,
+      "mcdonalds": 72
+    },
+    {
+      "date": "2018-05",
+      "burger_king": 31,
+      "mcdonalds": 71
+    },
+    {
+      "date": "2018-06",
+      "burger_king": 36,
+      "mcdonalds": 77
+    },
+    {
+      "date": "2018-07",
+      "burger_king": 36,
+      "mcdonalds": 83
+    },
+    {
+      "date": "2018-08",
+      "burger_king": 33,
+      "mcdonalds": 79
+    },
+    {
+      "date": "2018-09",
+      "burger_king": 31,
+      "mcdonalds": 72
+    },
+    {
+      "date": "2018-10",
+      "burger_king": 34,
+      "mcdonalds": 81
+    },
+    {
+      "date": "2018-11",
+      "burger_king": 33,
+      "mcdonalds": 74
+    },
+    {
+      "date": "2018-12",
+      "burger_king": 41,
+      "mcdonalds": 83
+    },
+    {
+      "date": "2019-01",
+      "burger_king": 35,
+      "mcdonalds": 78
+    },
+    {
+      "date": "2019-02",
+      "burger_king": 34,
+      "mcdonalds": 72
+    },
+    {
+      "date": "2019-03",
+      "burger_king": 34,
+      "mcdonalds": 79
+    },
+    {
+      "date": "2019-04",
+      "burger_king": 38,
+      "mcdonalds": 80
+    },
+    {
+      "date": "2019-05",
+      "burger_king": 39,
+      "mcdonalds": 87
+    },
+    {
+      "date": "2019-06",
+      "burger_king": 41,
+      "mcdonalds": 100
+    },
+    {
+      "date": "2019-07",
+      "burger_king": 47,
+      "mcdonalds": 88
+    },
+    {
+      "date": "2019-08",
+      "burger_king": 47,
+      "mcdonalds": 87
+    },
+    {
+      "date": "2019-09",
+      "burger_king": 39,
+      "mcdonalds": 77
+    },
+    {
+      "date": "2019-10",
+      "burger_king": 38,
+      "mcdonalds": 77
+    },
+    {
+      "date": "2019-11",
+      "burger_king": 36,
+      "mcdonalds": 82
+    },
+    {
+      "date": "2019-12",
+      "burger_king": 41,
+      "mcdonalds": 88
+    },
+    {
+      "date": "2020-01",
+      "burger_king": 38,
+      "mcdonalds": 80
+    },
+    {
+      "date": "2020-02",
+      "burger_king": 36,
+      "mcdonalds": 72
+    },
+    {
+      "date": "2020-03",
+      "burger_king": 32,
+      "mcdonalds": 78
+    },
+    {
+      "date": "2020-04",
+      "burger_king": 33,
+      "mcdonalds": 74
+    },
+    {
+      "date": "2020-05",
+      "burger_king": 36,
+      "mcdonalds": 78
+    },
+    {
+      "date": "2020-06",
+      "burger_king": 38,
+      "mcdonalds": 79
+    },
+    {
+      "date": "2020-07",
+      "burger_king": 38,
+      "mcdonalds": 72
+    },
+    {
+      "date": "2020-08",
+      "burger_king": 40,
+      "mcdonalds": 71
+    },
+    {
+      "date": "2020-09",
+      "burger_king": 35,
+      "mcdonalds": 82
+    },
+    {
+      "date": "2020-10",
+      "burger_king": 37,
+      "mcdonalds": 76
+    },
+    {
+      "date": "2020-11",
+      "burger_king": 35,
+      "mcdonalds": 72
+    },
+    {
+      "date": "2020-12",
+      "burger_king": 38,
+      "mcdonalds": 87
+    },
+    {
+      "date": "2021-01",
+      "burger_king": 36,
+      "mcdonalds": 74
+    },
+    {
+      "date": "2021-02",
+      "burger_king": 35,
+      "mcdonalds": 86
+    },
+    {
+      "date": "2021-03",
+      "burger_king": 37,
+      "mcdonalds": 77
+    },
+    {
+      "date": "2021-04",
+      "burger_king": 39,
+      "mcdonalds": 88
+    },
+    {
+      "date": "2021-05",
+      "burger_king": 38,
+      "mcdonalds": 89
+    },
+    {
+      "date": "2021-06",
+      "burger_king": 41,
+      "mcdonalds": 90
+    },
+    {
+      "date": "2021-07",
+      "burger_king": 39,
+      "mcdonalds": 83
+    },
+    {
+      "date": "2021-08",
+      "burger_king": 37,
+      "mcdonalds": 85
+    },
+    {
+      "date": "2021-09",
+      "burger_king": 34,
+      "mcdonalds": 83
+    },
+    {
+      "date": "2021-10",
+      "burger_king": 35,
+      "mcdonalds": 83
+    },
+    {
+      "date": "2021-11",
+      "burger_king": 34,
+      "mcdonalds": 81
+    },
+    {
+      "date": "2021-12",
+      "burger_king": 40,
+      "mcdonalds": 91
+    },
+    {
+      "date": "2022-01",
+      "burger_king": 32,
+      "mcdonalds": 70
+    },
+    {
+      "date": "2022-02",
+      "burger_king": 32,
+      "mcdonalds": 68
+    },
+    {
+      "date": "2022-03",
+      "burger_king": 35,
+      "mcdonalds": 69
+    },
+    {
+      "date": "2022-04",
+      "burger_king": 33,
+      "mcdonalds": 65
+    },
+    {
+      "date": "2022-05",
+      "burger_king": 35,
+      "mcdonalds": 65
+    },
+    {
+      "date": "2022-06",
+      "burger_king": 37,
+      "mcdonalds": 64
+    },
+    {
+      "date": "2022-07",
+      "burger_king": 37,
+      "mcdonalds": 69
+    },
+    {
+      "date": "2022-08",
+      "burger_king": 33,
+      "mcdonalds": 64
+    },
+    {
+      "date": "2022-09",
+      "burger_king": 31,
+      "mcdonalds": 58
+    },
+    {
+      "date": "2022-10",
+      "burger_king": 31,
+      "mcdonalds": 69
+    },
+    {
+      "date": "2022-11",
+      "burger_king": 31,
+      "mcdonalds": 41
+    },
+    {
+      "date": "2022-12",
+      "burger_king": 30,
+      "mcdonalds": 42
+    },
+    {
+      "date": "2023-01",
+      "burger_king": 29,
+      "mcdonalds": 36
+    },
+    {
+      "date": "2023-02",
+      "burger_king": 32,
+      "mcdonalds": 39
+    },
+    {
+      "date": "2023-03",
+      "burger_king": 32,
+      "mcdonalds": 36
+    },
+    {
+      "date": "2023-04",
+      "burger_king": 32,
+      "mcdonalds": 39
+    },
+    {
+      "date": "2023-05",
+      "burger_king": 36,
+      "mcdonalds": 36
+    },
+    {
+      "date": "2023-06",
+      "burger_king": 35,
+      "mcdonalds": 47
+    },
+    {
+      "date": "2023-07",
+      "burger_king": 34,
+      "mcdonalds": 48
+    },
+    {
+      "date": "2023-08",
+      "burger_king": 32,
+      "mcdonalds": 38
+    },
+    {
+      "date": "2023-09",
+      "burger_king": 31,
+      "mcdonalds": 39
+    },
+    {
+      "date": "2023-10",
+      "burger_king": 31,
+      "mcdonalds": 42
+    },
+    {
+      "date": "2023-11",
+      "burger_king": 29,
+      "mcdonalds": 38
+    },
+    {
+      "date": "2023-12",
+      "burger_king": 31,
+      "mcdonalds": 41
+    },
+    {
+      "date": "2024-01",
+      "burger_king": 29,
+      "mcdonalds": 35
+    },
+    {
+      "date": "2024-02",
+      "burger_king": 27,
+      "mcdonalds": 37
+    },
+    {
+      "date": "2024-03",
+      "burger_king": 30,
+      "mcdonalds": 39
+    },
+    {
+      "date": "2024-04",
+      "burger_king": 28,
+      "mcdonalds": 39
+    },
+    {
+      "date": "2024-05",
+      "burger_king": 31,
+      "mcdonalds": 40
+    },
+    {
+      "date": "2024-06",
+      "burger_king": 31,
+      "mcdonalds": 39
+    },
+    {
+      "date": "2024-07",
+      "burger_king": 30,
+      "mcdonalds": 39
+    },
+    {
+      "date": "2024-08",
+      "burger_king": 29,
+      "mcdonalds": 50
+    },
+    {
+      "date": "2024-09",
+      "burger_king": 26,
+      "mcdonalds": 44
+    },
+    {
+      "date": "2024-10",
+      "burger_king": 30,
+      "mcdonalds": 52
+    },
+    {
+      "date": "2024-11",
+      "burger_king": 27,
+      "mcdonalds": 43
+    },
+    {
+      "date": "2024-12",
+      "burger_king": 27,
+      "mcdonalds": 46
+    },
+    {
+      "date": "2025-01",
+      "burger_king": 25,
+      "mcdonalds": 40
+    },
+    {
+      "date": "2025-02",
+      "burger_king": 23,
+      "mcdonalds": 37
+    },
+    {
+      "date": "2025-03",
+      "burger_king": 24,
+      "mcdonalds": 39
+    },
+    {
+      "date": "2025-04",
+      "burger_king": 25,
+      "mcdonalds": 49
+    },
+    {
+      "date": "2025-05",
+      "burger_king": 27,
+      "mcdonalds": 38
+    },
+    {
+      "date": "2025-06",
+      "burger_king": 29,
+      "mcdonalds": 41
+    },
+    {
+      "date": "2025-07",
+      "burger_king": 32,
+      "mcdonalds": 48
+    },
+    {
+      "date": "2025-08",
+      "burger_king": 28,
+      "mcdonalds": 45
+    },
+    {
+      "date": "2025-09",
+      "burger_king": 26,
+      "mcdonalds": 39
+    },
+    {
+      "date": "2025-10",
+      "burger_king": 27,
+      "mcdonalds": 48
+    },
+    {
+      "date": "2025-11",
+      "burger_king": 28,
+      "mcdonalds": 40
+    },
+    {
+      "date": "2025-12",
+      "burger_king": 41,
+      "mcdonalds": 57
+    },
+    {
+      "date": "2026-01",
+      "burger_king": 26,
+      "mcdonalds": 40
+    },
+    {
+      "date": "2026-02",
+      "burger_king": 25,
+      "mcdonalds": 44
+    }
+  ],
+  "monthly_share_trends": [
+    {
+      "date": "2004-01",
+      "pepsi_share": 50.0,
+      "bk_share": 37.0
+    },
+    {
+      "date": "2004-02",
+      "pepsi_share": 58.8,
+      "bk_share": 28.0
+    },
+    {
+      "date": "2004-03",
+      "pepsi_share": 54.3,
+      "bk_share": 27.6
+    },
+    {
+      "date": "2004-04",
+      "pepsi_share": 52.9,
+      "bk_share": 31.2
+    },
+    {
+      "date": "2004-05",
+      "pepsi_share": 50.7,
+      "bk_share": 30.0
+    },
+    {
+      "date": "2004-06",
+      "pepsi_share": 50.7,
+      "bk_share": 33.3
+    },
+    {
+      "date": "2004-07",
+      "pepsi_share": 54.9,
+      "bk_share": 32.0
+    },
+    {
+      "date": "2004-08",
+      "pepsi_share": 46.6,
+      "bk_share": 31.8
+    },
+    {
+      "date": "2004-09",
+      "pepsi_share": 49.1,
+      "bk_share": 32.0
+    },
+    {
+      "date": "2004-10",
+      "pepsi_share": 47.3,
+      "bk_share": 34.5
+    },
+    {
+      "date": "2004-11",
+      "pepsi_share": 50.0,
+      "bk_share": 30.0
+    },
+    {
+      "date": "2004-12",
+      "pepsi_share": 45.6,
+      "bk_share": 46.4
+    },
+    {
+      "date": "2005-01",
+      "pepsi_share": 49.1,
+      "bk_share": 34.6
+    },
+    {
+      "date": "2005-02",
+      "pepsi_share": 54.5,
+      "bk_share": 33.3
+    },
+    {
+      "date": "2005-03",
+      "pepsi_share": 51.6,
+      "bk_share": 38.9
+    },
+    {
+      "date": "2005-04",
+      "pepsi_share": 47.1,
+      "bk_share": 35.3
+    },
+    {
+      "date": "2005-05",
+      "pepsi_share": 48.4,
+      "bk_share": 39.4
+    },
+    {
+      "date": "2005-06",
+      "pepsi_share": 45.3,
+      "bk_share": 39.3
+    },
+    {
+      "date": "2005-07",
+      "pepsi_share": 49.2,
+      "bk_share": 33.3
+    },
+    {
+      "date": "2005-08",
+      "pepsi_share": 44.4,
+      "bk_share": 36.0
+    },
+    {
+      "date": "2005-09",
+      "pepsi_share": 48.1,
+      "bk_share": 39.3
+    },
+    {
+      "date": "2005-10",
+      "pepsi_share": 50.0,
+      "bk_share": 31.1
+    },
+    {
+      "date": "2005-11",
+      "pepsi_share": 48.1,
+      "bk_share": 28.6
+    },
+    {
+      "date": "2005-12",
+      "pepsi_share": 43.4,
+      "bk_share": 45.2
+    },
+    {
+      "date": "2006-01",
+      "pepsi_share": 44.2,
+      "bk_share": 34.5
+    },
+    {
+      "date": "2006-02",
+      "pepsi_share": 55.1,
+      "bk_share": 33.3
+    },
+    {
+      "date": "2006-03",
+      "pepsi_share": 48.6,
+      "bk_share": 28.6
+    },
+    {
+      "date": "2006-04",
+      "pepsi_share": 43.4,
+      "bk_share": 30.3
+    },
+    {
+      "date": "2006-05",
+      "pepsi_share": 45.8,
+      "bk_share": 32.4
+    },
+    {
+      "date": "2006-06",
+      "pepsi_share": 34.6,
+      "bk_share": 29.0
+    },
+    {
+      "date": "2006-07",
+      "pepsi_share": 35.5,
+      "bk_share": 29.4
+    },
+    {
+      "date": "2006-08",
+      "pepsi_share": 32.6,
+      "bk_share": 32.1
+    },
+    {
+      "date": "2006-09",
+      "pepsi_share": 36.1,
+      "bk_share": 32.3
+    },
+    {
+      "date": "2006-10",
+      "pepsi_share": 35.8,
+      "bk_share": 24.5
+    },
+    {
+      "date": "2006-11",
+      "pepsi_share": 36.5,
+      "bk_share": 35.3
+    },
+    {
+      "date": "2006-12",
+      "pepsi_share": 34.4,
+      "bk_share": 37.1
+    },
+    {
+      "date": "2007-01",
+      "pepsi_share": 36.7,
+      "bk_share": 29.0
+    },
+    {
+      "date": "2007-02",
+      "pepsi_share": 44.6,
+      "bk_share": 25.0
+    },
+    {
+      "date": "2007-03",
+      "pepsi_share": 38.9,
+      "bk_share": 24.3
+    },
+    {
+      "date": "2007-04",
+      "pepsi_share": 36.5,
+      "bk_share": 22.9
+    },
+    {
+      "date": "2007-05",
+      "pepsi_share": 32.1,
+      "bk_share": 25.7
+    },
+    {
+      "date": "2007-06",
+      "pepsi_share": 34.5,
+      "bk_share": 27.8
+    },
+    {
+      "date": "2007-07",
+      "pepsi_share": 34.6,
+      "bk_share": 30.6
+    },
+    {
+      "date": "2007-08",
+      "pepsi_share": 32.4,
+      "bk_share": 29.4
+    },
+    {
+      "date": "2007-09",
+      "pepsi_share": 34.7,
+      "bk_share": 28.6
+    },
+    {
+      "date": "2007-10",
+      "pepsi_share": 35.7,
+      "bk_share": 18.3
+    },
+    {
+      "date": "2007-11",
+      "pepsi_share": 36.4,
+      "bk_share": 28.6
+    },
+    {
+      "date": "2007-12",
+      "pepsi_share": 33.9,
+      "bk_share": 31.4
+    },
+    {
+      "date": "2008-01",
+      "pepsi_share": 37.3,
+      "bk_share": 27.8
+    },
+    {
+      "date": "2008-02",
+      "pepsi_share": 45.3,
+      "bk_share": 26.3
+    },
+    {
+      "date": "2008-03",
+      "pepsi_share": 41.7,
+      "bk_share": 26.3
+    },
+    {
+      "date": "2008-04",
+      "pepsi_share": 42.3,
+      "bk_share": 27.5
+    },
+    {
+      "date": "2008-05",
+      "pepsi_share": 42.5,
+      "bk_share": 27.3
+    },
+    {
+      "date": "2008-06",
+      "pepsi_share": 40.8,
+      "bk_share": 27.5
+    },
+    {
+      "date": "2008-07",
+      "pepsi_share": 38.4,
+      "bk_share": 27.5
+    },
+    {
+      "date": "2008-08",
+      "pepsi_share": 39.1,
+      "bk_share": 30.8
+    },
+    {
+      "date": "2008-09",
+      "pepsi_share": 41.2,
+      "bk_share": 27.5
+    },
+    {
+      "date": "2008-10",
+      "pepsi_share": 43.7,
+      "bk_share": 18.2
+    },
+    {
+      "date": "2008-11",
+      "pepsi_share": 42.4,
+      "bk_share": 22.4
+    },
+    {
+      "date": "2008-12",
+      "pepsi_share": 43.5,
+      "bk_share": 34.9
+    },
+    {
+      "date": "2009-01",
+      "pepsi_share": 45.6,
+      "bk_share": 29.3
+    },
+    {
+      "date": "2009-02",
+      "pepsi_share": 45.2,
+      "bk_share": 26.1
+    },
+    {
+      "date": "2009-03",
+      "pepsi_share": 42.4,
+      "bk_share": 24.0
+    },
+    {
+      "date": "2009-04",
+      "pepsi_share": 42.9,
+      "bk_share": 28.6
+    },
+    {
+      "date": "2009-05",
+      "pepsi_share": 47.1,
+      "bk_share": 27.7
+    },
+    {
+      "date": "2009-06",
+      "pepsi_share": 42.2,
+      "bk_share": 27.1
+    },
+    {
+      "date": "2009-07",
+      "pepsi_share": 48.6,
+      "bk_share": 24.0
+    },
+    {
+      "date": "2009-08",
+      "pepsi_share": 39.3,
+      "bk_share": 26.1
+    },
+    {
+      "date": "2009-09",
+      "pepsi_share": 41.7,
+      "bk_share": 26.7
+    },
+    {
+      "date": "2009-10",
+      "pepsi_share": 38.7,
+      "bk_share": 18.1
+    },
+    {
+      "date": "2009-11",
+      "pepsi_share": 36.7,
+      "bk_share": 26.9
+    },
+    {
+      "date": "2009-12",
+      "pepsi_share": 35.7,
+      "bk_share": 27.3
+    },
+    {
+      "date": "2010-01",
+      "pepsi_share": 42.9,
+      "bk_share": 26.0
+    },
+    {
+      "date": "2010-02",
+      "pepsi_share": 46.3,
+      "bk_share": 24.5
+    },
+    {
+      "date": "2010-03",
+      "pepsi_share": 43.9,
+      "bk_share": 24.1
+    },
+    {
+      "date": "2010-04",
+      "pepsi_share": 43.8,
+      "bk_share": 25.5
+    },
+    {
+      "date": "2010-05",
+      "pepsi_share": 37.5,
+      "bk_share": 24.1
+    },
+    {
+      "date": "2010-06",
+      "pepsi_share": 40.0,
+      "bk_share": 22.0
+    },
+    {
+      "date": "2010-07",
+      "pepsi_share": 37.7,
+      "bk_share": 21.3
+    },
+    {
+      "date": "2010-08",
+      "pepsi_share": 37.9,
+      "bk_share": 21.1
+    },
+    {
+      "date": "2010-09",
+      "pepsi_share": 38.1,
+      "bk_share": 26.8
+    },
+    {
+      "date": "2010-10",
+      "pepsi_share": 37.9,
+      "bk_share": 19.4
+    },
+    {
+      "date": "2010-11",
+      "pepsi_share": 36.8,
+      "bk_share": 24.1
+    },
+    {
+      "date": "2010-12",
+      "pepsi_share": 37.0,
+      "bk_share": 25.0
+    },
+    {
+      "date": "2011-01",
+      "pepsi_share": 38.8,
+      "bk_share": 23.0
+    },
+    {
+      "date": "2011-02",
+      "pepsi_share": 39.7,
+      "bk_share": 21.0
+    },
+    {
+      "date": "2011-03",
+      "pepsi_share": 35.7,
+      "bk_share": 22.4
+    },
+    {
+      "date": "2011-04",
+      "pepsi_share": 35.9,
+      "bk_share": 18.5
+    },
+    {
+      "date": "2011-05",
+      "pepsi_share": 35.3,
+      "bk_share": 22.1
+    },
+    {
+      "date": "2011-06",
+      "pepsi_share": 34.8,
+      "bk_share": 21.6
+    },
+    {
+      "date": "2011-07",
+      "pepsi_share": 36.0,
+      "bk_share": 22.7
+    },
+    {
+      "date": "2011-08",
+      "pepsi_share": 32.8,
+      "bk_share": 23.2
+    },
+    {
+      "date": "2011-09",
+      "pepsi_share": 35.8,
+      "bk_share": 22.5
+    },
+    {
+      "date": "2011-10",
+      "pepsi_share": 30.4,
+      "bk_share": 17.6
+    },
+    {
+      "date": "2011-11",
+      "pepsi_share": 32.3,
+      "bk_share": 20.3
+    },
+    {
+      "date": "2011-12",
+      "pepsi_share": 32.4,
+      "bk_share": 26.1
+    },
+    {
+      "date": "2012-01",
+      "pepsi_share": 32.4,
+      "bk_share": 23.7
+    },
+    {
+      "date": "2012-02",
+      "pepsi_share": 41.8,
+      "bk_share": 24.3
+    },
+    {
+      "date": "2012-03",
+      "pepsi_share": 37.0,
+      "bk_share": 23.0
+    },
+    {
+      "date": "2012-04",
+      "pepsi_share": 34.2,
+      "bk_share": 30.5
+    },
+    {
+      "date": "2012-05",
+      "pepsi_share": 36.5,
+      "bk_share": 25.0
+    },
+    {
+      "date": "2012-06",
+      "pepsi_share": 34.7,
+      "bk_share": 29.8
+    },
+    {
+      "date": "2012-07",
+      "pepsi_share": 29.2,
+      "bk_share": 27.4
+    },
+    {
+      "date": "2012-08",
+      "pepsi_share": 30.9,
+      "bk_share": 26.0
+    },
+    {
+      "date": "2012-09",
+      "pepsi_share": 30.3,
+      "bk_share": 26.7
+    },
+    {
+      "date": "2012-10",
+      "pepsi_share": 30.0,
+      "bk_share": 22.8
+    },
+    {
+      "date": "2012-11",
+      "pepsi_share": 30.6,
+      "bk_share": 26.1
+    },
+    {
+      "date": "2012-12",
+      "pepsi_share": 31.0,
+      "bk_share": 27.6
+    },
+    {
+      "date": "2013-01",
+      "pepsi_share": 31.6,
+      "bk_share": 27.0
+    },
+    {
+      "date": "2013-02",
+      "pepsi_share": 31.3,
+      "bk_share": 28.0
+    },
+    {
+      "date": "2013-03",
+      "pepsi_share": 42.0,
+      "bk_share": 26.6
+    },
+    {
+      "date": "2013-04",
+      "pepsi_share": 38.1,
+      "bk_share": 25.6
+    },
+    {
+      "date": "2013-05",
+      "pepsi_share": 32.9,
+      "bk_share": 25.3
+    },
+    {
+      "date": "2013-06",
+      "pepsi_share": 30.3,
+      "bk_share": 25.8
+    },
+    {
+      "date": "2013-07",
+      "pepsi_share": 30.4,
+      "bk_share": 22.9
+    },
+    {
+      "date": "2013-08",
+      "pepsi_share": 30.3,
+      "bk_share": 22.8
+    },
+    {
+      "date": "2013-09",
+      "pepsi_share": 29.4,
+      "bk_share": 25.9
+    },
+    {
+      "date": "2013-10",
+      "pepsi_share": 30.0,
+      "bk_share": 28.7
+    },
+    {
+      "date": "2013-11",
+      "pepsi_share": 27.9,
+      "bk_share": 25.3
+    },
+    {
+      "date": "2013-12",
+      "pepsi_share": 25.4,
+      "bk_share": 26.0
+    },
+    {
+      "date": "2014-01",
+      "pepsi_share": 31.2,
+      "bk_share": 26.0
+    },
+    {
+      "date": "2014-02",
+      "pepsi_share": 25.8,
+      "bk_share": 23.3
+    },
+    {
+      "date": "2014-03",
+      "pepsi_share": 33.8,
+      "bk_share": 26.2
+    },
+    {
+      "date": "2014-04",
+      "pepsi_share": 28.4,
+      "bk_share": 24.7
+    },
+    {
+      "date": "2014-05",
+      "pepsi_share": 27.0,
+      "bk_share": 25.0
+    },
+    {
+      "date": "2014-06",
+      "pepsi_share": 25.3,
+      "bk_share": 26.8
+    },
+    {
+      "date": "2014-07",
+      "pepsi_share": 19.0,
+      "bk_share": 26.8
+    },
+    {
+      "date": "2014-08",
+      "pepsi_share": 20.2,
+      "bk_share": 31.4
+    },
+    {
+      "date": "2014-09",
+      "pepsi_share": 25.0,
+      "bk_share": 27.3
+    },
+    {
+      "date": "2014-10",
+      "pepsi_share": 26.4,
+      "bk_share": 25.6
+    },
+    {
+      "date": "2014-11",
+      "pepsi_share": 26.2,
+      "bk_share": 30.0
+    },
+    {
+      "date": "2014-12",
+      "pepsi_share": 25.8,
+      "bk_share": 25.6
+    },
+    {
+      "date": "2015-01",
+      "pepsi_share": 30.4,
+      "bk_share": 28.4
+    },
+    {
+      "date": "2015-02",
+      "pepsi_share": 30.8,
+      "bk_share": 26.8
+    },
+    {
+      "date": "2015-03",
+      "pepsi_share": 30.9,
+      "bk_share": 26.2
+    },
+    {
+      "date": "2015-04",
+      "pepsi_share": 32.4,
+      "bk_share": 28.7
+    },
+    {
+      "date": "2015-05",
+      "pepsi_share": 26.9,
+      "bk_share": 28.7
+    },
+    {
+      "date": "2015-06",
+      "pepsi_share": 25.9,
+      "bk_share": 31.2
+    },
+    {
+      "date": "2015-07",
+      "pepsi_share": 26.2,
+      "bk_share": 27.4
+    },
+    {
+      "date": "2015-08",
+      "pepsi_share": 30.1,
+      "bk_share": 30.1
+    },
+    {
+      "date": "2015-09",
+      "pepsi_share": 30.9,
+      "bk_share": 30.1
+    },
+    {
+      "date": "2015-10",
+      "pepsi_share": 39.5,
+      "bk_share": 31.0
+    },
+    {
+      "date": "2015-11",
+      "pepsi_share": 31.8,
+      "bk_share": 27.2
+    },
+    {
+      "date": "2015-12",
+      "pepsi_share": 33.8,
+      "bk_share": 28.9
+    },
+    {
+      "date": "2016-01",
+      "pepsi_share": 34.8,
+      "bk_share": 31.7
+    },
+    {
+      "date": "2016-02",
+      "pepsi_share": 35.2,
+      "bk_share": 31.2
+    },
+    {
+      "date": "2016-03",
+      "pepsi_share": 34.9,
+      "bk_share": 29.9
+    },
+    {
+      "date": "2016-04",
+      "pepsi_share": 37.3,
+      "bk_share": 27.1
+    },
+    {
+      "date": "2016-05",
+      "pepsi_share": 32.8,
+      "bk_share": 30.0
+    },
+    {
+      "date": "2016-06",
+      "pepsi_share": 33.3,
+      "bk_share": 33.3
+    },
+    {
+      "date": "2016-07",
+      "pepsi_share": 33.3,
+      "bk_share": 31.0
+    },
+    {
+      "date": "2016-08",
+      "pepsi_share": 44.8,
+      "bk_share": 29.1
+    },
+    {
+      "date": "2016-09",
+      "pepsi_share": 32.8,
+      "bk_share": 30.5
+    },
+    {
+      "date": "2016-10",
+      "pepsi_share": 31.1,
+      "bk_share": 30.9
+    },
+    {
+      "date": "2016-11",
+      "pepsi_share": 33.9,
+      "bk_share": 29.3
+    },
+    {
+      "date": "2016-12",
+      "pepsi_share": 28.8,
+      "bk_share": 28.9
+    },
+    {
+      "date": "2017-01",
+      "pepsi_share": 31.7,
+      "bk_share": 28.6
+    },
+    {
+      "date": "2017-02",
+      "pepsi_share": 33.8,
+      "bk_share": 29.2
+    },
+    {
+      "date": "2017-03",
+      "pepsi_share": 29.7,
+      "bk_share": 28.7
+    },
+    {
+      "date": "2017-04",
+      "pepsi_share": 62.1,
+      "bk_share": 29.3
+    },
+    {
+      "date": "2017-05",
+      "pepsi_share": 35.2,
+      "bk_share": 29.3
+    },
+    {
+      "date": "2017-06",
+      "pepsi_share": 35.6,
+      "bk_share": 29.2
+    },
+    {
+      "date": "2017-07",
+      "pepsi_share": 32.4,
+      "bk_share": 29.5
+    },
+    {
+      "date": "2017-08",
+      "pepsi_share": 33.8,
+      "bk_share": 29.7
+    },
+    {
+      "date": "2017-09",
+      "pepsi_share": 41.4,
+      "bk_share": 28.9
+    },
+    {
+      "date": "2017-10",
+      "pepsi_share": 35.7,
+      "bk_share": 27.2
+    },
+    {
+      "date": "2017-11",
+      "pepsi_share": 32.2,
+      "bk_share": 28.3
+    },
+    {
+      "date": "2017-12",
+      "pepsi_share": 26.6,
+      "bk_share": 27.5
+    },
+    {
+      "date": "2018-01",
+      "pepsi_share": 32.8,
+      "bk_share": 29.7
+    },
+    {
+      "date": "2018-02",
+      "pepsi_share": 36.4,
+      "bk_share": 28.0
+    },
+    {
+      "date": "2018-03",
+      "pepsi_share": 32.8,
+      "bk_share": 29.3
+    },
+    {
+      "date": "2018-04",
+      "pepsi_share": 32.8,
+      "bk_share": 30.8
+    },
+    {
+      "date": "2018-05",
+      "pepsi_share": 33.3,
+      "bk_share": 30.4
+    },
+    {
+      "date": "2018-06",
+      "pepsi_share": 33.8,
+      "bk_share": 31.9
+    },
+    {
+      "date": "2018-07",
+      "pepsi_share": 33.8,
+      "bk_share": 30.3
+    },
+    {
+      "date": "2018-08",
+      "pepsi_share": 35.5,
+      "bk_share": 29.5
+    },
+    {
+      "date": "2018-09",
+      "pepsi_share": 34.4,
+      "bk_share": 30.1
+    },
+    {
+      "date": "2018-10",
+      "pepsi_share": 36.2,
+      "bk_share": 29.6
+    },
+    {
+      "date": "2018-11",
+      "pepsi_share": 34.0,
+      "bk_share": 30.8
+    },
+    {
+      "date": "2018-12",
+      "pepsi_share": 32.1,
+      "bk_share": 33.1
+    },
+    {
+      "date": "2019-01",
+      "pepsi_share": 38.7,
+      "bk_share": 31.0
+    },
+    {
+      "date": "2019-02",
+      "pepsi_share": 39.4,
+      "bk_share": 32.1
+    },
+    {
+      "date": "2019-03",
+      "pepsi_share": 34.4,
+      "bk_share": 30.1
+    },
+    {
+      "date": "2019-04",
+      "pepsi_share": 35.5,
+      "bk_share": 32.2
+    },
+    {
+      "date": "2019-05",
+      "pepsi_share": 33.3,
+      "bk_share": 31.0
+    },
+    {
+      "date": "2019-06",
+      "pepsi_share": 34.9,
+      "bk_share": 29.1
+    },
+    {
+      "date": "2019-07",
+      "pepsi_share": 31.8,
+      "bk_share": 34.8
+    },
+    {
+      "date": "2019-08",
+      "pepsi_share": 33.3,
+      "bk_share": 35.1
+    },
+    {
+      "date": "2019-09",
+      "pepsi_share": 32.7,
+      "bk_share": 33.6
+    },
+    {
+      "date": "2019-10",
+      "pepsi_share": 32.7,
+      "bk_share": 33.0
+    },
+    {
+      "date": "2019-11",
+      "pepsi_share": 33.3,
+      "bk_share": 30.5
+    },
+    {
+      "date": "2019-12",
+      "pepsi_share": 31.0,
+      "bk_share": 31.8
+    },
+    {
+      "date": "2020-01",
+      "pepsi_share": 33.9,
+      "bk_share": 32.2
+    },
+    {
+      "date": "2020-02",
+      "pepsi_share": 35.9,
+      "bk_share": 33.3
+    },
+    {
+      "date": "2020-03",
+      "pepsi_share": 34.0,
+      "bk_share": 29.1
+    },
+    {
+      "date": "2020-04",
+      "pepsi_share": 29.2,
+      "bk_share": 30.8
+    },
+    {
+      "date": "2020-05",
+      "pepsi_share": 27.5,
+      "bk_share": 31.6
+    },
+    {
+      "date": "2020-06",
+      "pepsi_share": 35.8,
+      "bk_share": 32.5
+    },
+    {
+      "date": "2020-07",
+      "pepsi_share": 31.6,
+      "bk_share": 34.5
+    },
+    {
+      "date": "2020-08",
+      "pepsi_share": 32.7,
+      "bk_share": 36.0
+    },
+    {
+      "date": "2020-09",
+      "pepsi_share": 31.2,
+      "bk_share": 29.9
+    },
+    {
+      "date": "2020-10",
+      "pepsi_share": 30.0,
+      "bk_share": 32.7
+    },
+    {
+      "date": "2020-11",
+      "pepsi_share": 30.2,
+      "bk_share": 32.7
+    },
+    {
+      "date": "2020-12",
+      "pepsi_share": 29.5,
+      "bk_share": 30.4
+    },
+    {
+      "date": "2021-01",
+      "pepsi_share": 31.4,
+      "bk_share": 32.7
+    },
+    {
+      "date": "2021-02",
+      "pepsi_share": 25.7,
+      "bk_share": 28.9
+    },
+    {
+      "date": "2021-03",
+      "pepsi_share": 33.9,
+      "bk_share": 32.5
+    },
+    {
+      "date": "2021-04",
+      "pepsi_share": 31.0,
+      "bk_share": 30.7
+    },
+    {
+      "date": "2021-05",
+      "pepsi_share": 32.1,
+      "bk_share": 29.9
+    },
+    {
+      "date": "2021-06",
+      "pepsi_share": 29.8,
+      "bk_share": 31.3
+    },
+    {
+      "date": "2021-07",
+      "pepsi_share": 30.2,
+      "bk_share": 32.0
+    },
+    {
+      "date": "2021-08",
+      "pepsi_share": 28.8,
+      "bk_share": 30.3
+    },
+    {
+      "date": "2021-09",
+      "pepsi_share": 31.4,
+      "bk_share": 29.1
+    },
+    {
+      "date": "2021-10",
+      "pepsi_share": 32.7,
+      "bk_share": 29.7
+    },
+    {
+      "date": "2021-11",
+      "pepsi_share": 29.8,
+      "bk_share": 29.6
+    },
+    {
+      "date": "2021-12",
+      "pepsi_share": 25.9,
+      "bk_share": 30.5
+    },
+    {
+      "date": "2022-01",
+      "pepsi_share": 31.5,
+      "bk_share": 31.4
+    },
+    {
+      "date": "2022-02",
+      "pepsi_share": 32.8,
+      "bk_share": 32.0
+    },
+    {
+      "date": "2022-03",
+      "pepsi_share": 36.2,
+      "bk_share": 33.7
+    },
+    {
+      "date": "2022-04",
+      "pepsi_share": 37.3,
+      "bk_share": 33.7
+    },
+    {
+      "date": "2022-05",
+      "pepsi_share": 32.3,
+      "bk_share": 35.0
+    },
+    {
+      "date": "2022-06",
+      "pepsi_share": 32.2,
+      "bk_share": 36.6
+    },
+    {
+      "date": "2022-07",
+      "pepsi_share": 31.1,
+      "bk_share": 34.9
+    },
+    {
+      "date": "2022-08",
+      "pepsi_share": 27.5,
+      "bk_share": 34.0
+    },
+    {
+      "date": "2022-09",
+      "pepsi_share": 31.1,
+      "bk_share": 34.8
+    },
+    {
+      "date": "2022-10",
+      "pepsi_share": 34.0,
+      "bk_share": 31.0
+    },
+    {
+      "date": "2022-11",
+      "pepsi_share": 45.2,
+      "bk_share": 43.1
+    },
+    {
+      "date": "2022-12",
+      "pepsi_share": 39.0,
+      "bk_share": 41.7
+    },
+    {
+      "date": "2023-01",
+      "pepsi_share": 38.3,
+      "bk_share": 44.6
+    },
+    {
+      "date": "2023-02",
+      "pepsi_share": 38.0,
+      "bk_share": 45.1
+    },
+    {
+      "date": "2023-03",
+      "pepsi_share": 35.8,
+      "bk_share": 47.1
+    },
+    {
+      "date": "2023-04",
+      "pepsi_share": 35.5,
+      "bk_share": 45.1
+    },
+    {
+      "date": "2023-05",
+      "pepsi_share": 32.8,
+      "bk_share": 50.0
+    },
+    {
+      "date": "2023-06",
+      "pepsi_share": 31.2,
+      "bk_share": 42.7
+    },
+    {
+      "date": "2023-07",
+      "pepsi_share": 32.4,
+      "bk_share": 41.5
+    },
+    {
+      "date": "2023-08",
+      "pepsi_share": 32.2,
+      "bk_share": 45.7
+    },
+    {
+      "date": "2023-09",
+      "pepsi_share": 33.9,
+      "bk_share": 44.3
+    },
+    {
+      "date": "2023-10",
+      "pepsi_share": 32.8,
+      "bk_share": 42.5
+    },
+    {
+      "date": "2023-11",
+      "pepsi_share": 34.5,
+      "bk_share": 43.3
+    },
+    {
+      "date": "2023-12",
+      "pepsi_share": 32.1,
+      "bk_share": 43.1
+    },
+    {
+      "date": "2024-01",
+      "pepsi_share": 35.2,
+      "bk_share": 45.3
+    },
+    {
+      "date": "2024-02",
+      "pepsi_share": 33.3,
+      "bk_share": 42.2
+    },
+    {
+      "date": "2024-03",
+      "pepsi_share": 33.3,
+      "bk_share": 43.5
+    },
+    {
+      "date": "2024-04",
+      "pepsi_share": 32.1,
+      "bk_share": 41.8
+    },
+    {
+      "date": "2024-05",
+      "pepsi_share": 31.1,
+      "bk_share": 43.7
+    },
+    {
+      "date": "2024-06",
+      "pepsi_share": 33.9,
+      "bk_share": 44.3
+    },
+    {
+      "date": "2024-07",
+      "pepsi_share": 33.9,
+      "bk_share": 43.5
+    },
+    {
+      "date": "2024-08",
+      "pepsi_share": 33.3,
+      "bk_share": 36.7
+    },
+    {
+      "date": "2024-09",
+      "pepsi_share": 31.0,
+      "bk_share": 37.1
+    },
+    {
+      "date": "2024-10",
+      "pepsi_share": 34.4,
+      "bk_share": 36.6
+    },
+    {
+      "date": "2024-11",
+      "pepsi_share": 30.5,
+      "bk_share": 38.6
+    },
+    {
+      "date": "2024-12",
+      "pepsi_share": 30.0,
+      "bk_share": 37.0
+    },
+    {
+      "date": "2025-01",
+      "pepsi_share": 31.1,
+      "bk_share": 38.5
+    },
+    {
+      "date": "2025-02",
+      "pepsi_share": 35.4,
+      "bk_share": 38.3
+    },
+    {
+      "date": "2025-03",
+      "pepsi_share": 34.3,
+      "bk_share": 38.1
+    },
+    {
+      "date": "2025-04",
+      "pepsi_share": 30.9,
+      "bk_share": 33.8
+    },
+    {
+      "date": "2025-05",
+      "pepsi_share": 27.8,
+      "bk_share": 41.5
+    },
+    {
+      "date": "2025-06",
+      "pepsi_share": 29.4,
+      "bk_share": 41.4
+    },
+    {
+      "date": "2025-07",
+      "pepsi_share": 29.5,
+      "bk_share": 40.0
+    },
+    {
+      "date": "2025-08",
+      "pepsi_share": 31.5,
+      "bk_share": 38.4
+    },
+    {
+      "date": "2025-09",
+      "pepsi_share": 31.7,
+      "bk_share": 40.0
+    },
+    {
+      "date": "2025-10",
+      "pepsi_share": 28.8,
+      "bk_share": 36.0
+    },
+    {
+      "date": "2025-11",
+      "pepsi_share": 25.7,
+      "bk_share": 41.2
+    },
+    {
+      "date": "2025-12",
+      "pepsi_share": 25.4,
+      "bk_share": 41.8
+    },
+    {
+      "date": "2026-01",
+      "pepsi_share": 31.3,
+      "bk_share": 39.4
+    },
+    {
+      "date": "2026-02",
+      "pepsi_share": 35.6,
+      "bk_share": 36.2
+    }
+  ],
+  "monthly_underdog_trends": [
+    {
+      "date": "2004-01",
+      "pepsi": 31,
+      "burger_king": 21,
+      "world_quality_index": 65.8
+    },
+    {
+      "date": "2004-02",
+      "pepsi": 45,
+      "burger_king": 16,
+      "world_quality_index": 66.2
+    },
+    {
+      "date": "2004-03",
+      "pepsi": 37,
+      "burger_king": 16,
+      "world_quality_index": 66.6
+    },
+    {
+      "date": "2004-04",
+      "pepsi": 36,
+      "burger_king": 20,
+      "world_quality_index": 67.0
+    },
+    {
+      "date": "2004-05",
+      "pepsi": 35,
+      "burger_king": 20,
+      "world_quality_index": 67.4
+    },
+    {
+      "date": "2004-06",
+      "pepsi": 35,
+      "burger_king": 19,
+      "world_quality_index": 67.8
+    },
+    {
+      "date": "2004-07",
+      "pepsi": 37,
+      "burger_king": 16,
+      "world_quality_index": 68.2
+    },
+    {
+      "date": "2004-08",
+      "pepsi": 26,
+      "burger_king": 15,
+      "world_quality_index": 68.1
+    },
+    {
+      "date": "2004-09",
+      "pepsi": 27,
+      "burger_king": 18,
+      "world_quality_index": 67.9
+    },
+    {
+      "date": "2004-10",
+      "pepsi": 25,
+      "burger_king": 20,
+      "world_quality_index": 67.8
+    },
+    {
+      "date": "2004-11",
+      "pepsi": 29,
+      "burger_king": 19,
+      "world_quality_index": 67.6
+    },
+    {
+      "date": "2004-12",
+      "pepsi": 25,
+      "burger_king": 28,
+      "world_quality_index": 67.5
+    },
+    {
+      "date": "2005-01",
+      "pepsi": 25,
+      "burger_king": 19,
+      "world_quality_index": 67.3
+    },
+    {
+      "date": "2005-02",
+      "pepsi": 35,
+      "burger_king": 21,
+      "world_quality_index": 67.2
+    },
+    {
+      "date": "2005-03",
+      "pepsi": 32,
+      "burger_king": 29,
+      "world_quality_index": 67.1
+    },
+    {
+      "date": "2005-04",
+      "pepsi": 31,
+      "burger_king": 25,
+      "world_quality_index": 66.9
+    },
+    {
+      "date": "2005-05",
+      "pepsi": 30,
+      "burger_king": 27,
+      "world_quality_index": 66.8
+    },
+    {
+      "date": "2005-06",
+      "pepsi": 28,
+      "burger_king": 23,
+      "world_quality_index": 66.6
+    },
+    {
+      "date": "2005-07",
+      "pepsi": 29,
+      "burger_king": 20,
+      "world_quality_index": 66.5
+    },
+    {
+      "date": "2005-08",
+      "pepsi": 24,
+      "burger_king": 19,
+      "world_quality_index": 66.4
+    },
+    {
+      "date": "2005-09",
+      "pepsi": 25,
+      "burger_king": 23,
+      "world_quality_index": 66.4
+    },
+    {
+      "date": "2005-10",
+      "pepsi": 24,
+      "burger_king": 31,
+      "world_quality_index": 66.3
+    },
+    {
+      "date": "2005-11",
+      "pepsi": 24,
+      "burger_king": 21,
+      "world_quality_index": 66.3
+    },
+    {
+      "date": "2005-12",
+      "pepsi": 22,
+      "burger_king": 30,
+      "world_quality_index": 66.2
+    },
+    {
+      "date": "2006-01",
+      "pepsi": 22,
+      "burger_king": 21,
+      "world_quality_index": 66.2
+    },
+    {
+      "date": "2006-02",
+      "pepsi": 36,
+      "burger_king": 23,
+      "world_quality_index": 66.1
+    },
+    {
+      "date": "2006-03",
+      "pepsi": 35,
+      "burger_king": 21,
+      "world_quality_index": 66.0
+    },
+    {
+      "date": "2006-04",
+      "pepsi": 32,
+      "burger_king": 22,
+      "world_quality_index": 66.0
+    },
+    {
+      "date": "2006-05",
+      "pepsi": 32,
+      "burger_king": 23,
+      "world_quality_index": 65.9
+    },
+    {
+      "date": "2006-06",
+      "pepsi": 35,
+      "burger_king": 20,
+      "world_quality_index": 65.9
+    },
+    {
+      "date": "2006-07",
+      "pepsi": 32,
+      "burger_king": 21,
+      "world_quality_index": 65.8
+    },
+    {
+      "date": "2006-08",
+      "pepsi": 27,
+      "burger_king": 19,
+      "world_quality_index": 65.6
+    },
+    {
+      "date": "2006-09",
+      "pepsi": 26,
+      "burger_king": 21,
+      "world_quality_index": 65.3
+    },
+    {
+      "date": "2006-10",
+      "pepsi": 24,
+      "burger_king": 26,
+      "world_quality_index": 65.1
+    },
+    {
+      "date": "2006-11",
+      "pepsi": 22,
+      "burger_king": 26,
+      "world_quality_index": 64.9
+    },
+    {
+      "date": "2006-12",
+      "pepsi": 20,
+      "burger_king": 28,
+      "world_quality_index": 64.7
+    },
+    {
+      "date": "2007-01",
+      "pepsi": 21,
+      "burger_king": 20,
+      "world_quality_index": 64.5
+    },
+    {
+      "date": "2007-02",
+      "pepsi": 32,
+      "burger_king": 17,
+      "world_quality_index": 64.2
+    },
+    {
+      "date": "2007-03",
+      "pepsi": 27,
+      "burger_king": 19,
+      "world_quality_index": 64.0
+    },
+    {
+      "date": "2007-04",
+      "pepsi": 26,
+      "burger_king": 17,
+      "world_quality_index": 63.8
+    },
+    {
+      "date": "2007-05",
+      "pepsi": 25,
+      "burger_king": 20,
+      "world_quality_index": 63.5
+    },
+    {
+      "date": "2007-06",
+      "pepsi": 28,
+      "burger_king": 21,
+      "world_quality_index": 63.3
+    },
+    {
+      "date": "2007-07",
+      "pepsi": 27,
+      "burger_king": 24,
+      "world_quality_index": 63.1
+    },
+    {
+      "date": "2007-08",
+      "pepsi": 23,
+      "burger_king": 22,
+      "world_quality_index": 62.2
+    },
+    {
+      "date": "2007-09",
+      "pepsi": 25,
+      "burger_king": 21,
+      "world_quality_index": 61.3
+    },
+    {
+      "date": "2007-10",
+      "pepsi": 24,
+      "burger_king": 24,
+      "world_quality_index": 60.4
+    },
+    {
+      "date": "2007-11",
+      "pepsi": 23,
+      "burger_king": 22,
+      "world_quality_index": 59.5
+    },
+    {
+      "date": "2007-12",
+      "pepsi": 20,
+      "burger_king": 24,
+      "world_quality_index": 58.6
+    },
+    {
+      "date": "2008-01",
+      "pepsi": 24,
+      "burger_king": 22,
+      "world_quality_index": 57.8
+    },
+    {
+      "date": "2008-02",
+      "pepsi": 33,
+      "burger_king": 21,
+      "world_quality_index": 56.9
+    },
+    {
+      "date": "2008-03",
+      "pepsi": 29,
+      "burger_king": 21,
+      "world_quality_index": 56.0
+    },
+    {
+      "date": "2008-04",
+      "pepsi": 29,
+      "burger_king": 24,
+      "world_quality_index": 55.1
+    },
+    {
+      "date": "2008-05",
+      "pepsi": 30,
+      "burger_king": 25,
+      "world_quality_index": 54.2
+    },
+    {
+      "date": "2008-06",
+      "pepsi": 28,
+      "burger_king": 23,
+      "world_quality_index": 53.3
+    },
+    {
+      "date": "2008-07",
+      "pepsi": 27,
+      "burger_king": 24,
+      "world_quality_index": 52.4
+    },
+    {
+      "date": "2008-08",
+      "pepsi": 26,
+      "burger_king": 25,
+      "world_quality_index": 52.1
+    },
+    {
+      "date": "2008-09",
+      "pepsi": 27,
+      "burger_king": 23,
+      "world_quality_index": 51.8
+    },
+    {
+      "date": "2008-10",
+      "pepsi": 30,
+      "burger_king": 26,
+      "world_quality_index": 51.5
+    },
+    {
+      "date": "2008-11",
+      "pepsi": 27,
+      "burger_king": 23,
+      "world_quality_index": 51.2
+    },
+    {
+      "date": "2008-12",
+      "pepsi": 26,
+      "burger_king": 32,
+      "world_quality_index": 50.9
+    },
+    {
+      "date": "2009-01",
+      "pepsi": 30,
+      "burger_king": 26,
+      "world_quality_index": 50.6
+    },
+    {
+      "date": "2009-02",
+      "pepsi": 32,
+      "burger_king": 26,
+      "world_quality_index": 50.4
+    },
+    {
+      "date": "2009-03",
+      "pepsi": 27,
+      "burger_king": 26,
+      "world_quality_index": 50.1
+    },
+    {
+      "date": "2009-04",
+      "pepsi": 29,
+      "burger_king": 31,
+      "world_quality_index": 49.8
+    },
+    {
+      "date": "2009-05",
+      "pepsi": 31,
+      "burger_king": 27,
+      "world_quality_index": 49.5
+    },
+    {
+      "date": "2009-06",
+      "pepsi": 26,
+      "burger_king": 28,
+      "world_quality_index": 49.2
+    },
+    {
+      "date": "2009-07",
+      "pepsi": 34,
+      "burger_king": 27,
+      "world_quality_index": 48.9
+    },
+    {
+      "date": "2009-08",
+      "pepsi": 24,
+      "burger_king": 26,
+      "world_quality_index": 49.1
+    },
+    {
+      "date": "2009-09",
+      "pepsi": 25,
+      "burger_king": 25,
+      "world_quality_index": 49.3
+    },
+    {
+      "date": "2009-10",
+      "pepsi": 24,
+      "burger_king": 29,
+      "world_quality_index": 49.5
+    },
+    {
+      "date": "2009-11",
+      "pepsi": 21,
+      "burger_king": 29,
+      "world_quality_index": 49.7
+    },
+    {
+      "date": "2009-12",
+      "pepsi": 19,
+      "burger_king": 26,
+      "world_quality_index": 49.9
+    },
+    {
+      "date": "2010-01",
+      "pepsi": 26,
+      "burger_king": 27,
+      "world_quality_index": 50.0
+    },
+    {
+      "date": "2010-02",
+      "pepsi": 30,
+      "burger_king": 26,
+      "world_quality_index": 50.2
+    },
+    {
+      "date": "2010-03",
+      "pepsi": 28,
+      "burger_king": 28,
+      "world_quality_index": 50.4
+    },
+    {
+      "date": "2010-04",
+      "pepsi": 28,
+      "burger_king": 30,
+      "world_quality_index": 50.6
+    },
+    {
+      "date": "2010-05",
+      "pepsi": 26,
+      "burger_king": 28,
+      "world_quality_index": 50.8
+    },
+    {
+      "date": "2010-06",
+      "pepsi": 25,
+      "burger_king": 28,
+      "world_quality_index": 51.0
+    },
+    {
+      "date": "2010-07",
+      "pepsi": 22,
+      "burger_king": 28,
+      "world_quality_index": 51.2
+    },
+    {
+      "date": "2010-08",
+      "pepsi": 21,
+      "burger_king": 26,
+      "world_quality_index": 51.2
+    },
+    {
+      "date": "2010-09",
+      "pepsi": 23,
+      "burger_king": 31,
+      "world_quality_index": 51.1
+    },
+    {
+      "date": "2010-10",
+      "pepsi": 24,
+      "burger_king": 30,
+      "world_quality_index": 51.1
+    },
+    {
+      "date": "2010-11",
+      "pepsi": 20,
+      "burger_king": 29,
+      "world_quality_index": 51.1
+    },
+    {
+      "date": "2010-12",
+      "pepsi": 20,
+      "burger_king": 28,
+      "world_quality_index": 51.0
+    },
+    {
+      "date": "2011-01",
+      "pepsi": 25,
+      "burger_king": 31,
+      "world_quality_index": 51.0
+    },
+    {
+      "date": "2011-02",
+      "pepsi": 30,
+      "burger_king": 28,
+      "world_quality_index": 51.0
+    },
+    {
+      "date": "2011-03",
+      "pepsi": 24,
+      "burger_king": 32,
+      "world_quality_index": 50.9
+    },
+    {
+      "date": "2011-04",
+      "pepsi": 23,
+      "burger_king": 32,
+      "world_quality_index": 50.9
+    },
+    {
+      "date": "2011-05",
+      "pepsi": 23,
+      "burger_king": 31,
+      "world_quality_index": 50.9
+    },
+    {
+      "date": "2011-06",
+      "pepsi": 23,
+      "burger_king": 34,
+      "world_quality_index": 50.8
+    },
+    {
+      "date": "2011-07",
+      "pepsi": 26,
+      "burger_king": 36,
+      "world_quality_index": 50.8
+    },
+    {
+      "date": "2011-08",
+      "pepsi": 21,
+      "burger_king": 35,
+      "world_quality_index": 51.0
+    },
+    {
+      "date": "2011-09",
+      "pepsi": 23,
+      "burger_king": 35,
+      "world_quality_index": 51.3
+    },
+    {
+      "date": "2011-10",
+      "pepsi": 21,
+      "burger_king": 34,
+      "world_quality_index": 51.5
+    },
+    {
+      "date": "2011-11",
+      "pepsi": 20,
+      "burger_king": 31,
+      "world_quality_index": 51.7
+    },
+    {
+      "date": "2011-12",
+      "pepsi": 21,
+      "burger_king": 39,
+      "world_quality_index": 52.0
+    },
+    {
+      "date": "2012-01",
+      "pepsi": 21,
+      "burger_king": 39,
+      "world_quality_index": 52.2
+    },
+    {
+      "date": "2012-02",
+      "pepsi": 32,
+      "burger_king": 39,
+      "world_quality_index": 52.4
+    },
+    {
+      "date": "2012-03",
+      "pepsi": 26,
+      "burger_king": 37,
+      "world_quality_index": 52.7
+    },
+    {
+      "date": "2012-04",
+      "pepsi": 26,
+      "burger_king": 53,
+      "world_quality_index": 52.9
+    },
+    {
+      "date": "2012-05",
+      "pepsi": 26,
+      "burger_king": 42,
+      "world_quality_index": 53.1
+    },
+    {
+      "date": "2012-06",
+      "pepsi": 24,
+      "burger_king": 54,
+      "world_quality_index": 53.4
+    },
+    {
+      "date": "2012-07",
+      "pepsi": 20,
+      "burger_king": 50,
+      "world_quality_index": 53.6
+    },
+    {
+      "date": "2012-08",
+      "pepsi": 21,
+      "burger_king": 43,
+      "world_quality_index": 53.7
+    },
+    {
+      "date": "2012-09",
+      "pepsi": 19,
+      "burger_king": 43,
+      "world_quality_index": 53.9
+    },
+    {
+      "date": "2012-10",
+      "pepsi": 21,
+      "burger_king": 37,
+      "world_quality_index": 54.0
+    },
+    {
+      "date": "2012-11",
+      "pepsi": 21,
+      "burger_king": 39,
+      "world_quality_index": 54.1
+    },
+    {
+      "date": "2012-12",
+      "pepsi": 21,
+      "burger_king": 44,
+      "world_quality_index": 54.2
+    },
+    {
+      "date": "2013-01",
+      "pepsi": 23,
+      "burger_king": 43,
+      "world_quality_index": 54.4
+    },
+    {
+      "date": "2013-02",
+      "pepsi": 25,
+      "burger_king": 45,
+      "world_quality_index": 54.5
+    },
+    {
+      "date": "2013-03",
+      "pepsi": 36,
+      "burger_king": 44,
+      "world_quality_index": 54.6
+    },
+    {
+      "date": "2013-04",
+      "pepsi": 31,
+      "burger_king": 45,
+      "world_quality_index": 54.7
+    },
+    {
+      "date": "2013-05",
+      "pepsi": 26,
+      "burger_king": 46,
+      "world_quality_index": 54.9
+    },
+    {
+      "date": "2013-06",
+      "pepsi": 22,
+      "burger_king": 50,
+      "world_quality_index": 55.0
+    },
+    {
+      "date": "2013-07",
+      "pepsi": 23,
+      "burger_king": 48,
+      "world_quality_index": 55.1
+    },
+    {
+      "date": "2013-08",
+      "pepsi": 22,
+      "burger_king": 45,
+      "world_quality_index": 55.4
+    },
+    {
+      "date": "2013-09",
+      "pepsi": 19,
+      "burger_king": 45,
+      "world_quality_index": 55.6
+    },
+    {
+      "date": "2013-10",
+      "pepsi": 20,
+      "burger_king": 49,
+      "world_quality_index": 55.9
+    },
+    {
+      "date": "2013-11",
+      "pepsi": 18,
+      "burger_king": 42,
+      "world_quality_index": 56.2
+    },
+    {
+      "date": "2013-12",
+      "pepsi": 16,
+      "burger_king": 42,
+      "world_quality_index": 56.4
+    },
+    {
+      "date": "2014-01",
+      "pepsi": 23,
+      "burger_king": 44,
+      "world_quality_index": 56.7
+    },
+    {
+      "date": "2014-02",
+      "pepsi": 23,
+      "burger_king": 37,
+      "world_quality_index": 57.0
+    },
+    {
+      "date": "2014-03",
+      "pepsi": 25,
+      "burger_king": 46,
+      "world_quality_index": 57.2
+    },
+    {
+      "date": "2014-04",
+      "pepsi": 20,
+      "burger_king": 44,
+      "world_quality_index": 57.5
+    },
+    {
+      "date": "2014-05",
+      "pepsi": 19,
+      "burger_king": 43,
+      "world_quality_index": 57.8
+    },
+    {
+      "date": "2014-06",
+      "pepsi": 19,
+      "burger_king": 47,
+      "world_quality_index": 58.0
+    },
+    {
+      "date": "2014-07",
+      "pepsi": 21,
+      "burger_king": 48,
+      "world_quality_index": 58.3
+    },
+    {
+      "date": "2014-08",
+      "pepsi": 19,
+      "burger_king": 57,
+      "world_quality_index": 58.6
+    },
+    {
+      "date": "2014-09",
+      "pepsi": 18,
+      "burger_king": 45,
+      "world_quality_index": 58.9
+    },
+    {
+      "date": "2014-10",
+      "pepsi": 18,
+      "burger_king": 48,
+      "world_quality_index": 59.1
+    },
+    {
+      "date": "2014-11",
+      "pepsi": 16,
+      "burger_king": 45,
+      "world_quality_index": 59.4
+    },
+    {
+      "date": "2014-12",
+      "pepsi": 16,
+      "burger_king": 43,
+      "world_quality_index": 59.7
+    },
+    {
+      "date": "2015-01",
+      "pepsi": 20,
+      "burger_king": 44,
+      "world_quality_index": 60.0
+    },
+    {
+      "date": "2015-02",
+      "pepsi": 19,
+      "burger_king": 41,
+      "world_quality_index": 60.3
+    },
+    {
+      "date": "2015-03",
+      "pepsi": 20,
+      "burger_king": 46,
+      "world_quality_index": 60.6
+    },
+    {
+      "date": "2015-04",
+      "pepsi": 22,
+      "burger_king": 49,
+      "world_quality_index": 60.9
+    },
+    {
+      "date": "2015-05",
+      "pepsi": 20,
+      "burger_king": 49,
+      "world_quality_index": 61.1
+    },
+    {
+      "date": "2015-06",
+      "pepsi": 20,
+      "burger_king": 54,
+      "world_quality_index": 61.4
+    },
+    {
+      "date": "2015-07",
+      "pepsi": 21,
+      "burger_king": 55,
+      "world_quality_index": 61.7
+    },
+    {
+      "date": "2015-08",
+      "pepsi": 21,
+      "burger_king": 54,
+      "world_quality_index": 61.6
+    },
+    {
+      "date": "2015-09",
+      "pepsi": 20,
+      "burger_king": 53,
+      "world_quality_index": 61.5
+    },
+    {
+      "date": "2015-10",
+      "pepsi": 29,
+      "burger_king": 59,
+      "world_quality_index": 61.3
+    },
+    {
+      "date": "2015-11",
+      "pepsi": 21,
+      "burger_king": 47,
+      "world_quality_index": 61.2
+    },
+    {
+      "date": "2015-12",
+      "pepsi": 23,
+      "burger_king": 50,
+      "world_quality_index": 61.1
+    },
+    {
+      "date": "2016-01",
+      "pepsi": 22,
+      "burger_king": 56,
+      "world_quality_index": 61.0
+    },
+    {
+      "date": "2016-02",
+      "pepsi": 24,
+      "burger_king": 53,
+      "world_quality_index": 60.8
+    },
+    {
+      "date": "2016-03",
+      "pepsi": 21,
+      "burger_king": 55,
+      "world_quality_index": 60.7
+    },
+    {
+      "date": "2016-04",
+      "pepsi": 24,
+      "burger_king": 56,
+      "world_quality_index": 60.6
+    },
+    {
+      "date": "2016-05",
+      "pepsi": 21,
+      "burger_king": 57,
+      "world_quality_index": 60.5
+    },
+    {
+      "date": "2016-06",
+      "pepsi": 20,
+      "burger_king": 68,
+      "world_quality_index": 60.3
+    },
+    {
+      "date": "2016-07",
+      "pepsi": 21,
+      "burger_king": 66,
+      "world_quality_index": 60.2
+    },
+    {
+      "date": "2016-08",
+      "pepsi": 29,
+      "burger_king": 53,
+      "world_quality_index": 60.3
+    },
+    {
+      "date": "2016-09",
+      "pepsi": 20,
+      "burger_king": 54,
+      "world_quality_index": 60.4
+    },
+    {
+      "date": "2016-10",
+      "pepsi": 18,
+      "burger_king": 53,
+      "world_quality_index": 60.5
+    },
+    {
+      "date": "2016-11",
+      "pepsi": 20,
+      "burger_king": 51,
+      "world_quality_index": 60.6
+    },
+    {
+      "date": "2016-12",
+      "pepsi": 17,
+      "burger_king": 56,
+      "world_quality_index": 60.7
+    },
+    {
+      "date": "2017-01",
+      "pepsi": 19,
+      "burger_king": 56,
+      "world_quality_index": 60.9
+    },
+    {
+      "date": "2017-02",
+      "pepsi": 22,
+      "burger_king": 56,
+      "world_quality_index": 61.0
+    },
+    {
+      "date": "2017-03",
+      "pepsi": 19,
+      "burger_king": 54,
+      "world_quality_index": 61.1
+    },
+    {
+      "date": "2017-04",
+      "pepsi": 97,
+      "burger_king": 62,
+      "world_quality_index": 61.2
+    },
+    {
+      "date": "2017-05",
+      "pepsi": 24,
+      "burger_king": 61,
+      "world_quality_index": 61.3
+    },
+    {
+      "date": "2017-06",
+      "pepsi": 25,
+      "burger_king": 66,
+      "world_quality_index": 61.4
+    },
+    {
+      "date": "2017-07",
+      "pepsi": 23,
+      "burger_king": 70,
+      "world_quality_index": 61.5
+    },
+    {
+      "date": "2017-08",
+      "pepsi": 21,
+      "burger_king": 63,
+      "world_quality_index": 61.6
+    },
+    {
+      "date": "2017-09",
+      "pepsi": 28,
+      "burger_king": 59,
+      "world_quality_index": 61.7
+    },
+    {
+      "date": "2017-10",
+      "pepsi": 24,
+      "burger_king": 60,
+      "world_quality_index": 61.8
+    },
+    {
+      "date": "2017-11",
+      "pepsi": 19,
+      "burger_king": 59,
+      "world_quality_index": 61.9
+    },
+    {
+      "date": "2017-12",
+      "pepsi": 17,
+      "burger_king": 65,
+      "world_quality_index": 62.0
+    },
+    {
+      "date": "2018-01",
+      "pepsi": 21,
+      "burger_king": 64,
+      "world_quality_index": 62.1
+    },
+    {
+      "date": "2018-02",
+      "pepsi": 27,
+      "burger_king": 61,
+      "world_quality_index": 62.3
+    },
+    {
+      "date": "2018-03",
+      "pepsi": 21,
+      "burger_king": 62,
+      "world_quality_index": 62.4
+    },
+    {
+      "date": "2018-04",
+      "pepsi": 20,
+      "burger_king": 68,
+      "world_quality_index": 62.5
+    },
+    {
+      "date": "2018-05",
+      "pepsi": 20,
+      "burger_king": 65,
+      "world_quality_index": 62.6
+    },
+    {
+      "date": "2018-06",
+      "pepsi": 21,
+      "burger_king": 77,
+      "world_quality_index": 62.7
+    },
+    {
+      "date": "2018-07",
+      "pepsi": 23,
+      "burger_king": 77,
+      "world_quality_index": 62.8
+    },
+    {
+      "date": "2018-08",
+      "pepsi": 21,
+      "burger_king": 70,
+      "world_quality_index": 62.9
+    },
+    {
+      "date": "2018-09",
+      "pepsi": 20,
+      "burger_king": 67,
+      "world_quality_index": 63.0
+    },
+    {
+      "date": "2018-10",
+      "pepsi": 20,
+      "burger_king": 73,
+      "world_quality_index": 63.1
+    },
+    {
+      "date": "2018-11",
+      "pepsi": 18,
+      "burger_king": 71,
+      "world_quality_index": 63.2
+    },
+    {
+      "date": "2018-12",
+      "pepsi": 17,
+      "burger_king": 87,
+      "world_quality_index": 63.3
+    },
+    {
+      "date": "2019-01",
+      "pepsi": 23,
+      "burger_king": 74,
+      "world_quality_index": 63.4
+    },
+    {
+      "date": "2019-02",
+      "pepsi": 27,
+      "burger_king": 72,
+      "world_quality_index": 63.6
+    },
+    {
+      "date": "2019-03",
+      "pepsi": 21,
+      "burger_king": 73,
+      "world_quality_index": 63.7
+    },
+    {
+      "date": "2019-04",
+      "pepsi": 21,
+      "burger_king": 81,
+      "world_quality_index": 63.8
+    },
+    {
+      "date": "2019-05",
+      "pepsi": 21,
+      "burger_king": 84,
+      "world_quality_index": 63.9
+    },
+    {
+      "date": "2019-06",
+      "pepsi": 22,
+      "burger_king": 87,
+      "world_quality_index": 64.0
+    },
+    {
+      "date": "2019-07",
+      "pepsi": 20,
+      "burger_king": 100,
+      "world_quality_index": 64.1
+    },
+    {
+      "date": "2019-08",
+      "pepsi": 18,
+      "burger_king": 100,
+      "world_quality_index": 62.5
+    },
+    {
+      "date": "2019-09",
+      "pepsi": 18,
+      "burger_king": 82,
+      "world_quality_index": 61.0
+    },
+    {
+      "date": "2019-10",
+      "pepsi": 18,
+      "burger_king": 80,
+      "world_quality_index": 59.4
+    },
+    {
+      "date": "2019-11",
+      "pepsi": 17,
+      "burger_king": 76,
+      "world_quality_index": 57.8
+    },
+    {
+      "date": "2019-12",
+      "pepsi": 17,
+      "burger_king": 87,
+      "world_quality_index": 56.3
+    },
+    {
+      "date": "2020-01",
+      "pepsi": 19,
+      "burger_king": 80,
+      "world_quality_index": 54.7
+    },
+    {
+      "date": "2020-02",
+      "pepsi": 22,
+      "burger_king": 77,
+      "world_quality_index": 53.1
+    },
+    {
+      "date": "2020-03",
+      "pepsi": 16,
+      "burger_king": 67,
+      "world_quality_index": 51.6
+    },
+    {
+      "date": "2020-04",
+      "pepsi": 14,
+      "burger_king": 70,
+      "world_quality_index": 50.0
+    },
+    {
+      "date": "2020-05",
+      "pepsi": 14,
+      "burger_king": 76,
+      "world_quality_index": 48.4
+    },
+    {
+      "date": "2020-06",
+      "pepsi": 19,
+      "burger_king": 81,
+      "world_quality_index": 46.9
+    },
+    {
+      "date": "2020-07",
+      "pepsi": 17,
+      "burger_king": 81,
+      "world_quality_index": 45.3
+    },
+    {
+      "date": "2020-08",
+      "pepsi": 17,
+      "burger_king": 85,
+      "world_quality_index": 45.9
+    },
+    {
+      "date": "2020-09",
+      "pepsi": 15,
+      "burger_king": 75,
+      "world_quality_index": 46.5
+    },
+    {
+      "date": "2020-10",
+      "pepsi": 14,
+      "burger_king": 79,
+      "world_quality_index": 47.2
+    },
+    {
+      "date": "2020-11",
+      "pepsi": 13,
+      "burger_king": 74,
+      "world_quality_index": 47.8
+    },
+    {
+      "date": "2020-12",
+      "pepsi": 13,
+      "burger_king": 81,
+      "world_quality_index": 48.4
+    },
+    {
+      "date": "2021-01",
+      "pepsi": 16,
+      "burger_king": 76,
+      "world_quality_index": 49.0
+    },
+    {
+      "date": "2021-02",
+      "pepsi": 18,
+      "burger_king": 75,
+      "world_quality_index": 49.7
+    },
+    {
+      "date": "2021-03",
+      "pepsi": 19,
+      "burger_king": 80,
+      "world_quality_index": 50.3
+    },
+    {
+      "date": "2021-04",
+      "pepsi": 18,
+      "burger_king": 83,
+      "world_quality_index": 50.9
+    },
+    {
+      "date": "2021-05",
+      "pepsi": 17,
+      "burger_king": 82,
+      "world_quality_index": 51.5
+    },
+    {
+      "date": "2021-06",
+      "pepsi": 16,
+      "burger_king": 87,
+      "world_quality_index": 52.2
+    },
+    {
+      "date": "2021-07",
+      "pepsi": 16,
+      "burger_king": 83,
+      "world_quality_index": 52.8
+    },
+    {
+      "date": "2021-08",
+      "pepsi": 15,
+      "burger_king": 79,
+      "world_quality_index": 52.4
+    },
+    {
+      "date": "2021-09",
+      "pepsi": 16,
+      "burger_king": 73,
+      "world_quality_index": 52.1
+    },
+    {
+      "date": "2021-10",
+      "pepsi": 15,
+      "burger_king": 74,
+      "world_quality_index": 51.8
+    },
+    {
+      "date": "2021-11",
+      "pepsi": 14,
+      "burger_king": 73,
+      "world_quality_index": 51.4
+    },
+    {
+      "date": "2021-12",
+      "pepsi": 14,
+      "burger_king": 85,
+      "world_quality_index": 51.0
+    },
+    {
+      "date": "2022-01",
+      "pepsi": 17,
+      "burger_king": 69,
+      "world_quality_index": 50.7
+    },
+    {
+      "date": "2022-02",
+      "pepsi": 20,
+      "burger_king": 68,
+      "world_quality_index": 50.4
+    },
+    {
+      "date": "2022-03",
+      "pepsi": 24,
+      "burger_king": 74,
+      "world_quality_index": 50.0
+    },
+    {
+      "date": "2022-04",
+      "pepsi": 24,
+      "burger_king": 70,
+      "world_quality_index": 49.6
+    },
+    {
+      "date": "2022-05",
+      "pepsi": 21,
+      "burger_king": 74,
+      "world_quality_index": 49.3
+    },
+    {
+      "date": "2022-06",
+      "pepsi": 19,
+      "burger_king": 80,
+      "world_quality_index": 49.0
+    },
+    {
+      "date": "2022-07",
+      "pepsi": 18,
+      "burger_king": 80,
+      "world_quality_index": 48.6
+    },
+    {
+      "date": "2022-08",
+      "pepsi": 18,
+      "burger_king": 71,
+      "world_quality_index": 48.8
+    },
+    {
+      "date": "2022-09",
+      "pepsi": 18,
+      "burger_king": 67,
+      "world_quality_index": 49.0
+    },
+    {
+      "date": "2022-10",
+      "pepsi": 18,
+      "burger_king": 67,
+      "world_quality_index": 49.2
+    },
+    {
+      "date": "2022-11",
+      "pepsi": 27,
+      "burger_king": 65,
+      "world_quality_index": 49.5
+    },
+    {
+      "date": "2022-12",
+      "pepsi": 22,
+      "burger_king": 63,
+      "world_quality_index": 49.7
+    },
+    {
+      "date": "2023-01",
+      "pepsi": 22,
+      "burger_king": 63,
+      "world_quality_index": 49.9
+    },
+    {
+      "date": "2023-02",
+      "pepsi": 26,
+      "burger_king": 69,
+      "world_quality_index": 50.1
+    },
+    {
+      "date": "2023-03",
+      "pepsi": 23,
+      "burger_king": 68,
+      "world_quality_index": 50.3
+    },
+    {
+      "date": "2023-04",
+      "pepsi": 21,
+      "burger_king": 68,
+      "world_quality_index": 50.6
+    },
+    {
+      "date": "2023-05",
+      "pepsi": 19,
+      "burger_king": 77,
+      "world_quality_index": 50.8
+    },
+    {
+      "date": "2023-06",
+      "pepsi": 20,
+      "burger_king": 76,
+      "world_quality_index": 51.0
+    },
+    {
+      "date": "2023-07",
+      "pepsi": 21,
+      "burger_king": 74,
+      "world_quality_index": 51.2
+    },
+    {
+      "date": "2023-08",
+      "pepsi": 18,
+      "burger_king": 68,
+      "world_quality_index": 51.4
+    },
+    {
+      "date": "2023-09",
+      "pepsi": 19,
+      "burger_king": 66,
+      "world_quality_index": 51.5
+    },
+    {
+      "date": "2023-10",
+      "pepsi": 18,
+      "burger_king": 66,
+      "world_quality_index": 51.7
+    },
+    {
+      "date": "2023-11",
+      "pepsi": 18,
+      "burger_king": 63,
+      "world_quality_index": 51.8
+    },
+    {
+      "date": "2023-12",
+      "pepsi": 17,
+      "burger_king": 66,
+      "world_quality_index": 52.0
+    },
+    {
+      "date": "2024-01",
+      "pepsi": 18,
+      "burger_king": 62,
+      "world_quality_index": 52.2
+    },
+    {
+      "date": "2024-02",
+      "pepsi": 19,
+      "burger_king": 59,
+      "world_quality_index": 52.3
+    },
+    {
+      "date": "2024-03",
+      "pepsi": 19,
+      "burger_king": 63,
+      "world_quality_index": 52.5
+    },
+    {
+      "date": "2024-04",
+      "pepsi": 18,
+      "burger_king": 60,
+      "world_quality_index": 52.6
+    },
+    {
+      "date": "2024-05",
+      "pepsi": 19,
+      "burger_king": 66,
+      "world_quality_index": 52.8
+    },
+    {
+      "date": "2024-06",
+      "pepsi": 19,
+      "burger_king": 67,
+      "world_quality_index": 52.9
+    },
+    {
+      "date": "2024-07",
+      "pepsi": 21,
+      "burger_king": 65,
+      "world_quality_index": 53.1
+    },
+    {
+      "date": "2024-08",
+      "pepsi": 20,
+      "burger_king": 62,
+      "world_quality_index": 53.1
+    },
+    {
+      "date": "2024-09",
+      "pepsi": 21,
+      "burger_king": 56,
+      "world_quality_index": 53.1
+    },
+    {
+      "date": "2024-10",
+      "pepsi": 20,
+      "burger_king": 65,
+      "world_quality_index": 53.1
+    },
+    {
+      "date": "2024-11",
+      "pepsi": 18,
+      "burger_king": 58,
+      "world_quality_index": 53.1
+    },
+    {
+      "date": "2024-12",
+      "pepsi": 17,
+      "burger_king": 57,
+      "world_quality_index": 53.1
+    },
+    {
+      "date": "2025-01",
+      "pepsi": 19,
+      "burger_king": 54,
+      "world_quality_index": null
+    },
+    {
+      "date": "2025-02",
+      "pepsi": 27,
+      "burger_king": 50,
+      "world_quality_index": null
+    },
+    {
+      "date": "2025-03",
+      "pepsi": 22,
+      "burger_king": 51,
+      "world_quality_index": null
+    },
+    {
+      "date": "2025-04",
+      "pepsi": 20,
+      "burger_king": 53,
+      "world_quality_index": null
+    },
+    {
+      "date": "2025-05",
+      "pepsi": 19,
+      "burger_king": 58,
+      "world_quality_index": null
+    },
+    {
+      "date": "2025-06",
+      "pepsi": 20,
+      "burger_king": 63,
+      "world_quality_index": null
+    },
+    {
+      "date": "2025-07",
+      "pepsi": 22,
+      "burger_king": 68,
+      "world_quality_index": null
+    },
+    {
+      "date": "2025-08",
+      "pepsi": 22,
+      "burger_king": 60,
+      "world_quality_index": null
+    },
+    {
+      "date": "2025-09",
+      "pepsi": 19,
+      "burger_king": 55,
+      "world_quality_index": null
+    },
+    {
+      "date": "2025-10",
+      "pepsi": 18,
+      "burger_king": 58,
+      "world_quality_index": null
+    },
+    {
+      "date": "2025-11",
+      "pepsi": 19,
+      "burger_king": 59,
+      "world_quality_index": null
+    },
+    {
+      "date": "2025-12",
+      "pepsi": 17,
+      "burger_king": 87,
+      "world_quality_index": null
+    },
+    {
+      "date": "2026-01",
+      "pepsi": 20,
+      "burger_king": 56,
+      "world_quality_index": null
+    },
+    {
+      "date": "2026-02",
+      "pepsi": 25,
+      "burger_king": 54,
+      "world_quality_index": null
+    }
+  ],
+  "monthly_wqi": [
+    {
+      "date": "1990-01",
+      "world_quality_index": 58.4
+    },
+    {
+      "date": "1990-02",
+      "world_quality_index": 58.4
+    },
+    {
+      "date": "1990-03",
+      "world_quality_index": 58.4
+    },
+    {
+      "date": "1990-04",
+      "world_quality_index": 58.4
+    },
+    {
+      "date": "1990-05",
+      "world_quality_index": 58.4
+    },
+    {
+      "date": "1990-06",
+      "world_quality_index": 58.4
+    },
+    {
+      "date": "1990-07",
+      "world_quality_index": 58.4
+    },
+    {
+      "date": "1990-08",
+      "world_quality_index": 58.0
+    },
+    {
+      "date": "1990-09",
+      "world_quality_index": 57.7
+    },
+    {
+      "date": "1990-10",
+      "world_quality_index": 57.4
+    },
+    {
+      "date": "1990-11",
+      "world_quality_index": 57.0
+    },
+    {
+      "date": "1990-12",
+      "world_quality_index": 56.6
+    },
+    {
+      "date": "1991-01",
+      "world_quality_index": 56.3
+    },
+    {
+      "date": "1991-02",
+      "world_quality_index": 56.0
+    },
+    {
+      "date": "1991-03",
+      "world_quality_index": 55.6
+    },
+    {
+      "date": "1991-04",
+      "world_quality_index": 55.2
+    },
+    {
+      "date": "1991-05",
+      "world_quality_index": 54.9
+    },
+    {
+      "date": "1991-06",
+      "world_quality_index": 54.6
+    },
+    {
+      "date": "1991-07",
+      "world_quality_index": 54.2
+    },
+    {
+      "date": "1991-08",
+      "world_quality_index": 54.3
+    },
+    {
+      "date": "1991-09",
+      "world_quality_index": 54.5
+    },
+    {
+      "date": "1991-10",
+      "world_quality_index": 54.6
+    },
+    {
+      "date": "1991-11",
+      "world_quality_index": 54.7
+    },
+    {
+      "date": "1991-12",
+      "world_quality_index": 54.9
+    },
+    {
+      "date": "1992-01",
+      "world_quality_index": 55.0
+    },
+    {
+      "date": "1992-02",
+      "world_quality_index": 55.1
+    },
+    {
+      "date": "1992-03",
+      "world_quality_index": 55.3
+    },
+    {
+      "date": "1992-04",
+      "world_quality_index": 55.4
+    },
+    {
+      "date": "1992-05",
+      "world_quality_index": 55.5
+    },
+    {
+      "date": "1992-06",
+      "world_quality_index": 55.7
+    },
+    {
+      "date": "1992-07",
+      "world_quality_index": 55.8
+    },
+    {
+      "date": "1992-08",
+      "world_quality_index": 55.9
+    },
+    {
+      "date": "1992-09",
+      "world_quality_index": 56.0
+    },
+    {
+      "date": "1992-10",
+      "world_quality_index": 56.1
+    },
+    {
+      "date": "1992-11",
+      "world_quality_index": 56.2
+    },
+    {
+      "date": "1992-12",
+      "world_quality_index": 56.3
+    },
+    {
+      "date": "1993-01",
+      "world_quality_index": 56.5
+    },
+    {
+      "date": "1993-02",
+      "world_quality_index": 56.6
+    },
+    {
+      "date": "1993-03",
+      "world_quality_index": 56.7
+    },
+    {
+      "date": "1993-04",
+      "world_quality_index": 56.8
+    },
+    {
+      "date": "1993-05",
+      "world_quality_index": 56.9
+    },
+    {
+      "date": "1993-06",
+      "world_quality_index": 57.0
+    },
+    {
+      "date": "1993-07",
+      "world_quality_index": 57.1
+    },
+    {
+      "date": "1993-08",
+      "world_quality_index": 57.4
+    },
+    {
+      "date": "1993-09",
+      "world_quality_index": 57.6
+    },
+    {
+      "date": "1993-10",
+      "world_quality_index": 57.9
+    },
+    {
+      "date": "1993-11",
+      "world_quality_index": 58.2
+    },
+    {
+      "date": "1993-12",
+      "world_quality_index": 58.4
+    },
+    {
+      "date": "1994-01",
+      "world_quality_index": 58.7
+    },
+    {
+      "date": "1994-02",
+      "world_quality_index": 59.0
+    },
+    {
+      "date": "1994-03",
+      "world_quality_index": 59.2
+    },
+    {
+      "date": "1994-04",
+      "world_quality_index": 59.5
+    },
+    {
+      "date": "1994-05",
+      "world_quality_index": 59.8
+    },
+    {
+      "date": "1994-06",
+      "world_quality_index": 60.0
+    },
+    {
+      "date": "1994-07",
+      "world_quality_index": 60.3
+    },
+    {
+      "date": "1994-08",
+      "world_quality_index": 60.4
+    },
+    {
+      "date": "1994-09",
+      "world_quality_index": 60.6
+    },
+    {
+      "date": "1994-10",
+      "world_quality_index": 60.8
+    },
+    {
+      "date": "1994-11",
+      "world_quality_index": 60.9
+    },
+    {
+      "date": "1994-12",
+      "world_quality_index": 61.0
+    },
+    {
+      "date": "1995-01",
+      "world_quality_index": 61.2
+    },
+    {
+      "date": "1995-02",
+      "world_quality_index": 61.4
+    },
+    {
+      "date": "1995-03",
+      "world_quality_index": 61.5
+    },
+    {
+      "date": "1995-04",
+      "world_quality_index": 61.6
+    },
+    {
+      "date": "1995-05",
+      "world_quality_index": 61.8
+    },
+    {
+      "date": "1995-06",
+      "world_quality_index": 62.0
+    },
+    {
+      "date": "1995-07",
+      "world_quality_index": 62.1
+    },
+    {
+      "date": "1995-08",
+      "world_quality_index": 62.3
+    },
+    {
+      "date": "1995-09",
+      "world_quality_index": 62.5
+    },
+    {
+      "date": "1995-10",
+      "world_quality_index": 62.8
+    },
+    {
+      "date": "1995-11",
+      "world_quality_index": 63.0
+    },
+    {
+      "date": "1995-12",
+      "world_quality_index": 63.2
+    },
+    {
+      "date": "1996-01",
+      "world_quality_index": 63.5
+    },
+    {
+      "date": "1996-02",
+      "world_quality_index": 63.7
+    },
+    {
+      "date": "1996-03",
+      "world_quality_index": 63.9
+    },
+    {
+      "date": "1996-04",
+      "world_quality_index": 64.1
+    },
+    {
+      "date": "1996-05",
+      "world_quality_index": 64.3
+    },
+    {
+      "date": "1996-06",
+      "world_quality_index": 64.6
+    },
+    {
+      "date": "1996-07",
+      "world_quality_index": 64.8
+    },
+    {
+      "date": "1996-08",
+      "world_quality_index": 65.1
+    },
+    {
+      "date": "1996-09",
+      "world_quality_index": 65.4
+    },
+    {
+      "date": "1996-10",
+      "world_quality_index": 65.7
+    },
+    {
+      "date": "1996-11",
+      "world_quality_index": 66.0
+    },
+    {
+      "date": "1996-12",
+      "world_quality_index": 66.3
+    },
+    {
+      "date": "1997-01",
+      "world_quality_index": 66.7
+    },
+    {
+      "date": "1997-02",
+      "world_quality_index": 67.0
+    },
+    {
+      "date": "1997-03",
+      "world_quality_index": 67.3
+    },
+    {
+      "date": "1997-04",
+      "world_quality_index": 67.6
+    },
+    {
+      "date": "1997-05",
+      "world_quality_index": 67.9
+    },
+    {
+      "date": "1997-06",
+      "world_quality_index": 68.2
+    },
+    {
+      "date": "1997-07",
+      "world_quality_index": 68.5
+    },
+    {
+      "date": "1997-08",
+      "world_quality_index": 68.7
+    },
+    {
+      "date": "1997-09",
+      "world_quality_index": 69.0
+    },
+    {
+      "date": "1997-10",
+      "world_quality_index": 69.2
+    },
+    {
+      "date": "1997-11",
+      "world_quality_index": 69.4
+    },
+    {
+      "date": "1997-12",
+      "world_quality_index": 69.6
+    },
+    {
+      "date": "1998-01",
+      "world_quality_index": 69.8
+    },
+    {
+      "date": "1998-02",
+      "world_quality_index": 70.1
+    },
+    {
+      "date": "1998-03",
+      "world_quality_index": 70.3
+    },
+    {
+      "date": "1998-04",
+      "world_quality_index": 70.5
+    },
+    {
+      "date": "1998-05",
+      "world_quality_index": 70.8
+    },
+    {
+      "date": "1998-06",
+      "world_quality_index": 71.0
+    },
+    {
+      "date": "1998-07",
+      "world_quality_index": 71.2
+    },
+    {
+      "date": "1998-08",
+      "world_quality_index": 71.3
+    },
+    {
+      "date": "1998-09",
+      "world_quality_index": 71.5
+    },
+    {
+      "date": "1998-10",
+      "world_quality_index": 71.6
+    },
+    {
+      "date": "1998-11",
+      "world_quality_index": 71.7
+    },
+    {
+      "date": "1998-12",
+      "world_quality_index": 71.9
+    },
+    {
+      "date": "1999-01",
+      "world_quality_index": 72.0
+    },
+    {
+      "date": "1999-02",
+      "world_quality_index": 72.1
+    },
+    {
+      "date": "1999-03",
+      "world_quality_index": 72.3
+    },
+    {
+      "date": "1999-04",
+      "world_quality_index": 72.4
+    },
+    {
+      "date": "1999-05",
+      "world_quality_index": 72.5
+    },
+    {
+      "date": "1999-06",
+      "world_quality_index": 72.7
+    },
+    {
+      "date": "1999-07",
+      "world_quality_index": 72.8
+    },
+    {
+      "date": "1999-08",
+      "world_quality_index": 72.7
+    },
+    {
+      "date": "1999-09",
+      "world_quality_index": 72.6
+    },
+    {
+      "date": "1999-10",
+      "world_quality_index": 72.5
+    },
+    {
+      "date": "1999-11",
+      "world_quality_index": 72.4
+    },
+    {
+      "date": "1999-12",
+      "world_quality_index": 72.3
+    },
+    {
+      "date": "2000-01",
+      "world_quality_index": 72.2
+    },
+    {
+      "date": "2000-02",
+      "world_quality_index": 72.0
+    },
+    {
+      "date": "2000-03",
+      "world_quality_index": 71.9
+    },
+    {
+      "date": "2000-04",
+      "world_quality_index": 71.8
+    },
+    {
+      "date": "2000-05",
+      "world_quality_index": 71.7
+    },
+    {
+      "date": "2000-06",
+      "world_quality_index": 71.6
+    },
+    {
+      "date": "2000-07",
+      "world_quality_index": 71.5
+    },
+    {
+      "date": "2000-08",
+      "world_quality_index": 70.7
+    },
+    {
+      "date": "2000-09",
+      "world_quality_index": 70.0
+    },
+    {
+      "date": "2000-10",
+      "world_quality_index": 69.2
+    },
+    {
+      "date": "2000-11",
+      "world_quality_index": 68.4
+    },
+    {
+      "date": "2000-12",
+      "world_quality_index": 67.7
+    },
+    {
+      "date": "2001-01",
+      "world_quality_index": 66.9
+    },
+    {
+      "date": "2001-02",
+      "world_quality_index": 66.1
+    },
+    {
+      "date": "2001-03",
+      "world_quality_index": 65.4
+    },
+    {
+      "date": "2001-04",
+      "world_quality_index": 64.6
+    },
+    {
+      "date": "2001-05",
+      "world_quality_index": 63.8
+    },
+    {
+      "date": "2001-06",
+      "world_quality_index": 63.1
+    },
+    {
+      "date": "2001-07",
+      "world_quality_index": 62.3
+    },
+    {
+      "date": "2001-08",
+      "world_quality_index": 62.3
+    },
+    {
+      "date": "2001-09",
+      "world_quality_index": 62.2
+    },
+    {
+      "date": "2001-10",
+      "world_quality_index": 62.2
+    },
+    {
+      "date": "2001-11",
+      "world_quality_index": 62.1
+    },
+    {
+      "date": "2001-12",
+      "world_quality_index": 62.1
+    },
+    {
+      "date": "2002-01",
+      "world_quality_index": 62.0
+    },
+    {
+      "date": "2002-02",
+      "world_quality_index": 62.0
+    },
+    {
+      "date": "2002-03",
+      "world_quality_index": 62.0
+    },
+    {
+      "date": "2002-04",
+      "world_quality_index": 61.9
+    },
+    {
+      "date": "2002-05",
+      "world_quality_index": 61.9
+    },
+    {
+      "date": "2002-06",
+      "world_quality_index": 61.8
+    },
+    {
+      "date": "2002-07",
+      "world_quality_index": 61.8
+    },
+    {
+      "date": "2002-08",
+      "world_quality_index": 61.9
+    },
+    {
+      "date": "2002-09",
+      "world_quality_index": 62.1
+    },
+    {
+      "date": "2002-10",
+      "world_quality_index": 62.2
+    },
+    {
+      "date": "2002-11",
+      "world_quality_index": 62.4
+    },
+    {
+      "date": "2002-12",
+      "world_quality_index": 62.5
+    },
+    {
+      "date": "2003-01",
+      "world_quality_index": 62.6
+    },
+    {
+      "date": "2003-02",
+      "world_quality_index": 62.8
+    },
+    {
+      "date": "2003-03",
+      "world_quality_index": 62.9
+    },
+    {
+      "date": "2003-04",
+      "world_quality_index": 63.1
+    },
+    {
+      "date": "2003-05",
+      "world_quality_index": 63.2
+    },
+    {
+      "date": "2003-06",
+      "world_quality_index": 63.4
+    },
+    {
+      "date": "2003-07",
+      "world_quality_index": 63.5
+    },
+    {
+      "date": "2003-08",
+      "world_quality_index": 63.9
+    },
+    {
+      "date": "2003-09",
+      "world_quality_index": 64.3
+    },
+    {
+      "date": "2003-10",
+      "world_quality_index": 64.7
+    },
+    {
+      "date": "2003-11",
+      "world_quality_index": 65.1
+    },
+    {
+      "date": "2003-12",
+      "world_quality_index": 65.5
+    },
+    {
+      "date": "2004-01",
+      "world_quality_index": 65.8
+    },
+    {
+      "date": "2004-02",
+      "world_quality_index": 66.2
+    },
+    {
+      "date": "2004-03",
+      "world_quality_index": 66.6
+    },
+    {
+      "date": "2004-04",
+      "world_quality_index": 67.0
+    },
+    {
+      "date": "2004-05",
+      "world_quality_index": 67.4
+    },
+    {
+      "date": "2004-06",
+      "world_quality_index": 67.8
+    },
+    {
+      "date": "2004-07",
+      "world_quality_index": 68.2
+    },
+    {
+      "date": "2004-08",
+      "world_quality_index": 68.1
+    },
+    {
+      "date": "2004-09",
+      "world_quality_index": 67.9
+    },
+    {
+      "date": "2004-10",
+      "world_quality_index": 67.8
+    },
+    {
+      "date": "2004-11",
+      "world_quality_index": 67.6
+    },
+    {
+      "date": "2004-12",
+      "world_quality_index": 67.5
+    },
+    {
+      "date": "2005-01",
+      "world_quality_index": 67.3
+    },
+    {
+      "date": "2005-02",
+      "world_quality_index": 67.2
+    },
+    {
+      "date": "2005-03",
+      "world_quality_index": 67.1
+    },
+    {
+      "date": "2005-04",
+      "world_quality_index": 66.9
+    },
+    {
+      "date": "2005-05",
+      "world_quality_index": 66.8
+    },
+    {
+      "date": "2005-06",
+      "world_quality_index": 66.6
+    },
+    {
+      "date": "2005-07",
+      "world_quality_index": 66.5
+    },
+    {
+      "date": "2005-08",
+      "world_quality_index": 66.4
+    },
+    {
+      "date": "2005-09",
+      "world_quality_index": 66.4
+    },
+    {
+      "date": "2005-10",
+      "world_quality_index": 66.3
+    },
+    {
+      "date": "2005-11",
+      "world_quality_index": 66.3
+    },
+    {
+      "date": "2005-12",
+      "world_quality_index": 66.2
+    },
+    {
+      "date": "2006-01",
+      "world_quality_index": 66.2
+    },
+    {
+      "date": "2006-02",
+      "world_quality_index": 66.1
+    },
+    {
+      "date": "2006-03",
+      "world_quality_index": 66.0
+    },
+    {
+      "date": "2006-04",
+      "world_quality_index": 66.0
+    },
+    {
+      "date": "2006-05",
+      "world_quality_index": 65.9
+    },
+    {
+      "date": "2006-06",
+      "world_quality_index": 65.9
+    },
+    {
+      "date": "2006-07",
+      "world_quality_index": 65.8
+    },
+    {
+      "date": "2006-08",
+      "world_quality_index": 65.6
+    },
+    {
+      "date": "2006-09",
+      "world_quality_index": 65.3
+    },
+    {
+      "date": "2006-10",
+      "world_quality_index": 65.1
+    },
+    {
+      "date": "2006-11",
+      "world_quality_index": 64.9
+    },
+    {
+      "date": "2006-12",
+      "world_quality_index": 64.7
+    },
+    {
+      "date": "2007-01",
+      "world_quality_index": 64.5
+    },
+    {
+      "date": "2007-02",
+      "world_quality_index": 64.2
+    },
+    {
+      "date": "2007-03",
+      "world_quality_index": 64.0
+    },
+    {
+      "date": "2007-04",
+      "world_quality_index": 63.8
+    },
+    {
+      "date": "2007-05",
+      "world_quality_index": 63.5
+    },
+    {
+      "date": "2007-06",
+      "world_quality_index": 63.3
+    },
+    {
+      "date": "2007-07",
+      "world_quality_index": 63.1
+    },
+    {
+      "date": "2007-08",
+      "world_quality_index": 62.2
+    },
+    {
+      "date": "2007-09",
+      "world_quality_index": 61.3
+    },
+    {
+      "date": "2007-10",
+      "world_quality_index": 60.4
+    },
+    {
+      "date": "2007-11",
+      "world_quality_index": 59.5
+    },
+    {
+      "date": "2007-12",
+      "world_quality_index": 58.6
+    },
+    {
+      "date": "2008-01",
+      "world_quality_index": 57.8
+    },
+    {
+      "date": "2008-02",
+      "world_quality_index": 56.9
+    },
+    {
+      "date": "2008-03",
+      "world_quality_index": 56.0
+    },
+    {
+      "date": "2008-04",
+      "world_quality_index": 55.1
+    },
+    {
+      "date": "2008-05",
+      "world_quality_index": 54.2
+    },
+    {
+      "date": "2008-06",
+      "world_quality_index": 53.3
+    },
+    {
+      "date": "2008-07",
+      "world_quality_index": 52.4
+    },
+    {
+      "date": "2008-08",
+      "world_quality_index": 52.1
+    },
+    {
+      "date": "2008-09",
+      "world_quality_index": 51.8
+    },
+    {
+      "date": "2008-10",
+      "world_quality_index": 51.5
+    },
+    {
+      "date": "2008-11",
+      "world_quality_index": 51.2
+    },
+    {
+      "date": "2008-12",
+      "world_quality_index": 50.9
+    },
+    {
+      "date": "2009-01",
+      "world_quality_index": 50.6
+    },
+    {
+      "date": "2009-02",
+      "world_quality_index": 50.4
+    },
+    {
+      "date": "2009-03",
+      "world_quality_index": 50.1
+    },
+    {
+      "date": "2009-04",
+      "world_quality_index": 49.8
+    },
+    {
+      "date": "2009-05",
+      "world_quality_index": 49.5
+    },
+    {
+      "date": "2009-06",
+      "world_quality_index": 49.2
+    },
+    {
+      "date": "2009-07",
+      "world_quality_index": 48.9
+    },
+    {
+      "date": "2009-08",
+      "world_quality_index": 49.1
+    },
+    {
+      "date": "2009-09",
+      "world_quality_index": 49.3
+    },
+    {
+      "date": "2009-10",
+      "world_quality_index": 49.5
+    },
+    {
+      "date": "2009-11",
+      "world_quality_index": 49.7
+    },
+    {
+      "date": "2009-12",
+      "world_quality_index": 49.9
+    },
+    {
+      "date": "2010-01",
+      "world_quality_index": 50.0
+    },
+    {
+      "date": "2010-02",
+      "world_quality_index": 50.2
+    },
+    {
+      "date": "2010-03",
+      "world_quality_index": 50.4
+    },
+    {
+      "date": "2010-04",
+      "world_quality_index": 50.6
+    },
+    {
+      "date": "2010-05",
+      "world_quality_index": 50.8
+    },
+    {
+      "date": "2010-06",
+      "world_quality_index": 51.0
+    },
+    {
+      "date": "2010-07",
+      "world_quality_index": 51.2
+    },
+    {
+      "date": "2010-08",
+      "world_quality_index": 51.2
+    },
+    {
+      "date": "2010-09",
+      "world_quality_index": 51.1
+    },
+    {
+      "date": "2010-10",
+      "world_quality_index": 51.1
+    },
+    {
+      "date": "2010-11",
+      "world_quality_index": 51.1
+    },
+    {
+      "date": "2010-12",
+      "world_quality_index": 51.0
+    },
+    {
+      "date": "2011-01",
+      "world_quality_index": 51.0
+    },
+    {
+      "date": "2011-02",
+      "world_quality_index": 51.0
+    },
+    {
+      "date": "2011-03",
+      "world_quality_index": 50.9
+    },
+    {
+      "date": "2011-04",
+      "world_quality_index": 50.9
+    },
+    {
+      "date": "2011-05",
+      "world_quality_index": 50.9
+    },
+    {
+      "date": "2011-06",
+      "world_quality_index": 50.8
+    },
+    {
+      "date": "2011-07",
+      "world_quality_index": 50.8
+    },
+    {
+      "date": "2011-08",
+      "world_quality_index": 51.0
+    },
+    {
+      "date": "2011-09",
+      "world_quality_index": 51.3
+    },
+    {
+      "date": "2011-10",
+      "world_quality_index": 51.5
+    },
+    {
+      "date": "2011-11",
+      "world_quality_index": 51.7
+    },
+    {
+      "date": "2011-12",
+      "world_quality_index": 52.0
+    },
+    {
+      "date": "2012-01",
+      "world_quality_index": 52.2
+    },
+    {
+      "date": "2012-02",
+      "world_quality_index": 52.4
+    },
+    {
+      "date": "2012-03",
+      "world_quality_index": 52.7
+    },
+    {
+      "date": "2012-04",
+      "world_quality_index": 52.9
+    },
+    {
+      "date": "2012-05",
+      "world_quality_index": 53.1
+    },
+    {
+      "date": "2012-06",
+      "world_quality_index": 53.4
+    },
+    {
+      "date": "2012-07",
+      "world_quality_index": 53.6
+    },
+    {
+      "date": "2012-08",
+      "world_quality_index": 53.7
+    },
+    {
+      "date": "2012-09",
+      "world_quality_index": 53.9
+    },
+    {
+      "date": "2012-10",
+      "world_quality_index": 54.0
+    },
+    {
+      "date": "2012-11",
+      "world_quality_index": 54.1
+    },
+    {
+      "date": "2012-12",
+      "world_quality_index": 54.2
+    },
+    {
+      "date": "2013-01",
+      "world_quality_index": 54.4
+    },
+    {
+      "date": "2013-02",
+      "world_quality_index": 54.5
+    },
+    {
+      "date": "2013-03",
+      "world_quality_index": 54.6
+    },
+    {
+      "date": "2013-04",
+      "world_quality_index": 54.7
+    },
+    {
+      "date": "2013-05",
+      "world_quality_index": 54.9
+    },
+    {
+      "date": "2013-06",
+      "world_quality_index": 55.0
+    },
+    {
+      "date": "2013-07",
+      "world_quality_index": 55.1
+    },
+    {
+      "date": "2013-08",
+      "world_quality_index": 55.4
+    },
+    {
+      "date": "2013-09",
+      "world_quality_index": 55.6
+    },
+    {
+      "date": "2013-10",
+      "world_quality_index": 55.9
+    },
+    {
+      "date": "2013-11",
+      "world_quality_index": 56.2
+    },
+    {
+      "date": "2013-12",
+      "world_quality_index": 56.4
+    },
+    {
+      "date": "2014-01",
+      "world_quality_index": 56.7
+    },
+    {
+      "date": "2014-02",
+      "world_quality_index": 57.0
+    },
+    {
+      "date": "2014-03",
+      "world_quality_index": 57.2
+    },
+    {
+      "date": "2014-04",
+      "world_quality_index": 57.5
+    },
+    {
+      "date": "2014-05",
+      "world_quality_index": 57.8
+    },
+    {
+      "date": "2014-06",
+      "world_quality_index": 58.0
+    },
+    {
+      "date": "2014-07",
+      "world_quality_index": 58.3
+    },
+    {
+      "date": "2014-08",
+      "world_quality_index": 58.6
+    },
+    {
+      "date": "2014-09",
+      "world_quality_index": 58.9
+    },
+    {
+      "date": "2014-10",
+      "world_quality_index": 59.1
+    },
+    {
+      "date": "2014-11",
+      "world_quality_index": 59.4
+    },
+    {
+      "date": "2014-12",
+      "world_quality_index": 59.7
+    },
+    {
+      "date": "2015-01",
+      "world_quality_index": 60.0
+    },
+    {
+      "date": "2015-02",
+      "world_quality_index": 60.3
+    },
+    {
+      "date": "2015-03",
+      "world_quality_index": 60.6
+    },
+    {
+      "date": "2015-04",
+      "world_quality_index": 60.9
+    },
+    {
+      "date": "2015-05",
+      "world_quality_index": 61.1
+    },
+    {
+      "date": "2015-06",
+      "world_quality_index": 61.4
+    },
+    {
+      "date": "2015-07",
+      "world_quality_index": 61.7
+    },
+    {
+      "date": "2015-08",
+      "world_quality_index": 61.6
+    },
+    {
+      "date": "2015-09",
+      "world_quality_index": 61.5
+    },
+    {
+      "date": "2015-10",
+      "world_quality_index": 61.3
+    },
+    {
+      "date": "2015-11",
+      "world_quality_index": 61.2
+    },
+    {
+      "date": "2015-12",
+      "world_quality_index": 61.1
+    },
+    {
+      "date": "2016-01",
+      "world_quality_index": 61.0
+    },
+    {
+      "date": "2016-02",
+      "world_quality_index": 60.8
+    },
+    {
+      "date": "2016-03",
+      "world_quality_index": 60.7
+    },
+    {
+      "date": "2016-04",
+      "world_quality_index": 60.6
+    },
+    {
+      "date": "2016-05",
+      "world_quality_index": 60.5
+    },
+    {
+      "date": "2016-06",
+      "world_quality_index": 60.3
+    },
+    {
+      "date": "2016-07",
+      "world_quality_index": 60.2
+    },
+    {
+      "date": "2016-08",
+      "world_quality_index": 60.3
+    },
+    {
+      "date": "2016-09",
+      "world_quality_index": 60.4
+    },
+    {
+      "date": "2016-10",
+      "world_quality_index": 60.5
+    },
+    {
+      "date": "2016-11",
+      "world_quality_index": 60.6
+    },
+    {
+      "date": "2016-12",
+      "world_quality_index": 60.7
+    },
+    {
+      "date": "2017-01",
+      "world_quality_index": 60.9
+    },
+    {
+      "date": "2017-02",
+      "world_quality_index": 61.0
+    },
+    {
+      "date": "2017-03",
+      "world_quality_index": 61.1
+    },
+    {
+      "date": "2017-04",
+      "world_quality_index": 61.2
+    },
+    {
+      "date": "2017-05",
+      "world_quality_index": 61.3
+    },
+    {
+      "date": "2017-06",
+      "world_quality_index": 61.4
+    },
+    {
+      "date": "2017-07",
+      "world_quality_index": 61.5
+    },
+    {
+      "date": "2017-08",
+      "world_quality_index": 61.6
+    },
+    {
+      "date": "2017-09",
+      "world_quality_index": 61.7
+    },
+    {
+      "date": "2017-10",
+      "world_quality_index": 61.8
+    },
+    {
+      "date": "2017-11",
+      "world_quality_index": 61.9
+    },
+    {
+      "date": "2017-12",
+      "world_quality_index": 62.0
+    },
+    {
+      "date": "2018-01",
+      "world_quality_index": 62.1
+    },
+    {
+      "date": "2018-02",
+      "world_quality_index": 62.3
+    },
+    {
+      "date": "2018-03",
+      "world_quality_index": 62.4
+    },
+    {
+      "date": "2018-04",
+      "world_quality_index": 62.5
+    },
+    {
+      "date": "2018-05",
+      "world_quality_index": 62.6
+    },
+    {
+      "date": "2018-06",
+      "world_quality_index": 62.7
+    },
+    {
+      "date": "2018-07",
+      "world_quality_index": 62.8
+    },
+    {
+      "date": "2018-08",
+      "world_quality_index": 62.9
+    },
+    {
+      "date": "2018-09",
+      "world_quality_index": 63.0
+    },
+    {
+      "date": "2018-10",
+      "world_quality_index": 63.1
+    },
+    {
+      "date": "2018-11",
+      "world_quality_index": 63.2
+    },
+    {
+      "date": "2018-12",
+      "world_quality_index": 63.3
+    },
+    {
+      "date": "2019-01",
+      "world_quality_index": 63.4
+    },
+    {
+      "date": "2019-02",
+      "world_quality_index": 63.6
+    },
+    {
+      "date": "2019-03",
+      "world_quality_index": 63.7
+    },
+    {
+      "date": "2019-04",
+      "world_quality_index": 63.8
+    },
+    {
+      "date": "2019-05",
+      "world_quality_index": 63.9
+    },
+    {
+      "date": "2019-06",
+      "world_quality_index": 64.0
+    },
+    {
+      "date": "2019-07",
+      "world_quality_index": 64.1
+    },
+    {
+      "date": "2019-08",
+      "world_quality_index": 62.5
+    },
+    {
+      "date": "2019-09",
+      "world_quality_index": 61.0
+    },
+    {
+      "date": "2019-10",
+      "world_quality_index": 59.4
+    },
+    {
+      "date": "2019-11",
+      "world_quality_index": 57.8
+    },
+    {
+      "date": "2019-12",
+      "world_quality_index": 56.3
+    },
+    {
+      "date": "2020-01",
+      "world_quality_index": 54.7
+    },
+    {
+      "date": "2020-02",
+      "world_quality_index": 53.1
+    },
+    {
+      "date": "2020-03",
+      "world_quality_index": 51.6
+    },
+    {
+      "date": "2020-04",
+      "world_quality_index": 50.0
+    },
+    {
+      "date": "2020-05",
+      "world_quality_index": 48.4
+    },
+    {
+      "date": "2020-06",
+      "world_quality_index": 46.9
+    },
+    {
+      "date": "2020-07",
+      "world_quality_index": 45.3
+    },
+    {
+      "date": "2020-08",
+      "world_quality_index": 45.9
+    },
+    {
+      "date": "2020-09",
+      "world_quality_index": 46.5
+    },
+    {
+      "date": "2020-10",
+      "world_quality_index": 47.2
+    },
+    {
+      "date": "2020-11",
+      "world_quality_index": 47.8
+    },
+    {
+      "date": "2020-12",
+      "world_quality_index": 48.4
+    },
+    {
+      "date": "2021-01",
+      "world_quality_index": 49.0
+    },
+    {
+      "date": "2021-02",
+      "world_quality_index": 49.7
+    },
+    {
+      "date": "2021-03",
+      "world_quality_index": 50.3
+    },
+    {
+      "date": "2021-04",
+      "world_quality_index": 50.9
+    },
+    {
+      "date": "2021-05",
+      "world_quality_index": 51.5
+    },
+    {
+      "date": "2021-06",
+      "world_quality_index": 52.2
+    },
+    {
+      "date": "2021-07",
+      "world_quality_index": 52.8
+    },
+    {
+      "date": "2021-08",
+      "world_quality_index": 52.4
+    },
+    {
+      "date": "2021-09",
+      "world_quality_index": 52.1
+    },
+    {
+      "date": "2021-10",
+      "world_quality_index": 51.8
+    },
+    {
+      "date": "2021-11",
+      "world_quality_index": 51.4
+    },
+    {
+      "date": "2021-12",
+      "world_quality_index": 51.0
+    },
+    {
+      "date": "2022-01",
+      "world_quality_index": 50.7
+    },
+    {
+      "date": "2022-02",
+      "world_quality_index": 50.4
+    },
+    {
+      "date": "2022-03",
+      "world_quality_index": 50.0
+    },
+    {
+      "date": "2022-04",
+      "world_quality_index": 49.6
+    },
+    {
+      "date": "2022-05",
+      "world_quality_index": 49.3
+    },
+    {
+      "date": "2022-06",
+      "world_quality_index": 49.0
+    },
+    {
+      "date": "2022-07",
+      "world_quality_index": 48.6
+    },
+    {
+      "date": "2022-08",
+      "world_quality_index": 48.8
+    },
+    {
+      "date": "2022-09",
+      "world_quality_index": 49.0
+    },
+    {
+      "date": "2022-10",
+      "world_quality_index": 49.2
+    },
+    {
+      "date": "2022-11",
+      "world_quality_index": 49.5
+    },
+    {
+      "date": "2022-12",
+      "world_quality_index": 49.7
+    },
+    {
+      "date": "2023-01",
+      "world_quality_index": 49.9
+    },
+    {
+      "date": "2023-02",
+      "world_quality_index": 50.1
+    },
+    {
+      "date": "2023-03",
+      "world_quality_index": 50.3
+    },
+    {
+      "date": "2023-04",
+      "world_quality_index": 50.6
+    },
+    {
+      "date": "2023-05",
+      "world_quality_index": 50.8
+    },
+    {
+      "date": "2023-06",
+      "world_quality_index": 51.0
+    },
+    {
+      "date": "2023-07",
+      "world_quality_index": 51.2
+    },
+    {
+      "date": "2023-08",
+      "world_quality_index": 51.4
+    },
+    {
+      "date": "2023-09",
+      "world_quality_index": 51.5
+    },
+    {
+      "date": "2023-10",
+      "world_quality_index": 51.7
+    },
+    {
+      "date": "2023-11",
+      "world_quality_index": 51.8
+    },
+    {
+      "date": "2023-12",
+      "world_quality_index": 52.0
+    },
+    {
+      "date": "2024-01",
+      "world_quality_index": 52.2
+    },
+    {
+      "date": "2024-02",
+      "world_quality_index": 52.3
+    },
+    {
+      "date": "2024-03",
+      "world_quality_index": 52.5
+    },
+    {
+      "date": "2024-04",
+      "world_quality_index": 52.6
+    },
+    {
+      "date": "2024-05",
+      "world_quality_index": 52.8
+    },
+    {
+      "date": "2024-06",
+      "world_quality_index": 52.9
+    },
+    {
+      "date": "2024-07",
+      "world_quality_index": 53.1
+    },
+    {
+      "date": "2024-08",
+      "world_quality_index": 53.1
+    },
+    {
+      "date": "2024-09",
+      "world_quality_index": 53.1
+    },
+    {
+      "date": "2024-10",
+      "world_quality_index": 53.1
+    },
+    {
+      "date": "2024-11",
+      "world_quality_index": 53.1
+    },
+    {
+      "date": "2024-12",
+      "world_quality_index": 53.1
+    }
   ]
 }
